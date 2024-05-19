@@ -1,18 +1,31 @@
 import { Link } from 'react-router-dom';
-import { Container, StyledImage, Title, StyledP, StyledArrow } from './WelcomePage.styled';
-import MyFoto from '../../assets/img/photo_2024-05-01_20-32-40.jpg';
+import css from './WelcomePage.module.css';
 import icons from '../../assets/img/symbol-defs.svg';
 
 const WelcomePage = () => {
   return (
-    <Container>
-      <Title>Welcome!</Title>
-      <StyledP>I am Kristina, a Junior Full Stack Developer with experience in HTML, CSS, JavaScript, React, and Node.js.
-        Let me show you what I have created.</StyledP>
-      <StyledImage src={MyFoto} alt="myFoto" />
-      <Link to="/second"><StyledArrow ><use href={`${icons}#icon-arrow`}></use></StyledArrow></Link>
-    </Container>
-
+    <div >
+    <div className={css.container}>
+      <div className={css.content}>
+        <div className={css.globe}></div>
+          <h2 className={css.firstFrame}>Welcome!</h2>
+          <h2 className={css.secondFrame}>I am Kris,</h2>
+          <h2 className={css.thirdFrame}>a Junior</h2>
+          <h2 className={css.fourthFrame}>Full Stack Developer</h2>
+      <h2 className={css.fifthFrame}>
+        <span>Let me</span>
+          <span> show you</span>
+          <span> what I have</span>
+          <span> created.</span>
+      </h2>
+      <Link className={css.circle} to="/second">
+        <svg className={css.arrow}>
+          <use href={`${icons}#icon-arrow`}></use>
+        </svg>
+      </Link>
+        </div>
+        </div>
+    </div>
   )
 };
 
