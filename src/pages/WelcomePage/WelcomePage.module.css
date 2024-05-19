@@ -128,7 +128,6 @@ text-shadow: 0px 0px 1px #fff;
 .arrow {
    width: 50px;
   height: 50px;
-  margin-left: 250px;
   stroke: #ffffff;
   filter: drop-shadow(0 0 5px #00baff)
           drop-shadow(0 0 10px #00baff)
@@ -136,13 +135,9 @@ text-shadow: 0px 0px 1px #fff;
           drop-shadow(0 0 40px #00baff)
           drop-shadow(0 0 80px #00baff);
           	position: absolute;
-            
-left: 55%;
-  top: 70%;
-  
+transform: translate(-50%,50%);
 }
 .circle {
- 
   width: 150px;
   height: auto;
   border-radius: 50%;
@@ -150,14 +145,12 @@ left: 55%;
   left: 50%;
   top: 70%;
   margin: -50px 0 0 -75px;
-  
-
 	text-align: center;
 	line-height: 100px;
 	width: 100px;
 	height: 100px;
 	background: #fff;
-	color: #3f1616;
+	color: #100f0f;
 	font-size: 25px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -171,6 +164,11 @@ left: 55%;
 	-o-transform: scale(1) rotate(0deg);
 	-ms-transform: scale(1) rotate(0deg);
 	transform: scale(1) rotate(0deg);
+  box-shadow:  0 0 5px #00baff,
+    0 0 10px #00baff,
+    0 0 20px #00baff,
+    0 0 40px #00baff,
+    0 0 80px #00baff;;
 }
 .sp-circle-link:hover {
 	background: #85373b;

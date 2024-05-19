@@ -1,30 +1,13 @@
-import {
-  HeaderContainer,
-  Navigation,
-  StyledLink,
-  
-} from './Header.styled';
 
+// import { Link } from 'react-router-dom';
+import icons from '../../assets/img/symbol-defs.svg';
+import css from './Header.module.css';
 
 export const Header = () => {
 
   return (
-    <HeaderContainer>
-      <Navigation>
-        <StyledLink to="/welcome">
-         
-          Welcome
-        </StyledLink>
-        <StyledLink to="/second">
-          
-          Second
-        </StyledLink>
-
-        <StyledLink to="/third">
-         
-         third
-        </StyledLink>
-      </Navigation>
-    </HeaderContainer>
+    <header className={css.header}>
+      <button type='button'><svg className={css.arrow}><use href={`${icons}#icon-arrow`}></use></svg></button>
+    </header>
   );
 };

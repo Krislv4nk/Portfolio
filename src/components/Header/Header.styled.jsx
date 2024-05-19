@@ -3,6 +3,11 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
   padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
 `;
 
 export const Navigation = styled.nav`
