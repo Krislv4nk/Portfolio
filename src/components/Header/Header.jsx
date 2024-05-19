@@ -11,13 +11,18 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <Navigation>
-        <StyledLink to="/first">
+        <StyledLink to="/welcome">
          
-          First
+          Welcome
         </StyledLink>
         <StyledLink to="/second">
           
           Second
+        </StyledLink>
+
+        <StyledLink to="/third">
+         
+         third
         </StyledLink>
       </Navigation>
     </HeaderContainer>
