@@ -1,9 +1,11 @@
 .header {
-    padding: 20px;
+    padding: 30px 50px;
     width: 100%;
-   
+   height: 140px;
 }
 .button {
+    position: relative;
+    z-index: 6;
     width: 50px;
     height: 50px;
     background-color: #ffffff;
@@ -13,11 +15,13 @@
     0 0 20px #00baff,
     0 0 40px #00baff,
     0 0 80px #00baff;
+    border: none;
   transition:
     color 0.3s,
     text-shadow 0.3s;
     cursor: pointer;
     display: flex;
+    margin-top: 30px;
 }
 .button:hover,
 .button:focus {
@@ -33,16 +37,33 @@
     width: 50px;
     height: 50px;
     stroke: #ffffff;
-    fill: transparent;
+    fill: #00baff;
+    border: none;
     transform: translate(0, 0);
+    filter: drop-shadow(0 0 5px #00baff)
+          drop-shadow(0 0 10px #00baff)
+          drop-shadow(0 0 20px #00baff)
+          drop-shadow(0 0 40px #00baff)
+          drop-shadow(0 0 80px #00baff);
+}
+.close {
+    stroke: #00baff;
+    border: none;
+   fill: transparent;
+   width: 50px;
+   height: 50px;
+   filter: drop-shadow(0 0 5px #00baff)
+          drop-shadow(0 0 10px #00baff)
+          drop-shadow(0 0 20px #00baff)
+          drop-shadow(0 0 40px #00baff)
+          drop-shadow(0 0 80px #00baff);
 }
 .dialog {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 140px;
     z-index: 5;
-    background-color: #00baff;
     opacity: 0.8;
 }

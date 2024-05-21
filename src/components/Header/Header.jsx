@@ -18,7 +18,15 @@ export const Header = () => {
   };
   return (
     <header className={css.header}>
-      <button onClick={handleOpenModal} className={css.button} type='button'><svg className={css.menu}><use href={`${icons}#icon-menu`}></use></svg></button>
+      {isModalOpen ? (
+        <button onClick={handleCloseModal} className={css.button} type='button'>
+          <svg className={css.close}><use href={`${icons}#icon-x-mark`}></use></svg>
+        </button>
+      ) : (
+        <button onClick={handleOpenModal} className={css.button} type='button'>
+          <svg className={css.menu}><use href={`${icons}#icon-menu`}></use></svg>
+        </button>
+      )}
     <StyledEngineProvider injectFirst>
         <Dialog className={css.dialog}
           open={isModalOpen} onClose={handleCloseModal}

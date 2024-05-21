@@ -1,9 +1,14 @@
 @media screen and (min-width: 320px) {
-  .container {
+  .wrapper{
+	width: 100%;
+	height: 900px;
+	
+  }
+	.container {
   position: fixed;
 	top: 0px;
 	left: 0px;
- padding: 50px;
+ padding: 50px 100px;
 	width: 100%;
 	height: 100%;
 	z-index: 0;
@@ -24,7 +29,7 @@ content {
 .container h2 {
 	position: absolute;
   left: 0;
-	top: 50%;
+	top: 40%;
 	line-height: 100px;
 	height: 90px;
 	margin-top: -50px;
@@ -129,6 +134,7 @@ text-shadow: 0px 0px 1px #fff;
    width: 50px;
   height: 50px;
   stroke: #ffffff;
+  fill: #00baff;
   filter: drop-shadow(0 0 5px #00baff)
           drop-shadow(0 0 10px #00baff)
           drop-shadow(0 0 20px #00baff)
@@ -143,13 +149,13 @@ transform: translate(-50%,50%);
   border-radius: 50%;
 	position: absolute;
   left: 50%;
-  top: 70%;
+  top: 60%;
   margin: -50px 0 0 -75px;
 	text-align: center;
 	line-height: 100px;
 	width: 100px;
 	height: 100px;
-	background: #fff;
+	background: #ffffff;
 	color: #100f0f;
 	font-size: 25px;
 	-webkit-border-radius: 50%;
@@ -171,8 +177,8 @@ transform: translate(-50%,50%);
     0 0 80px #00baff;;
 }
 .sp-circle-link:hover {
-	background: #85373b;
-	color: #fff;
+	background: #00baff;
+	color: #ffffff;
 }
 /**/
 

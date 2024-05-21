@@ -1,13 +1,28 @@
-// import { Link } from 'react-router-dom';
-import icons from '../../assets/img/symbol-defs.svg';
+import { NavLink } from 'react-router-dom';
+
 import css from './Modal.module.css';
-export const Modal = ({ onClose }) => {
+export const Modal = () => {
     return (
         <div className={css.modal}>
-            <h1>Modal</h1>
-            <button className={css.closeButton} onClick={onClose}><svg className={css.close}>
-          <use href={`${icons}#icon-x-mark`}></use>
-        </svg></button>
+             <nav className={css.wrapper}>
+                <ul className={css.headerList}>
+                    
+                        <li ><NavLink className={({ isActive }) =>
+            `${css.headerItem} ${isActive ? css.active : ''}`
+          } to="/" end>Welcome</NavLink></li>
+                        
+                        <li ><NavLink className={({ isActive }) =>
+            `${css.headerItem} ${isActive ? css.active : ''}`
+          } to="/second">CamperClub</NavLink></li>
+
+                       <li ><NavLink className={({ isActive }) =>
+            `${css.headerItem} ${isActive ? css.active : ''}`
+          } to="/third">Water tracker</NavLink></li>
+          
+          
+                        </ul>
+                </nav>
+            
         </div>
     );
 }

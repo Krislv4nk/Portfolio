@@ -4,7 +4,7 @@ import icons from '../../assets/img/symbol-defs.svg';
 
 const WelcomePage = () => {
   return (
-    <div >
+    <div className={css.wrapper}>
     <div className={css.container}>
       <div className={css.content}>
         <div className={css.globe}></div>
