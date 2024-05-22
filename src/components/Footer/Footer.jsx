@@ -5,7 +5,7 @@ import icons from '../../assets/img/symbol-defs.svg';
 export const Footer = () => {
     return (
         <footer className={css.footer}>
-            <h2>Contact me</h2>
+            <h2 className={css.title}>Contact me</h2>
             <ul className={css.list}>
               <li><a href="mailto:kristinalev4enko89@gmail.com" title="kristinalev4enko89@gmail.com" className={css.contacts}
                   target="_blank" rel="noopener noreferrer"><svg className={css.icon} width="34" height="34">
