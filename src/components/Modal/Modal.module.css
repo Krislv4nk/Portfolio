@@ -29,6 +29,8 @@
   transition:
     color 0.3s,
     text-shadow 0.3s;
+    font-size: 25px;
+font-weight: 700;
 }
 .active {
   color: #00baff;

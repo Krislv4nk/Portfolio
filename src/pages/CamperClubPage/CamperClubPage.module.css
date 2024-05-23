@@ -1,0 +1,120 @@
+.wrapper {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+  text-shadow:
+    0 0 5px #00baff,
+    0 0 10px #00baff,
+    0 0 20px #00baff,
+    0 0 40px #00baff,
+    0 0 80px #00baff;
+}
+.listWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 50px 0px;
+}
+.imgCamper {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+.repoLinkIcon {
+ width: 50px;
+  height: 50px;
+  fill: #ffffff;
+  stroke: #00baff;
+  filter: drop-shadow(0 0 5px #00baff)
+          drop-shadow(0 0 10px #00baff)
+          drop-shadow(0 0 20px #00baff)
+          drop-shadow(0 0 40px #00baff)
+          drop-shadow(0 0 80px #00baff);
+}
+.linksWrapper {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+
+}
+.links {
+    font-size: 35px;
+     padding: 8px 16px;
+  color: #ffffff; /* White text color */
+  text-shadow:
+    0 0 5px #00baff,
+    0 0 10px #00baff,
+    0 0 20px #00baff,
+    0 0 40px #00baff,
+    0 0 80px #00baff;
+  transition:
+    color 0.3s,
+    text-shadow 0.3s;
+  display: block;
+  
+}
+.links:hover,
+  .links:focus {
+    color: #00baff; /* Blue text color on hover/focus */
+    text-shadow:
+      0 0 5px #00baff,
+      0 0 10px #00baff,
+      0 0 20px #00baff,
+      0 0 40px #00baff,
+      0 0 80px #00baff;
+  }
+  .linksItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+  .descriptionTitle {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-shadow:
+    0 0 5px #00baff,
+    0 0 10px #00baff,
+    0 0 20px #00baff,
+    0 0 40px #00baff,
+    0 0 80px #00baff;
+    text-align: center;
+  }
+  .description {
+    margin-bottom: 25px;
+    padding: 0 50px;
+    font-size: 25px;
+    text-shadow:
+    0 0 5px #00baff,
+    0 0 10px #00baff,
+    0 0 20px #00baff,
+    0 0 40px #00baff,
+    0 0 80px #00baff;
+    text-align: center;
+  }
+  .toolsList {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    gap: 10px;
+    margin-bottom: 20px;
+    text-shadow:
+    0 0 5px #00baff,
+    0 0 10px #00baff,
+    0 0 20px #00baff,
+    0 0 40px #00baff,
+    0 0 80px #00baff;
+    align-items: center;
+    justify-content: center;
+  }
+  

@@ -19,11 +19,11 @@ export const Header = () => {
   return (
     <header className={css.header}>
       {isModalOpen ? (
-        <button onClick={handleCloseModal} className={css.button} type='button'>
+        <button title='close' onClick={handleCloseModal} className={css.button} type='button'>
           <svg className={css.close}><use href={`${icons}#icon-x-mark`}></use></svg>
         </button>
       ) : (
-        <button onClick={handleOpenModal} className={css.button} type='button'>
+        <button title='menu' onClick={handleOpenModal} className={css.button} type='button'>
           <svg className={css.menu}><use href={`${icons}#icon-menu`}></use></svg>
         </button>
       )}

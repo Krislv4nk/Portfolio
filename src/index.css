@@ -9,6 +9,7 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0;
+  
 }
 h1,
 h2,
@@ -33,4 +34,15 @@ img {
 }
 button {
   cursor: pointer;
+}
+
+html {
+text-size-adjust: text-size-adjust;
+-webkit-text-size-adjust: text-size-adjust;
+}
+@media screen and (max-width: 768px) {
+  
+  body {
+    font-size: 14px;
+  }
 }
