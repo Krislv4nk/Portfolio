@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import camper from '../../assets/img/camper.png';
 import camperA from '../../assets/img/camper-1.png';
 import css from './CamperClubPage.module.css';
@@ -18,13 +19,13 @@ const CamperClubPage = () => {
            <li className={css.linksItem}> <svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>
         </svg>
-              <a className={css.links} href="https://krislv4nk.github.io/CamperClub/" rel="noreferrer"
-            title="View Live Demo of Phone Book App">Live Demo</a></li>
+              <Link className={css.links} href="https://krislv4nk.github.io/CamperClub/" rel="noreferrer"
+            title="View Live Demo of Phone Book App">Live Demo</Link></li>
         <li className={css.linksItem}><svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>
         </svg>
-              <a className={css.links} href="https://github.com/Krislv4nk/CamperClub" rel="noreferrer"
-          title="View Front-End Code on GitHub">Front-End GitHub</a></li>
+              <Link className={css.links} href="https://github.com/Krislv4nk/CamperClub" rel="noreferrer"
+          title="View Front-End Code on GitHub">Front-End GitHub</Link></li>
       </ul>
 <h4 className={css.descriptionTitle}>Individual Project</h4>
           <p className={css.description}>Introducing my latest venture: the premier individual project following my
@@ -37,14 +38,16 @@ const CamperClubPage = () => {
             personalized favorites
             list, planning your dream getaway has never been easier. Join us as we redefine the way adventurers connect
             with their
-            ideal camper experience. Welcome to a world of exploration, all at your fingertips.
+            ideal camper experience. Welcome to a world of exploration, all at your fingertips.</p>
 
-            Key Features:
-            - Browse Campers: Users can browse a list of available campers with images, prices, and other details.
-            - Camper Details: Each camper has a dedicated page with detailed information, including description,
+        <ul className={css.descriptionTitle}>Key Features:
+           <li className={css.tool}> - Browse Campers: Users can browse a list of available campers with images, prices, and other details.</li>
+            <li className={css.tool}>- Camper Details: Each camper has a dedicated page with detailed information, including description,
             location, rating,
-            reviews, and specifications.
-            - Add to Favorites: Users can add campers to their favorites list and remove them from it.</p>
+            reviews, and specifications.</li>
+            <li className={css.tool}>- Add to Favorites: Users can add campers to their favorites list and remove them from it.
+            </li >
+            </ul >
           <h4 className={css.descriptionTitle}>Tools: </h4>
             <ul className={css.toolsList}>
                 <li className={css.tool}>React,</li>

@@ -116,5 +116,18 @@
     0 0 80px #00baff;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
   }
-  
+  .tool {
+    font-size: 25px;
+  }
+  .phoneBook {
+    width: 700px;
+    height: auto;
+    border-radius: 8px;
+}
+.imgPhone {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}

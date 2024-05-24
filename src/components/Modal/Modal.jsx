@@ -13,11 +13,19 @@ export const Modal = () => {
                         
                         <li ><NavLink className={({ isActive }) =>
             `${css.headerItem} ${isActive ? css.active : ''}`
-          } to="/second">CamperClub</NavLink></li>
+          } to="/CamperClub">CamperClub</NavLink></li>
 
                        <li ><NavLink className={({ isActive }) =>
             `${css.headerItem} ${isActive ? css.active : ''}`
-          } to="/third">Water tracker</NavLink></li>
+          } to="/WaterTracker">Water tracker</NavLink></li>
+            
+            <li ><NavLink className={({ isActive }) =>
+            `${css.headerItem} ${isActive ? css.active : ''}`
+          } to="/PhoneBook">Phone Book</NavLink></li>
+            
+            <li ><NavLink className={({ isActive }) =>
+            `${css.headerItem} ${isActive ? css.active : ''}`
+          } to="/FoodStore">Food Store</NavLink></li>
           
           
                         </ul>
