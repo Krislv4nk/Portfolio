@@ -9,11 +9,11 @@ const PhoneBookPage = () => {
   return <div className={css.wrapper}>
     <h2 className={css.title}>PhoneBook</h2>
       
-      <ul className={css.listWrapper}>
-        <li><img className={css.phoneBook} src={phoneBook} alt="camper" /></li>
-        <li><img  className={css.imgPhone} src={phone} alt="camper" /></li>
+      <div className={css.listWrapper}>
+        <img className={css.phoneBook} src={phoneBook} alt="camper" />
+        <img  className={css.imgPhone} src={phone} alt="camper" />
        
-      </ul>
+      </div>
     <ul className={css.linksWrapper}>
       <li className={css.linksItem}>
                 <svg className={css.repoLinkIcon} >

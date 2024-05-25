@@ -10,11 +10,11 @@ const CamperClubPage = () => {
           
             <h2 className={css.title}>CamperClub</h2>
       
-      <ul className={css.listWrapper}>
-        <li><img className={css.imgCamper} src={camper} alt="camper" /></li>
-        <li><img  className={css.imgCamper}src={camperA} alt="camper" /></li>
+      <div className={css.listWrapper}>
+       <img className={css.imgCamper} src={camper} alt="camper" />
+        <img  className={css.imgCamper}src={camperA} alt="camper" />
        
-      </ul>
+      </div>
       <ul className={css.linksWrapper}>
            <li className={css.linksItem}> <svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>
