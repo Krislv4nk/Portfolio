@@ -29,23 +29,9 @@ body {
   background: linear-gradient(to bottom, #13013a, #141366, #051f3d, #010847);
   background-size: 400% 400%;
   animation: shimmer 15s ease infinite;
-  overflow: auto;
-::-webkit-scrollbar {
-        width: 10px;
-    }
-    ::-webkit-scrollbar-track {
-        background: transparent;
-    }
-    ::-webkit-scrollbar-thumb {
-        background: transparent;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-        background: transparent;
-    }
+
 }
-html, body {
-    scroll-behavior: smooth;
-}
+
 
 @keyframes shimmer {
   0% {

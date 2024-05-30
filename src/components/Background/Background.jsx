@@ -2,14 +2,14 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadAll } from "@tsparticles/all";
+import { loadSlim } from "@tsparticles/slim";
 
 
 export const Background = () => {
   const [init, setInit] = useState(false);
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-       await loadAll(engine);
+       await loadSlim(engine);
     }).then(() => {
       setInit(true);
     });
@@ -17,25 +17,43 @@ export const Background = () => {
 
   const options = useMemo(
     () => ({
-      fpsLimit: 120,
-     
-      particles: {
-        color: {
-          value: ["#a6c1ee", "#606390", "#00baff", "#0842b6", "#ffffff"],
-          animation: {
+     fpsLimit: 120,
+      interactivity: {
+        events: {
+         
+          onHover: {
             enable: true,
-            speed: 20, // Швидкість зміни кольорів
-            sync: true, // Встановіть на false, якщо хочете, щоб кожна частинка змінювала колір незалежно
+            mode: "repulse",
           },
         },
+        modes: {
+          push: {
+            quantity: 4,
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4,
+          },
+        },
+      },
+      particles: {
+        color: {
+          value: "#00baff",
+          animation: {
+            enable: true,
+            speed: 20,
+            sync: true,
+          }
+        },
+        
         move: {
-          direction: "none",
+          direction: "top",
           enable: true,
           outModes: {
-             default: "bounce",
+            default: "out",
           },
           random: false,
-          speed: 2,
+          speed: 3,
           straight: false,
         },
         number: {
@@ -45,16 +63,14 @@ export const Background = () => {
           value: 80,
         },
         opacity: {
-          value: 0.3,
+          value: 0.5,
         },
         shape: {
           type: "circle",
         },
         size: {
-          value: { min: 10, max: 40 },
-          
-          },
-       
+          value: { min: 1, max: 5 },
+        },
       },
       detectRetina: true,
     }),

@@ -21,7 +21,8 @@ const WelcomePage = () => {
       <Link className={css.circle} to="/CamperClub" title='View CamperClub'>
         <svg className={css.arrow}>
           <use href={`${icons}#icon-arrow`}></use>
-        </svg>
+            </svg>
+            
       </Link>
         </div>
         </div>

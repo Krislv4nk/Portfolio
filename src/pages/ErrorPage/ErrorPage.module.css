@@ -1,0 +1,154 @@
+.wrapper {
+   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  overflow: hidden;
+}
+.title {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 150px;
+    
+  text-shadow:
+    0 0 5px #00baff,
+    0 0 10px #00baff,
+    0 0 20px #00baff,
+    0 0 40px #00baff,
+    0 0 80px #00baff;
+}
+
+
+
+/*  */
+.astronaut img{
+  width: 400px;
+  position:absolute;
+ 
+  animation:astronautFly 6s infinite linear;
+  animation-delay: 2s;
+  overflow: hidden;
+}
+@keyframes astronautFly{
+  
+  0%{
+    left:-100px;
+  }
+  25%{
+    top:50%;
+    transform:rotate(30deg);
+  }
+  50%{
+    transform:rotate(45deg);
+    top:55%;
+  }
+  75%{
+    top:60%;
+    transform:rotate(30deg);
+ 
+  }
+  100%{
+    left:110%;
+    transform:rotate(45deg);
+   
+  }
+}
+
+.link {
+  
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  text-shadow:  0 0 5px #00baff,
+    0 0 10px #00baff,
+    0 0 20px #00baff,
+    0 0 40px #00baff,
+    0 0 80px #00baff;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  margin: 20px;
+  transition: 0.5s;
+}
+.linkContainer {
+   display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin-bottom: 50px;
+  
+  .clicker {
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    animation: blink 0.8s infinite;
+    color: transparent;
+    &:before {
+      content: "Click Me!";
+    }
+    &:nth-child(1) {
+      top: -30px;
+      left: -40px;
+      font: 12px/1 "Margarine", sans-serif;
+      transform: rotate(-20deg);
+      animation-duration: 0.5s;
+    }
+    &:nth-child(2) {
+      font: 12px/1 "Margarine", sans-serif;
+      right: -40px;
+      top: -20px;
+      transform: rotate(15deg);
+      animation-duration: 0.3s;
+    }
+    &:nth-child(3) {
+      font: 16px/1 "Margarine", sans-serif;
+      top: -60px;
+      left: 15px;
+      transform: rotate(10deg);
+      animation-duration: 1s;
+    }
+    &:nth-child(4) {
+      font: 18px/1 "Margarine", sans-serif;
+      top: -70px;
+      left: 95px;
+      transform: rotate(2deg);
+      animation-duration: 0.7s;
+    }
+    &:nth-child(5) {
+      font: 14px/1 "Margarine", sans-serif;
+      top: 80px;
+      left: 105px;
+      transform: rotate(-20deg);
+      animation-duration: 0.8s;
+    }
+    &:nth-child(6) {
+      font: 12px/1 "Margarine", sans-serif;
+      top: 80px;
+      left: 5px;
+      transform: rotate(10deg);
+      animation-duration: 1.2s;
+    }
+  }
+  .link:hover .clicker:before {
+    content: "Do it!";
+    width: 70px;
+  }
+}
+
+@keyframes blink {
+  25%,
+  75% {
+    color: transparent;
+  }
+  40%,
+  60% {
+    color: #fff;
+  }
+}
