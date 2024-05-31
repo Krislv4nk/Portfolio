@@ -16,9 +16,9 @@
 }
 
 body {
-  /* background-size: auto 100%; */
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: linear-gradient(45deg, #0d0d3c, #1e1e54, #1c2e6d, #002b80);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -26,25 +26,19 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0;
-  background: linear-gradient(to bottom, #13013a, #030230, #010a15, #010847);
-  background-size: 400% 400%;
-  animation: shimmer 15s ease infinite;
-
 }
 
-
-@keyframes shimmer {
+@keyframes gradientAnimation {
   0% {
-    background-position: 0% 0%;
+    background-position: 0% 50%;
   }
   50% {
     background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 100%;
+    background-position: 0% 50%;
   }
 }
-
 h1,
 h2,
 h3,

@@ -6,6 +6,7 @@
 	width: 100%;
 	height: 100%;
 	z-index: 0;
+	overflow: auto;
 	background: -webkit-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
 	background: -moz-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
 	background: -ms-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
@@ -15,6 +16,21 @@
 	-moz-animation: fadein 1s;
 	-ms-animation: fadein 1s;
 	animation: fadein 1s;
+
+	
+}
+
+.container::-webkit-scrollbar {
+    width: 0px;
+}
+.container::-webkit-scrollbar-track {
+    background: transparent;
+}
+.container::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+.container::-webkit-scrollbar-thumb:hover {
+    background: transparent;
 }
 
 @keyframes fadein {
