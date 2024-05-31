@@ -2,75 +2,40 @@
     padding: 50px 80px;
     width: 100%;
    height: 240px;
-
+position: relative;
+z-index: 12;
 }
-.button {
-    position: relative;
-    z-index: 6;
-    width: 50px;
-    height: 50px;
-    background-color: #ffffff;
-    fill: transparent;
-    box-shadow:  0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
-    border: none;
-    border-radius: 8px;
-  transition:
-    color 0.3s,
-    text-shadow 0.3s;
-    cursor: pointer;
-    display: flex;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: 0px;
-}
-.button:hover,
-.button:focus {
-    color: #00baff;
-    text-shadow:
+.headerItem {
+   padding: 8px 16px;
+  color: #ffffff; /* White text color */
+  text-shadow:
     0 0 5px #00baff,
     0 0 10px #00baff,
     0 0 20px #00baff,
     0 0 40px #00baff,
     0 0 80px #00baff;
+  transition:
+    color 0.3s,
+    text-shadow 0.3s;
+    font-size: 25px;
+font-weight: 700;
 }
-.menu{
-    width: 50px;
-    height: 50px;
-    stroke: #ffffff;
-    fill: #00baff;
-    border: none;
-    transform: translate(0, 0);
-    filter: drop-shadow(0 0 5px #00baff)
-          drop-shadow(0 0 10px #00baff)
-          drop-shadow(0 0 20px #00baff)
-          drop-shadow(0 0 40px #00baff)
-          drop-shadow(0 0 80px #00baff);
+.active {
+  color: #00baff;
 }
-.close {
-    stroke: #00baff;
-    border: none;
-   fill: transparent;
-   width: 50px;
-   height: 50px;
-   filter: drop-shadow(0 0 5px #00baff)
-          drop-shadow(0 0 10px #00baff)
-          drop-shadow(0 0 20px #00baff)
-          drop-shadow(0 0 40px #00baff)
-          drop-shadow(0 0 80px #00baff);
+  .headerItem:hover,
+  .headerItem:focus {
+    color: #00baff; /* Blue text color on hover/focus */
+    text-shadow:
+      0 0 5px #00baff,
+      0 0 10px #00baff,
+      0 0 20px #00baff,
+      0 0 40px #00baff,
+      0 0 80px #00baff;
+  }
+.headerList {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 50px;
 }
-.dialog {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 240px;
-    z-index: 5;
-    opacity: 0.8;
-}
-
-
-

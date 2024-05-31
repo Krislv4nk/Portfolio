@@ -20,7 +20,7 @@ const PhoneBookPage = () => {
           <use href={`${icons}#icon-link`}></use>
         </svg>
           <Link className={css.links} href="https://krislv4nk.github.io/goit-react-hw-08-phonebook/"  rel="noreferrer"
-                  title="View Live Demo of Water Tracker App">Live Demo</Link>
+                  title="View Live Demo of PhoneBook App">Live Demo</Link>
               </li>
               <li className={css.linksItem}>
                 <svg className={css.repoLinkIcon}>
@@ -58,6 +58,10 @@ const PhoneBookPage = () => {
                 <li className={css.tool}>Yup;</li>
               </ul>
           <p className={css.description}>Duration: 2 weeks</p>
+
+    <Link className={css.back} to={{ pathname: "/ProjectsPage", state: { from: location } }} title='View CamperClub'>
+  Back to Projects
+</Link>
             </div >;
 };
 

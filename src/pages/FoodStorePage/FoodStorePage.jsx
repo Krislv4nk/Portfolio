@@ -49,7 +49,10 @@ const FoodStorePage = () => {
             effectively within a team to deliver a high-quality web application that meets both client requirements and
             user
             expectations.</p>
-          <p className={css.description}>Duration: 1 week</p>
+    <p className={css.description}>Duration: 1 week</p>
+    <Link className={css.back} to={{ pathname: "/ProjectsPage", state: { from: location } }} title='View CamperClub'>
+  Back to Projects
+</Link>
     </div >;
     };
 

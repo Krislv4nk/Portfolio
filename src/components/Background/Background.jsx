@@ -63,13 +63,19 @@ export const Background = () => {
           value: 80,
         },
         opacity: {
-          value: 0.5,
+          value: { min: 0.3, max: 2.8 }, // Налаштуйте діапазон прозорості для більшого ефекту мерехтіння
+          animation: {
+            enable: true,
+            speed: 10, // Налаштуйте швидкість для контролю частоти мерехтіння
+            sync: false, // Кожна частинка мерехтить незалежно
+          },
         },
         shape: {
           type: "circle",
         },
         size: {
           value: { min: 1, max: 5 },
+          
         },
       },
       detectRetina: true,

@@ -41,8 +41,8 @@ const WaterTrackerPage = () => {
 2. Water Journal: This section allows users to log their daily water consumption. Users can input the amount of water consumed at different times throughout the day and view their hydration progress over time.
 
 3. Settings: The settings page enables users to customize their experience, such as setting reminders for drinking water, adjusting units of measurement, and managing account preferences.</p>
-
-<ul className={css.descriptionTitle}>Key Features:
+<h4 className={css.descriptionTitle}>Key Features:</h4>
+<ul className={css.featuresList}>
 
 <li className={css.tool}>- Private and Public Routes: The application implements private routes, which require user authentication, and public routes, accessible to all users. Private routes ensure data security and restrict unauthorized access to sensitive information.</li >
 
@@ -78,7 +78,11 @@ const WaterTrackerPage = () => {
             Formik, Yup),
             component MyDailyNorma with
             modal-window (MUI), component Background; on Back-End - Implemented logic for TodayWater component. </p>
-            </div >;
+            
+ <Link className={css.back} to={{ pathname: "/ProjectsPage", state: { from: location } }} title='View CamperClub'>
+  Back to Projects
+</Link>
+  </div >;
 };
 
 export default WaterTrackerPage;

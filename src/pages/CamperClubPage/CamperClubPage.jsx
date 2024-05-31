@@ -1,10 +1,13 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+
 import camper from '../../assets/img/camper.png';
 import camperA from '../../assets/img/camper-1.png';
 import css from './CamperClubPage.module.css';
 import icons from '../../assets/img/symbol-defs.svg';
 
 const CamperClubPage = () => {
+  const location = useLocation();
+
   return (
     <div className={css.wrapper}>
           
@@ -20,7 +23,7 @@ const CamperClubPage = () => {
           <use href={`${icons}#icon-link`}></use>
         </svg>
               <Link className={css.links} href="https://krislv4nk.github.io/CamperClub/" rel="noreferrer"
-            title="View Live Demo of Phone Book App">Live Demo</Link></li>
+            title="View Live Demo of CamperClub">Live Demo</Link></li>
         <li className={css.linksItem}><svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>
         </svg>
@@ -39,8 +42,8 @@ const CamperClubPage = () => {
             list, planning your dream getaway has never been easier. Join us as we redefine the way adventurers connect
             with their
             ideal camper experience. Welcome to a world of exploration, all at your fingertips.</p>
-
-        <ul className={css.descriptionTitle}>Key Features:
+<h4 className={css.descriptionTitle}>Key Features:</h4>
+        <ul className={css.featuresList}>
            <li className={css.tool}> - Browse Campers: Users can browse a list of available campers with images, prices, and other details.</li>
             <li className={css.tool}>- Camper Details: Each camper has a dedicated page with detailed information, including description,
             location, rating,
@@ -57,7 +60,11 @@ const CamperClubPage = () => {
                 <li className={css.tool}>Formik,</li>
                 <li className={css.tool}>Yup;</li>
               </ul>
-          <p className={css.description}>Duration: 3 weeks</p>
+      <p className={css.description}>Duration: 3 weeks</p>
+      
+      <Link className={css.back} to={{ pathname: "/ProjectsPage", state: { from: location } }} title='View CamperClub'>
+  Back to Projects
+</Link>
     </div>
   );
 };

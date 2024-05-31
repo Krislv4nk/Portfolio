@@ -18,7 +18,7 @@ const WelcomePage = () => {
           <span> what I have</span>
           <span> created.</span>
       </h2>
-      <Link className={css.circle} to="/CamperClub" title='View CamperClub'>
+      <Link className={css.circle} to="/ProjectsPage" title='View CamperClub'>
         <svg className={css.arrow}>
           <use href={`${icons}#icon-arrow`}></use>
             </svg>

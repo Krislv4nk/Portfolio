@@ -1,22 +1,2 @@
 
-@keyframes glitter {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 100%;
-  }
-}
 
-.container {
-  background: linear-gradient(to bottom, #161862, #0842b6, #38305e, #1f294c, #0d1150);
-  background-size: 400% 400%;
-  animation: glitter 15s ease infinite;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
