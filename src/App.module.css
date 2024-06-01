@@ -1,0 +1,22 @@
+/* transitions.css */
+.wrapper {
+  padding: 20px;
+}
+.fadeEnter {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.fadeEnterActive {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.fadeExit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fadeExitActive {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 300ms, transform 300ms;
+}

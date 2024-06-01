@@ -132,7 +132,7 @@ text-shadow: 0px 0px 1px #fff;
    width: 50px;
   height: 50px;
   stroke: #ffffff;
-  fill: #00baff;
+  fill: #ffffff;
   filter: drop-shadow(0 0 5px #00baff)
           drop-shadow(0 0 10px #00baff)
           drop-shadow(0 0 20px #00baff)
@@ -142,8 +142,6 @@ text-shadow: 0px 0px 1px #fff;
 transform: translate(-50%,50%);
 }
 .circle {
-  width: 150px;
-  height: auto;
   border-radius: 50%;
 	position: absolute;
   left: 50%;
@@ -153,8 +151,6 @@ transform: translate(-50%,50%);
 	line-height: 100px;
 	width: 100px;
 	height: 100px;
-	background: #ffffff;
-	color: #100f0f;
 	font-size: 25px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;

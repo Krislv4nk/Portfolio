@@ -7,6 +7,7 @@ import ErrorPage from 'pages/ErrorPage/ErrorPage';
 import FoodStorePage from 'pages/FoodStorePage/FoodStorePage';
 import PhoneBookPage from 'pages/PhoneBookPage/PhoneBookPage';
 import ProjectsPage from 'pages/ProjectsPage/ProjectsPage';
+import AboutMe from 'pages/AboutMe/AboutMe';
 
 
 
@@ -18,12 +19,11 @@ function App() {
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<WelcomePage />} />
           <Route path="/ProjectsPage" element={<ProjectsPage />}/>
-           
             <Route path="/CamperClub" element={<CamperClubPage />} />
             <Route path="/WaterTracker" element={<WaterTrackerPage />} />
             <Route path="/PhoneBook" element={<PhoneBookPage />} />
             <Route path="/FoodStore" element={<FoodStorePage />} />
-         
+          <Route path="/AboutMe" element={<AboutMe />}/>
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>

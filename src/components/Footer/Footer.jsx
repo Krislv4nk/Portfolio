@@ -18,7 +18,7 @@ export const Footer = () => {
                   </svg></Link></li>
               <li><Link href="https://t.me/KRISLV4NK" className={css.contacts} title="Telegram" target="_blank"
                   rel="noopener noreferrer"><svg className={css.icon}>
-                    <use href={`${icons}#icon-telegram1`}></use>
+                    <use href={`${icons}#icon-telegram`}></use>
                   </svg></Link></li>
               <li><Link href="https://github.com/Krislv4nk/" className={css.contacts} title="GitHub" target="_blank"
                   rel="noopener noreferrer"><svg className={css.icon}>

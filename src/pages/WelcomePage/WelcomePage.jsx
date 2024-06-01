@@ -9,8 +9,8 @@ const WelcomePage = () => {
       <div className={css.content}>
         <div className={css.globe}></div>
           <h2 className={css.firstFrame}>Welcome!</h2>
-          <h2 className={css.secondFrame}>I am Kris,</h2>
-          <h2 className={css.thirdFrame}>a Junior</h2>
+          <h2 className={css.secondFrame}>I am </h2>
+          <h2 className={css.thirdFrame}> Junior</h2>
           <h2 className={css.fourthFrame}>Full Stack Developer</h2>
       <h2 className={css.fifthFrame}>
         <span>Let me</span>
@@ -20,7 +20,7 @@ const WelcomePage = () => {
       </h2>
       <Link className={css.circle} to="/ProjectsPage" title='View Projects'>
         <svg className={css.arrow}>
-          <use href={`${icons}#icon-arrow`}></use>
+          <use href={`${icons}#icon-page`}></use>
             </svg>
             
       </Link>
