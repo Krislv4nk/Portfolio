@@ -36,6 +36,7 @@ content {
 	-moz-animation: blurFadeInOut 3s ease-in backwards;
 	-ms-animation: blurFadeInOut 3s ease-in backwards;
 	animation: blurFadeInOut 3s ease-in backwards;
+	
   }
   .container h2.firstFrame {
 	font-size: 200px;
@@ -125,6 +126,7 @@ text-shadow: 0px 0px 1px #fff;
 	-o-transform: scale(5);
 	-ms-transform: scale(5);
 	transform: scale(5);
+	
 }
 .arrow {
    width: 50px;
@@ -352,6 +354,16 @@ transform: translate(-50%,50%);
 		transform: scale(1) rotate(0deg);
 	}
 }
-
+@keyframes textShadowAnimation {
+  0% {
+    text-shadow: 0 0 5px #00baff, 0 0 10px #00baff, 0 0 20px #00baff, 0 0 40px #00baff, 0 0 80px #00baff;
+  }
+  50% {
+    text-shadow: 0 0 10px #00baff, 0 0 20px #00baff, 0 0 40px #00baff, 0 0 80px #00baff, 0 0 160px #00baff;
+  }
+  100% {
+    text-shadow: 0 0 5px #00baff, 0 0 10px #00baff, 0 0 20px #00baff, 0 0 40px #00baff, 0 0 80px #00baff;
+  }
+}
 
 
