@@ -12,7 +12,7 @@ This is my live portfolio, developed using HTML, CSS, and JavaScript. It contain
 Link
 
 
-The live website is available at the following link: [My Portfolio](https://krislv4nk.github.io/Portfolio-2/)
+The live website is available at the following link: [My Portfolio](https://krislv4nk.github.io/Portfolio/)
 
 Technologies
 
