@@ -40,8 +40,8 @@ text-shadow:
 
 .contacts {
     content: "";
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     background-color: #ffffff;
     box-shadow:
     0 0 5px #00baff,
@@ -55,11 +55,38 @@ text-shadow:
         align-items: center;
         justify-content: center;
         gap: 44px;
-        transition: color 0.5s ease;
-    animation: pulse 2s infinite;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease;
+  
 }
 
 .icon {
     fill: #00baff;
-    transition: fill 0.5s ease;
+    width: 60px;
+    height: 60px;
+   
+}
+.contacts:hover  {
+  animation: neonRainbow 1.5s infinite alternate;
+}
+
+@keyframes neonRainbow {
+  0% {
+    box-shadow: 0 0 5px #ff0099, 0 0 10px #ff0099, 0 0 15px #ff0099, 0 0 20px #ff0099, 0 0 25px #ff0099;
+  }
+  20% {
+    box-shadow: 0 0 5px #ff0099, 0 0 10px #ff0099, 0 0 15px #ff0099, 0 0 20px #ff0099, 0 0 25px #ff0099;
+  }
+  40% {
+    box-shadow: 0 0 5px #ff6600, 0 0 10px #ff6600, 0 0 15px #ff6600, 0 0 20px #ff6600, 0 0 25px #ff6600;
+  }
+  60% {
+    box-shadow: 0 0 5px #ffff33, 0 0 10px #ffff33, 0 0 15px #ffff33, 0 0 20px #ffff33, 0 0 25px #ffff33;
+  }
+  80% {
+    box-shadow: 0 0 5px #33ff33, 0 0 10px #33ff33, 0 0 15px #33ff33, 0 0 20px #33ff33, 0 0 25px #33ff33;
+  }
+  100% {
+    box-shadow: 0 0 5px #3399ff, 0 0 10px #3399ff, 0 0 15px #3399ff, 0 0 20px #3399ff, 0 0 25px #3399ff;
+  }
 }

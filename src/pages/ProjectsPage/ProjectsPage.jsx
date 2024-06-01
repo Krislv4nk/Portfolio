@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import css from './ProjectsPage.module.css';
-
+import icons from '../../assets/img/symbol-defs.svg';
 
 
 const ProjectsPage = () => {
@@ -14,13 +14,21 @@ const ProjectsPage = () => {
                     
                         
                         
-                        <li ><Link className={css.item} to="/CamperClub" title='CamperClub'>CamperClub</Link></li>
+                        <li className={css.projectItem}><Link className={css.item} to="/CamperClub" title='CamperClub'>CamperClub</Link><svg className={css.project}>
+          <use href={`${icons}#icon-menu`}></use>
+            </svg></li>
 
-                       <li ><Link className={css.item} to="/WaterTracker" title='WaterTracker'>Water tracker</Link></li>
+                       <li className={css.projectItem}><Link className={css.item} to="/WaterTracker" title='WaterTracker'>Water tracker</Link><svg className={css.project}>
+          <use href={`${icons}#icon-menu`}></use>
+            </svg></li>
             
-            <li ><Link className={css.item} to="/PhoneBook" title='PhoneBook'>Phone Book</Link></li>
+            <li className={css.projectItem}><Link className={css.item} to="/PhoneBook" title='PhoneBook'>Phone Book</Link><svg className={css.project}>
+          <use href={`${icons}#icon-menu`}></use>
+            </svg></li>
             
-            <li ><Link className={css.item} to="/FoodStore" title='FoodStore'>Food Store</Link></li>
+            <li className={css.projectItem}><Link className={css.item} to="/FoodStore" title='FoodStore'>Food Store</Link><svg className={css.project}>
+          <use href={`${icons}#icon-menu`}></use>
+            </svg></li>
           
           
                         </ul>

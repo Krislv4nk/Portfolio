@@ -77,6 +77,11 @@ export const Background = () => {
           value: { min: 1, max: 5 },
           
         },
+        shadow: {
+          enable: true,
+          blur: 20,
+          color: "#00baff",
+        },
       },
       detectRetina: true,
     }),
