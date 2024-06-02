@@ -11,7 +11,7 @@ export default defineConfig({
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
           if (req.url.endsWith('.mp4')) {
-            res.setHeader('Content-Type', 'video/mp4');
+            res.setHeader('Content-Type', 'image/jpeg');
           } else if (req.url.endsWith('.png')) {
             res.setHeader('Content-Type', 'image/png');
           } else if (req.url.endsWith('.svg')) {

@@ -1,7 +1,8 @@
 
 import icons from '../../assets/img/symbol-defs.svg';
-import myFoto from '../../assets/img/photo_2024-05-01_20-32-40.jpg';
+import myFoto from '../../assets/img/foto-1.jpg';
 import css from './AboutMe.module.css';
+import pdf from '../../assets/img/kristina.pdf';
 
 
 const AboutMe = () => {
@@ -70,7 +71,8 @@ const AboutMe = () => {
             </ul>
             <h3 className={css.title}>Education</h3>
             
-                <iframe className={css.iframe} src="https://drive.google.com/file/d/1dBRSm8ID4ucfYNSoIxbyjqceRLZstCQQ/preview"
+                <iframe className={css.iframe}
+                      src={pdf}
                     allow="autoplay"></iframe>
            
         </div>

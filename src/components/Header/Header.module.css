@@ -36,8 +36,9 @@ z-index: 12;
 font-weight: 700;
 }
 .active .icon {
- width: 90px;
-    height: 90px;
+ width: 100px;
+    height: 100px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
   
 .headerList {

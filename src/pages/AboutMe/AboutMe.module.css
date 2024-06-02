@@ -103,3 +103,8 @@
     0 0 40px #00baff,
     0 0 80px #00baff;
 }
+
+.iframe pdf {
+    width: 640px;
+    height: 800px;
+}
