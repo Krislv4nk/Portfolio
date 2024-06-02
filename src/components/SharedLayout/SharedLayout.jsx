@@ -9,13 +9,14 @@ const SharedLayout = () => {
   return (
 
     <>
-      <Container/>
+      <Container>
       <Background />
       <Header />
       <Suspense fallback={null}>
         <Outlet />
       </Suspense>
-      <Footer/>
+        <Footer />
+      </Container>
     </>
   );
 };

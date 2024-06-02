@@ -14,8 +14,8 @@ import AboutMe from 'pages/AboutMe/AboutMe';
 function App() {
   
   return (
-    <div>
-      <Routes>
+   
+      <Routes >
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<WelcomePage />} />
           <Route path="/ProjectsPage" element={<ProjectsPage />}/>
@@ -27,7 +27,7 @@ function App() {
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
-    </div>
+    
   );
 }
 export default App;

@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import {Container} from 'components/Container/Container';
 
 
 export const Background = () => {
@@ -63,11 +64,11 @@ export const Background = () => {
           value: 80,
         },
         opacity: {
-          value: { min: 0.3, max: 2.8 }, // Налаштуйте діапазон прозорості для більшого ефекту мерехтіння
+          value: { min: 0.3, max: 2.8 }, 
           animation: {
             enable: true,
-            speed: 10, // Налаштуйте швидкість для контролю частоти мерехтіння
-            sync: false, // Кожна частинка мерехтить незалежно
+            speed: 10, 
+            sync: false, 
           },
         },
         shape: {
@@ -93,14 +94,14 @@ export const Background = () => {
 
   if (init) {
     return (
-   
+   <Container>
       <Particles 
         id="tsparticles"
         init={initParticlesEngine}
         options={options}
        
       />
-    
+   </Container>
     );
   } 
 
