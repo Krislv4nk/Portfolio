@@ -1,8 +1,9 @@
 .container {
   padding: 0 50px;
+  position: relative;
+  z-index: 0;
     margin: 0 auto;
-	/* width: 100%;
-	height: 100%; */
+	
 	overflow: hidden;
 	background: -webkit-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
 	background: -moz-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
@@ -14,7 +15,7 @@
 	-ms-animation: fadein 1s;
 	animation: fadein 1s;
 
-background-size: 100% 100%;
+background-size: 400% 400%;
 }
 
 .container::-webkit-scrollbar {
