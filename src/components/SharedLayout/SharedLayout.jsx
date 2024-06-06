@@ -3,7 +3,8 @@ import { Outlet } from 'react-router-dom';
 import { Header } from 'components/Header/Header';
 import { Background } from 'components/Background/Background';
 import { Footer } from 'components/Footer/Footer';
-import {Container} from 'components/Container/Container';
+import { Container } from 'components/Container/Container';
+import { Loader } from 'components/Loader/Loader';
 
 const SharedLayout = () => {
   return (
@@ -12,7 +13,7 @@ const SharedLayout = () => {
       <Container>
       <Background />
       <Header />
-      <Suspense fallback={null}>
+      <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>
         <Footer />

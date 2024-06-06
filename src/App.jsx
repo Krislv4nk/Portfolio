@@ -1,3 +1,5 @@
+
+import { useState, useEffect } from "react";
 import { Route, Routes } from 'react-router-dom';
 import SharedLayout from 'components/SharedLayout/SharedLayout';
 import WelcomePage from 'pages/WelcomePage/WelcomePage';
@@ -8,11 +10,27 @@ import FoodStorePage from 'pages/FoodStorePage/FoodStorePage';
 import PhoneBookPage from 'pages/PhoneBookPage/PhoneBookPage';
 import ProjectsPage from 'pages/ProjectsPage/ProjectsPage';
 import AboutMe from 'pages/AboutMe/AboutMe';
+import {Loader} from 'components/Loader/Loader';
 
 
 
 function App() {
   
+const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); 
+    return () => clearTimeout(timeout);
+  }, []);
+
+ 
+  if (isLoading) {
+    return <Loader />;
+  }
+ 
   return (
    
       <Routes >
