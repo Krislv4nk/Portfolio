@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import icons from '../../assets/img/symbol-defs.svg';
 import myFoto from '../../assets/img/foto-1.jpg';
@@ -7,11 +6,15 @@ import pdf from '../../assets/img/kristina.pdf';
 
 
 const AboutMe = () => {
-     const iframeRef = useRef(null);
+    const iframeRef = useRef(null);
 
     useEffect(() => {
         if (iframeRef.current) {
-            iframeRef.current.setAttribute('allow', 'autoplay');
+            if (iframeRef.current.allow !== undefined) {
+                iframeRef.current.setAttribute('allow', 'autoplay');
+            } else {
+                console.warn('The allow attribute is not supported by this browser.');
+            }
         }
     }, []);
     return (
@@ -78,11 +81,8 @@ const AboutMe = () => {
             </ul>
             <h3 className={css.title}>Education</h3>
             
-                <iframe 
-            ref={iframeRef} title='pdf'
-            className={css.iframe}
-            src={pdf}
-        ></iframe>
+                <iframe className={css.iframe}
+                      src={pdf} title="pdf"></iframe>
            
         </div>
     )
