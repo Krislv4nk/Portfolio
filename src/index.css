@@ -18,7 +18,7 @@ body {
   background-size: 100% 100%;
   animation: gradientAnimation 15s ease infinite;
   font-family: 'Kalam', cursive;
- 
+color: #ffffff; 
   font-weight: 400;
   width: 100%;
   height: 100%;
