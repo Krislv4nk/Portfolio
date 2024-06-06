@@ -14,7 +14,9 @@
 
 
 body {
-  background: linear-gradient(to top, #0d0d3c, #1e1e54, #1c2e6d, #002b80);
+  background: 
+        radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) 35%, rgba(0, 0, 0, 0.9)),
+        linear-gradient(to top, #0b0b2e, #22225f, #192262, #001966);
   background-size: 100% 100%;
   animation: gradientAnimation 15s ease infinite;
   font-family: 'Kalam', cursive;

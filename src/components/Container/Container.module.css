@@ -3,18 +3,7 @@
   position: relative;
   z-index: 0;
     margin: 0 auto;
-	
 	overflow: hidden;
-	background: -webkit-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
-	background: -moz-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
-	background: -ms-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
-	background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
-
-	-webkit-animation: fadein 1s;
-	-moz-animation: fadein 1s;
-	-ms-animation: fadein 1s;
-	animation: fadein 1s;
-
 background-size: 400% 400%;
 }
 

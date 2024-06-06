@@ -64,7 +64,7 @@ export const Background = () => {
           value: 80,
         },
         opacity: {
-          value: { min: 0.3, max: 2.8 }, 
+          value: { min: 0.3, max: 2 }, 
           animation: {
             enable: true,
             speed: 10, 
@@ -75,13 +75,14 @@ export const Background = () => {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: 1, max: 10 },
           
         },
         shadow: {
           enable: true,
-          blur: 20,
+          blur: 10,
           color: "#00baff",
+          
         },
       },
       detectRetina: true,

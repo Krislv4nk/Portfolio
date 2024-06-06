@@ -1,4 +1,5 @@
 
+import { useEffect, useRef } from 'react';
 import icons from '../../assets/img/symbol-defs.svg';
 import myFoto from '../../assets/img/foto-1.jpg';
 import css from './AboutMe.module.css';
@@ -6,7 +7,13 @@ import pdf from '../../assets/img/kristina.pdf';
 
 
 const AboutMe = () => {
-    
+     const iframeRef = useRef(null);
+
+    useEffect(() => {
+        if (iframeRef.current) {
+            iframeRef.current.setAttribute('allow', 'autoplay');
+        }
+    }, []);
     return (
         <div className={css.wrapper}>
                 <div className={css.container}>
@@ -71,9 +78,11 @@ const AboutMe = () => {
             </ul>
             <h3 className={css.title}>Education</h3>
             
-                <iframe className={css.iframe}
-                      src={pdf}
-                    allow="autoplay"></iframe>
+                <iframe 
+            ref={iframeRef} title='pdf'
+            className={css.iframe}
+            src={pdf}
+        ></iframe>
            
         </div>
     )
