@@ -81,7 +81,7 @@ const AboutMe = () => {
             </ul>
             <h3 className={css.title}>Education</h3>
             
-                <iframe className={css.iframe}
+                <iframe className={css.iframe} ref={iframeRef}
                       src={pdf} title="pdf"></iframe>
            
         </div>
