@@ -9,8 +9,8 @@ z-index: 12;
 
 }
 .icon {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     fill: #ffffff;
     filter: drop-shadow(0 0 5px #00baff)
           drop-shadow(0 0 10px #00baff)
@@ -19,7 +19,7 @@ z-index: 12;
           drop-shadow(0 0 80px #00baff);
 }
 .headerItem {
-   padding: 18px 26px;
+   padding: 26px;
    border-radius: 50%;
   display: flex; 
   align-items: center;
