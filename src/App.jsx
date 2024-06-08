@@ -10,7 +10,7 @@ import FoodStorePage from 'pages/FoodStorePage/FoodStorePage';
 import PhoneBookPage from 'pages/PhoneBookPage/PhoneBookPage';
 import ProjectsPage from 'pages/ProjectsPage/ProjectsPage';
 import AboutMe from 'pages/AboutMe/AboutMe';
-import {Loader} from 'components/Loader/Loader';
+import { Loader } from 'components/Loader/Loader';
 
 
 
@@ -48,4 +48,5 @@ const [isLoading, setIsLoading] = useState(true);
     
   );
 }
+
 export default App;

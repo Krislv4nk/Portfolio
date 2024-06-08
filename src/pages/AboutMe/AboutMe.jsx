@@ -1,29 +1,20 @@
-import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import icons from '../../assets/img/symbol-defs.svg';
 import myFoto from '../../assets/img/foto-1.jpg';
 import css from './AboutMe.module.css';
-import pdf from '../../assets/img/kristina.pdf';
+import cv from '../../assets/img/CV.jpg';
+import certificate from '../../assets/img/certificate.jpg';
+
 
 
 const AboutMe = () => {
-    const iframeRef = useRef(null);
-
-    useEffect(() => {
-        if (iframeRef.current) {
-            if (iframeRef.current.allow !== undefined) {
-                iframeRef.current.setAttribute('allow', 'autoplay');
-            } else {
-                console.warn('The allow attribute is not supported by this browser.');
-            }
-        }
-    }, []);
     return (
         <div className={css.wrapper}>
                 <div className={css.container}>
                       <img className={css.foto} src={myFoto} alt="myFoto" />
-            <p className={css.text}>Hello, I'm Kristina, a junior full-stack developer.
+            <p className={css.text}>Hello, I am Kristina, a junior full-stack developer.
                 I am eager to wholeheartedly dive into the world of programming.
-                My skills and knowledge are constantly evolving, and I'm always
+                My skills and knowledge are constantly evolving, and I am always
                 open to new challenges and opportunities for growth. I dream
                 of working in a team and learning from experienced colleagues
                 to become a true professional in my field. My goal is to combine my
@@ -78,13 +69,22 @@ const AboutMe = () => {
                 <li className={css.item}><svg className={css.icon}>
           <use href={`${icons}#icon-axios`}></use>
                 </svg></li>
-            </ul>
+                </ul>
+                <div className={css.docBox}>
+                      <div className={css.education}>
             <h3 className={css.title}>Education</h3>
-            
-                <iframe className={css.iframe} ref={iframeRef} name='pdf'
-                      src={pdf} title="pdf"></iframe>
-           
+                            <Link title='View Certificate' rel="noreferrer" target='_blank'
+                                  to={'https://drive.google.com/file/d/1dBRSm8ID4ucfYNSoIxbyjqceRLZstCQQ/view?usp=sharing'}>
+                            <img className={css.cv} src={certificate} alt="cv" /></Link>
+                      </div>
+                      <div className={css.education}>
+                      <h3 className={css.title}>CV</h3>
+                      
+                            <Link title='View CV' rel="noreferrer" target='_blank'
+                                  to={'https://drive.google.com/file/d/1MVEG7NpPCGAgJYfxL_PqqMVipRRTcwm1/view?usp=sharing'}>
+                            <img className={css.cv} src={cv} alt="cv" /></Link></div></div>
         </div>
     )
 }
+
 export default AboutMe;

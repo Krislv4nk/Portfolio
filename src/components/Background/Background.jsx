@@ -37,7 +37,9 @@ export const Background = () => {
           },
         },
       },
+      
       particles: {
+        
         color: {
           value: "#00baff",
           animation: {
