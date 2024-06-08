@@ -6,7 +6,7 @@ import food from '../../assets/img/food.png';
 const FoodStorePage = () => {
   return <div className={css.wrapper}>
     <h2 className={css.title}>FoodStore</h2>
-   <img src={food} alt="Water" className={css.img}/>
+   <img src={food} alt="Water" className={css.imgWater}/>
       <ul className={css.linksWrapper}>
           
       <li className={css.linksItem}>
@@ -50,7 +50,7 @@ const FoodStorePage = () => {
             user
             expectations.</p>
     <p className={css.description}>Duration: 1 week</p>
-    <Link className={css.back} to={{ pathname: "/ProjectsPage", state: { from: location } }} title='View CamperClub'>
+    <Link className={css.back} to={{ pathname: "/ProjectsPage", state: { from: location } }} title='Back to Projects'>
   Back to Projects
 </Link>
     </div >;

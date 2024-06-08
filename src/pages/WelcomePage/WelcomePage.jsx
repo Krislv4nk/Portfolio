@@ -9,9 +9,8 @@ const WelcomePage = () => {
       <div className={css.content}>
         <div className={css.globe}></div>
           <h2 className={css.firstFrame}>Welcome!</h2>
-          <h2 className={css.secondFrame}>I am </h2>
-          <h2 className={css.thirdFrame}> Junior</h2>
-          <h2 className={css.fourthFrame}>Full Stack Developer</h2>
+          <h2 className={css.secondFrame}>I am Junior</h2>
+          <h2 className={css.thirdFrame}>Full Stack Developer</h2>
       <h2 className={css.fifthFrame}>
         <span>Let me</span>
           <span> show you</span>

@@ -54,6 +54,7 @@ z-index: 12;
     align-items: center;
     justify-content: center;
     text-align: center;
+    max-width: 100%;
     gap: 30px;
     padding: 10px 20px;
     border-radius: 10px;

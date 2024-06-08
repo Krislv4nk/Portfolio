@@ -15,7 +15,7 @@ const CamperClubPage = () => {
       
       <div className={css.listWrapper}>
        <img className={css.imgCamper} src={camper} alt="camper" />
-        <img  className={css.imgCamper}src={camperA} alt="camper" />
+        <img  className={css.imgCamper} src={camperA} alt="camper" />
        
       </div>
       <ul className={css.linksWrapper}>
@@ -62,7 +62,7 @@ const CamperClubPage = () => {
               </ul>
       <p className={css.description}>Duration: 3 weeks</p>
       
-      <Link className={css.back} to={{ pathname: "/ProjectsPage", state: { from: location } }} title='View CamperClub'>
+      <Link className={css.back} to={{ pathname: "/ProjectsPage", state: { from: location } }} title='Back to Projects'>
   Back to Projects
 </Link>
     </div>

@@ -6,7 +6,7 @@ import water from '../../assets/img/water-tracker.png';
 const WaterTrackerPage = () => {
   return <div className={css.wrapper}>
     <h2 className={css.title}>Water-tracker</h2>
-   <img src={water} alt="water" className={css.img}/>
+   <img src={water} alt="water" className={css.imgWater}/>
     <ul className={css.linksWrapper}>
       <li className={css.linksItem}>
                 <svg className={css.repoLinkIcon} >
@@ -79,7 +79,7 @@ const WaterTrackerPage = () => {
             component MyDailyNorma with
             modal-window (MUI), component Background; on Back-End - Implemented logic for TodayWater component. </p>
             
- <Link className={css.back} to={{ pathname: "/ProjectsPage", state: { from: location } }} title='View CamperClub'>
+ <Link className={css.back} to={{ pathname: "/ProjectsPage", state: { from: location } }} title='Back to Projects'>
   Back to Projects
 </Link>
   </div >;

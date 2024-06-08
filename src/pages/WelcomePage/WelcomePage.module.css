@@ -60,13 +60,8 @@
 	-ms-animation-delay: 3s;
 	animation-delay: 3s;
 }
+
 .container h2.thirdFrame {
-	-webkit-animation-delay: 6s;
-	-moz-animation-delay: 6s;
-	-ms-animation-delay: 6s;
-	animation-delay: 6s;
-}
-.container h2.fourthFrame {
 	font-size: 200px;
 	-webkit-animation-delay: 9s;
 	-moz-animation-delay: 9s;

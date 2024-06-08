@@ -59,7 +59,7 @@ const PhoneBookPage = () => {
               </ul>
           <p className={css.description}>Duration: 2 weeks</p>
 
-    <Link className={css.back} to={{ pathname: "/ProjectsPage", state: { from: location } }} title='View CamperClub'>
+    <Link className={css.back} to={{ pathname: "/ProjectsPage", state: { from: location } }} title='Back to Projects'>
   Back to Projects
 </Link>
             </div >;
