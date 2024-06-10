@@ -1,10 +1,12 @@
-// import { Container, Title } from './ErrorPage.styled';
+
 import { Link } from 'react-router-dom';
 import css from './ErrorPage.module.css';
+import {Background} from 'components/Background/Background';
 
 const ErrorPage = () => {
   return (
     <div className={css.wrapper}>
+      <Background/>
       <h2 className={css.title}>404</h2>
 <div className={css.linkContainer}>
       <Link className={css.link} to="/" title='Click Me!'>Click Me!

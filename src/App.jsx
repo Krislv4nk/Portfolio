@@ -1,8 +1,7 @@
 
-import { useState, useEffect } from "react";
+import { useState, useEffect} from "react";
 import { Route, Routes } from 'react-router-dom';
 import SharedLayout from 'components/SharedLayout/SharedLayout';
-import WelcomePage from 'pages/WelcomePage/WelcomePage';
 import CamperClubPage from 'pages/CamperClubPage/CamperClubPage';
 import WaterTrackerPage from 'pages/WaterTrackerPage/WaterTrackerPage';
 import ErrorPage from 'pages/ErrorPage/ErrorPage';
@@ -30,18 +29,19 @@ const [isLoading, setIsLoading] = useState(true);
   if (isLoading) {
     return <Loader />;
   }
+  
  
   return (
    
       <Routes >
         <Route path="/" element={<SharedLayout />}>
-          <Route index element={<WelcomePage />} />
-          <Route path="/ProjectsPage" element={<ProjectsPage />}/>
-            <Route path="/CamperClub" element={<CamperClubPage />} />
-            <Route path="/WaterTracker" element={<WaterTrackerPage />} />
-            <Route path="/PhoneBook" element={<PhoneBookPage />} />
-            <Route path="/FoodStore" element={<FoodStorePage />} />
-          <Route path="/AboutMe" element={<AboutMe />}/>
+          <Route index element={<AboutMe />} />
+          <Route path="/ProjectsPage" element={<ProjectsPage />}>
+            <Route path="CamperClub" element={<CamperClubPage />} />
+            <Route path="WaterTracker" element={<WaterTrackerPage />} />
+            <Route path="PhoneBook" element={<PhoneBookPage />} />
+          <Route path="FoodStore" element={<FoodStorePage />} />
+          </Route>
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>

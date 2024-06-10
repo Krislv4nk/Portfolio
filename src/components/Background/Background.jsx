@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import {Container} from 'components/Container/Container';
+
 
 
 export const Background = () => {
@@ -95,18 +95,20 @@ export const Background = () => {
  
 
 
-  if (init) {
+  if (!init) {
+    return null;
+  } 
     return (
-   <Container>
+  
       <Particles 
         id="tsparticles"
         init={initParticlesEngine}
         options={options}
        
       />
-   </Container>
+  
     );
-  } 
+
 
   
 };

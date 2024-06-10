@@ -7,13 +7,14 @@ font-size: 30px;
  position: relative;
  z-index: 12;
   gap: 80px;
-height: 240px;
-text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
+  max-width: 1440px;
+height: 170px;
+box-shadow: 
+    0 0 5px rgba(0, 0, 0, 0.1),
+    0 0 10px rgba(0, 0, 0, 0.1),
+    0 0 20px rgba(0, 0, 0, 0.1),
+    0 0 40px rgba(0, 0, 0, 0.1),
+    0 0 80px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -25,12 +26,6 @@ text-shadow:
 }
 .title {
     color: #ffffff;
-    text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
     margin-top: 50px;
     font-size: 30px;
 }
@@ -40,12 +35,6 @@ text-shadow:
     width: 100px;
     height: 100px;
     background-color: #ffffff;
-    box-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
     border-radius: 50%;
     margin-right: 5px;
      display: flex;
@@ -54,11 +43,16 @@ text-shadow:
         gap: 44px;
         cursor: pointer;
         transition: box-shadow 0.3s ease;
-  
+  box-shadow: 
+    0 0 5px rgba(0, 0, 0, 0.1),
+    0 0 10px rgba(0, 0, 0, 0.1),
+    0 0 20px rgba(0, 0, 0, 0.1),
+    0 0 40px rgba(0, 0, 0, 0.1),
+    0 0 80px rgba(0, 0, 0, 0.1);
 }
 
 .icon {
-    fill: #00baff;
+    fill: #0736a4;
     width: 60px;
     height: 60px;
    

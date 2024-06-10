@@ -1,8 +1,6 @@
 .wrapper {
     height: auto;
     padding: 50px;
-    position: relative;
-    z-index: 12;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -15,12 +13,6 @@
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 70px;
-  text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
 }
 .listWrapper {
     display: flex;
@@ -40,11 +32,6 @@
   height: 50px;
   fill: #ffffff;
   stroke: #00baff;
-  filter: drop-shadow(0 0 5px #00baff)
-          drop-shadow(0 0 10px #00baff)
-          drop-shadow(0 0 20px #00baff)
-          drop-shadow(0 0 40px #00baff)
-          drop-shadow(0 0 80px #00baff);
 }
 .linksWrapper {
     display: flex;
@@ -57,28 +44,14 @@
 .links {
     font-size: 35px;
      padding: 8px 16px;
-  color: #ffffff; /* White text color */
-  text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
-  transition:
-    color 0.3s,
-    text-shadow 0.3s;
+  color: #ffffff;;
   display: block;
   
 }
 .links:hover,
   .links:focus {
-    color: #00baff; /* Blue text color on hover/focus */
-    text-shadow:
-      0 0 5px #00baff,
-      0 0 10px #00baff,
-      0 0 20px #00baff,
-      0 0 40px #00baff,
-      0 0 80px #00baff;
+    color: #00baff; 
+    
   }
 
   
@@ -91,12 +64,6 @@
   .descriptionTitle {
     font-size: 35px;
     margin-bottom: 20px;
-    text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
     text-align: center;
   }
   .featuresList {
@@ -105,12 +72,6 @@
     font-size: 25px;
     gap: 10px;
     margin-bottom: 20px;
-    text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
@@ -119,12 +80,6 @@
     margin-bottom: 35px;
     padding: 0 50px;
     font-size: 25px;
-    text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
     text-align: center;
   }
   .toolsList {
@@ -133,12 +88,6 @@
     font-size: 25px;
     gap: 10px;
     margin-bottom: 20px;
-    text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
@@ -151,45 +100,21 @@
     width: 700px;
     height: auto;
     border-radius: 8px;
-    box-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
-  }
+    }
   .phoneBook {
     width: 700px;
     height: auto;
     border-radius: 8px;
-    box-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
 }
 .imgPhone {
     width: 300px;
     height: auto;
     border-radius: 8px;
-    box-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
 }
 .img {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  box-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
 }
 
 .button:before {
@@ -238,26 +163,4 @@
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
-.back {
-  
- padding: 20px 30px;
-  margin: 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  color: #ffffff;
-  text-align: center;
-  font-size: 20px;
-  text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
-  box-shadow: 0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
- cursor: pointer;
-  
-}
+

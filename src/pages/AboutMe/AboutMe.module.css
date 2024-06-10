@@ -1,12 +1,15 @@
 .wrapper {
-    padding: 50px;
-    position: relative;
-    z-index: 5;
     align-items: center;
     justify-content: center;
-    display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    display: flex;
+    margin: auto;
+     box-shadow: 
+    0 0 5px rgba(0, 0, 0, 0.1),
+    0 0 10px rgba(0, 0, 0, 0.1),
+    0 0 20px rgba(0, 0, 0, 0.1),
+    0 0 40px rgba(0, 0, 0, 0.1),
+    0 0 80px rgba(0, 0, 0, 0.1);
 }
 .text {
     text-align: center;
@@ -15,31 +18,20 @@
     font-weight: 400;
     margin-bottom: 50px;
     color: #ffffff;
-    text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
-}
+    }
 .foto {
     width: 500px;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
-}
+    }
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 50px;
-    padding: 30px;
+    gap: 100px;
+    padding: 50px;
     margin-bottom: 50px;
+    margin-top: 80px;
 }
 .title {
     text-align: center;
@@ -47,12 +39,6 @@
     font-weight: 600;
     margin-bottom: 50px;
     color: #ffffff;
-    text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
 }
 .list {
     display: flex;
@@ -74,13 +60,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   
-    box-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
 }
 .iconItem {
     fill: #00baff;
@@ -117,10 +96,4 @@
     height: auto;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
 }

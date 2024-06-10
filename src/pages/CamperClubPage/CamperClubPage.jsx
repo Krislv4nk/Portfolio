@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+
 
 import camper from '../../assets/img/camper.png';
 import camperA from '../../assets/img/camper-1.png';
@@ -6,7 +6,6 @@ import css from './CamperClubPage.module.css';
 import icons from '../../assets/img/symbol-defs.svg';
 
 const CamperClubPage = () => {
-  const location = useLocation();
 
   return (
     <div className={css.wrapper}>
@@ -22,13 +21,13 @@ const CamperClubPage = () => {
            <li className={css.linksItem}> <svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>
         </svg>
-              <Link className={css.links} href="https://krislv4nk.github.io/CamperClub/" rel="noreferrer"
-            title="View Live Demo of CamperClub">Live Demo</Link></li>
+              <a className={css.links} href="https://krislv4nk.github.io/CamperClub/" rel="noreferrer" target='_blank'
+            title="View Live Demo of CamperClub">Live Demo</a></li>
         <li className={css.linksItem}><svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>
         </svg>
-              <Link className={css.links} href="https://github.com/Krislv4nk/CamperClub" rel="noreferrer"
-          title="View Front-End Code on GitHub">Front-End GitHub</Link></li>
+              <a className={css.links} href="https://github.com/Krislv4nk/CamperClub" rel="noreferrer" target='_blank'
+          title="View Front-End Code on GitHub">Front-End GitHub</a></li>
       </ul>
 <h4 className={css.descriptionTitle}>Individual Project</h4>
           <p className={css.description}>Introducing my latest venture: the premier individual project following my
@@ -61,10 +60,6 @@ const CamperClubPage = () => {
                 <li className={css.tool}>Yup;</li>
               </ul>
       <p className={css.description}>Duration: 3 weeks</p>
-      
-      <Link className={css.back} to={{ pathname: "/ProjectsPage", state: { from: location } }} title='Back to Projects'>
-  Back to Projects
-</Link>
     </div>
   );
 };

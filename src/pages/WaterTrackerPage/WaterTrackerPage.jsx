@@ -1,6 +1,5 @@
 import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../assets/img/symbol-defs.svg';
-import { Link } from 'react-router-dom';
 import water from '../../assets/img/water-tracker.png';
 
 const WaterTrackerPage = () => {
@@ -12,22 +11,24 @@ const WaterTrackerPage = () => {
                 <svg className={css.repoLinkIcon} >
           <use href={`${icons}#icon-link`}></use>
         </svg>
-          <Link className={css.links} href="https://andriipolishchuk28.github.io/water-tracker-frontend/"  rel="noreferrer"
-                  title="View Live Demo of Water Tracker App">Live Demo</Link>
+        <a className={css.links} href="https://andriipolishchuk28.github.io/water-tracker-frontend/"
+          rel="noreferrer" target='_blank'
+                  title="View Live Demo of Water Tracker App">Live Demo</a>
               </li>
               <li className={css.linksItem}>
                 <svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>
         </svg>
-            <Link className={css.links} href="https://github.com/AndriiPolishchuk28/water-tracker-frontend/"  rel="noreferrer"
-                  title="View Front-End Code on GitHub">Front-End GitHub</Link>
+        <a className={css.links} href="https://github.com/AndriiPolishchuk28/water-tracker-frontend/"
+          rel="noreferrer" target='_blank'
+                  title="View Front-End Code on GitHub">Front-End GitHub</a>
               </li>
               <li className={css.linksItem}>
                 <svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>
         </svg>
-            <Link className={css.links} href="https://github.com/SerhiiOberemchuk/watertracker-backand-codekartel/" 
-                  rel="noreferrer" title="View Back-End Code on GitHub">Back-End GitHub</Link>
+            <a className={css.links} href="https://github.com/SerhiiOberemchuk/watertracker-backand-codekartel/" 
+                  rel="noreferrer" target='_blank' title="View Back-End Code on GitHub">Back-End GitHub</a>
               </li>
               </ul>
             
@@ -78,10 +79,7 @@ const WaterTrackerPage = () => {
             Formik, Yup),
             component MyDailyNorma with
             modal-window (MUI), component Background; on Back-End - Implemented logic for TodayWater component. </p>
-            
- <Link className={css.back} to={{ pathname: "/ProjectsPage", state: { from: location } }} title='Back to Projects'>
-  Back to Projects
-</Link>
+   
   </div >;
 };
 

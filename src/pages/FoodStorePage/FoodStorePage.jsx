@@ -1,6 +1,5 @@
 import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../assets/img/symbol-defs.svg';
-import { Link } from 'react-router-dom';
 import food from '../../assets/img/food.png';
 
 const FoodStorePage = () => {
@@ -13,27 +12,27 @@ const FoodStorePage = () => {
                 <svg className={css.repoLinkIcon} >
           <use href={`${icons}#icon-link`}></use>
         </svg>
-          <Link className={css.links} href="https://vuktorts.github.io/js-team-project-FoodStore/" 
-                title="View Live Demo of FoodStore"  rel="noreferrer">Live Demo</Link>
+          <a className={css.links} href="https://vuktorts.github.io/js-team-project-FoodStore/" 
+                title="View Live Demo of FoodStore"  rel="noreferrer" target='_blank'>Live Demo</a>
               </li>
               <li className={css.linksItem}>
                 <svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>
         </svg>
-            <Link className={css.links} href="https://github.com/VuktorTS/js-team-project-FoodStore"  rel="noreferrer"
-                  title="View Front-End Code on GitHub">Front-End GitHub</Link>
+            <a className={css.links} href="https://github.com/VuktorTS/js-team-project-FoodStore"  rel="noreferrer" target='_blank'
+                  title="View Front-End Code on GitHub">Front-End GitHub</a>
               </li>
               </ul>
             
         
           <h4 className={css.descriptionTitle}>Team project</h4>
 
-          <p className={css.description}>For the 'Food-Store' project, I collaborated as part of a team working with
+          <p className={css.description}>For the Food-Store project, I collaborated as part of a team working with
             Vanilla JavaScript, API integration, and
-            Parcel bundler. My role involved the development of two critical sections on the main page: 'Popular
-            Products'
+            Parcel bundler. My role involved the development of two critical sections on the main page: Popular
+            Products
             and
-            'Discount Products.'
+            Discount Products.
 
             The website boasts a responsive layout ensuring seamless user experience across devices. Additionally, I
             implemented
@@ -50,9 +49,7 @@ const FoodStorePage = () => {
             user
             expectations.</p>
     <p className={css.description}>Duration: 1 week</p>
-    <Link className={css.back} to={{ pathname: "/ProjectsPage", state: { from: location } }} title='Back to Projects'>
-  Back to Projects
-</Link>
+    
     </div >;
     };
 
