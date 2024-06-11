@@ -1,6 +1,7 @@
 import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../assets/img/symbol-defs.svg';
 import water from '../../assets/img/water-tracker.png';
+import { Link } from 'react-router-dom';
 
 const WaterTrackerPage = () => {
   return <div className={css.wrapper}>
@@ -11,24 +12,24 @@ const WaterTrackerPage = () => {
                 <svg className={css.repoLinkIcon} >
           <use href={`${icons}#icon-link`}></use>
         </svg>
-        <a className={css.links} href="https://andriipolishchuk28.github.io/water-tracker-frontend/"
+        <Link className={css.links} to="https://andriipolishchuk28.github.io/water-tracker-frontend/"
           rel="noreferrer" target='_blank'
-                  title="View Live Demo of Water Tracker App">Live Demo</a>
+                  title="View Live Demo of Water Tracker App">Live Demo</Link>
               </li>
               <li className={css.linksItem}>
                 <svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>
         </svg>
-        <a className={css.links} href="https://github.com/AndriiPolishchuk28/water-tracker-frontend/"
+        <Link className={css.links} to="https://github.com/AndriiPolishchuk28/water-tracker-frontend/"
           rel="noreferrer" target='_blank'
-                  title="View Front-End Code on GitHub">Front-End GitHub</a>
+                  title="View Front-End Code on GitHub">Front-End GitHub</Link>
               </li>
               <li className={css.linksItem}>
                 <svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>
         </svg>
-            <a className={css.links} href="https://github.com/SerhiiOberemchuk/watertracker-backand-codekartel/" 
-                  rel="noreferrer" target='_blank' title="View Back-End Code on GitHub">Back-End GitHub</a>
+            <Link className={css.links} to="https://github.com/SerhiiOberemchuk/watertracker-backand-codekartel/" 
+                  rel="noreferrer" target='_blank' title="View Back-End Code on GitHub">Back-End GitHub</Link>
               </li>
               </ul>
             

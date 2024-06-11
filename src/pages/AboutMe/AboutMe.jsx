@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import icons from '../../assets/img/symbol-defs.svg';
+import { motion } from 'framer-motion'
 import myFoto from '../../assets/img/foto-1.jpg';
 import css from './AboutMe.module.css';
 import cv from '../../assets/img/CV.jpg';
@@ -77,14 +78,18 @@ const AboutMe = () => {
             <h3 className={css.title}>Education</h3>
                             <Link title='View Certificate' rel="noreferrer" target='_blank'
                                   to={'https://drive.google.com/file/d/1dBRSm8ID4ucfYNSoIxbyjqceRLZstCQQ/view?usp=sharing'}>
-                            <img className={css.cv} src={certificate} alt="cv" /></Link>
+                            <motion.img className={css.cv} src={certificate} alt="cv"
+                            whileHover={{ scale: 1.05 }}
+                        /></Link>
                       </div>
                       <div className={css.education}>
                       <h3 className={css.title}>CV</h3>
                       
                             <Link title='View CV' rel="noreferrer" target='_blank'
                                   to={'https://drive.google.com/file/d/1MVEG7NpPCGAgJYfxL_PqqMVipRRTcwm1/view?usp=sharing'}>
-                            <img className={css.cv} src={cv} alt="cv" /></Link></div></div>
+                           <motion.img className={css.cv} src={cv} alt="cv"
+                            whileHover={{ scale: 1.05 }}
+                        /></Link></div></div>
         </div>
     )
 }

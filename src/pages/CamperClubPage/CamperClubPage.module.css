@@ -5,8 +5,24 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-   
+   opacity: 0;
+    transform: scale(0.5);
+    animation: portal-effect 1s forwards;
     
+}
+@keyframes portal-effect {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 .title {
     text-align: center;

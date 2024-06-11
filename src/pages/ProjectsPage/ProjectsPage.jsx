@@ -8,6 +8,7 @@ import FoodStorePage from 'pages/FoodStorePage/FoodStorePage';
 
 
 const ProjectsPage = () => {
+    
     const [activeTab, setActiveTab] = useState(null);
 
     const renderTabContent = () => {

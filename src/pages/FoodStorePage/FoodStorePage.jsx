@@ -1,6 +1,7 @@
 import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../assets/img/symbol-defs.svg';
 import food from '../../assets/img/food.png';
+import { Link } from 'react-router-dom';
 
 const FoodStorePage = () => {
   return <div className={css.wrapper}>
@@ -12,15 +13,15 @@ const FoodStorePage = () => {
                 <svg className={css.repoLinkIcon} >
           <use href={`${icons}#icon-link`}></use>
         </svg>
-          <a className={css.links} href="https://vuktorts.github.io/js-team-project-FoodStore/" 
-                title="View Live Demo of FoodStore"  rel="noreferrer" target='_blank'>Live Demo</a>
+          <Link className={css.links} to="https://vuktorts.github.io/js-team-project-FoodStore/" 
+                title="View Live Demo of FoodStore"  rel="noreferrer" target='_blank'>Live Demo</Link>
               </li>
               <li className={css.linksItem}>
                 <svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>
         </svg>
-            <a className={css.links} href="https://github.com/VuktorTS/js-team-project-FoodStore"  rel="noreferrer" target='_blank'
-                  title="View Front-End Code on GitHub">Front-End GitHub</a>
+            <Link className={css.links} to="https://github.com/VuktorTS/js-team-project-FoodStore"  rel="noreferrer" target='_blank'
+                  title="View Front-End Code on GitHub">Front-End GitHub</Link>
               </li>
               </ul>
             

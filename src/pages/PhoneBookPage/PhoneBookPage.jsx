@@ -2,7 +2,7 @@ import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../assets/img/symbol-defs.svg';
 import phone from '../../assets/img/phone.png';
 import phoneBook from '../../assets/img/phone-book.png';
-
+import { Link } from 'react-router-dom';
 
 const PhoneBookPage = () => {
   return <div className={css.wrapper}>
@@ -18,15 +18,15 @@ const PhoneBookPage = () => {
                 <svg className={css.repoLinkIcon} >
           <use href={`${icons}#icon-link`}></use>
         </svg>
-          <a className={css.links} href="https://krislv4nk.github.io/goit-react-hw-08-phonebook/" rel="noreferrer" target='_blank'
-                  title="View Live Demo of PhoneBook App">Live Demo</a>
+          <Link className={css.links} to="https://krislv4nk.github.io/goit-react-hw-08-phonebook/" rel="noreferrer" target='_blank'
+                  title="View Live Demo of PhoneBook App">Live Demo</Link>
               </li>
               <li className={css.linksItem}>
                 <svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>
         </svg>
-            <a className={css.links} href="https://github.com/Krislv4nk/goit-react-hw-08-phonebook" rel="noreferrer" target='_blank'
-                  title="View Front-End Code on GitHub">Front-End GitHub</a>
+            <Link className={css.links} to="https://github.com/Krislv4nk/goit-react-hw-08-phonebook" rel="noreferrer" target='_blank'
+                  title="View Front-End Code on GitHub">Front-End GitHub</Link>
               </li>
             
               </ul>

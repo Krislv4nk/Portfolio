@@ -11,6 +11,21 @@
     0 0 20px rgba(0, 0, 0, 0.1),
     0 0 40px rgba(0, 0, 0, 0.1),
     0 0 80px rgba(0, 0, 0, 0.1);
+
+}
+@keyframes portal-effect {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
  h2.fifthFrame {
@@ -119,16 +134,15 @@ h2.fifthFrame span:nth-child(4) {
   font-weight: 600;
   text-align: center;
   margin-bottom: 100px;
-   
-  -webkit-animation: fadeInRotate 1s linear 6s backwards;
-	-moz-animation: fadeInRotate 1s linear 6s backwards;
-	-ms-animation: fadeInRotate 1s linear 6s backwards;
-	animation: fadeInRotate 1s linear 6s backwards;
-	-webkit-transform: scale(1) rotate(0deg);
-	-moz-transform: scale(1) rotate(0deg);
-	-o-transform: scale(1) rotate(0deg);
-	-ms-transform: scale(1) rotate(0deg);
-	transform: scale(1) rotate(0deg);
+   opacity: 0;
+    transform: translateY(100px);
+    animation: slide-up 1s 6s forwards;
+}
+@keyframes slide-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .tabContent {
