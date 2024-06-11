@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import css from './ProjectsPage.module.css';
 import CamperClubPage from 'pages/CamperClubPage/CamperClubPage';
 import WaterTrackerPage from 'pages/WaterTrackerPage/WaterTrackerPage';
@@ -9,7 +9,11 @@ import FoodStorePage from 'pages/FoodStorePage/FoodStorePage';
 
 const ProjectsPage = () => {
     
-    const [activeTab, setActiveTab] = useState(null);
+    const [activeTab, setActiveTab] = useState(localStorage.getItem('activeTab') || null);
+
+    useEffect(() => {
+        localStorage.setItem('activeTab', activeTab);
+    }, [activeTab]);
 
     const renderTabContent = () => {
         switch (activeTab) {
@@ -27,7 +31,6 @@ const ProjectsPage = () => {
             );
         }
     };
-
     return (
         <div className={css.wrapper}>
             <h2 className={css.fifthFrame}>
@@ -67,6 +70,7 @@ const ProjectsPage = () => {
                 </li>
             </ul>
             <div className={css.tabContent}>
+                
                 {renderTabContent()}
             </div>
         </div>
