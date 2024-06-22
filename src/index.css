@@ -17,7 +17,7 @@ body {
  background: linear-gradient(45deg, #501970, #4c398b, #274ea2, #039f51, #6e9f03);
             background-size: 300% 300%;
             animation: gradientAnimation 10s ease infinite;
-  font-family: 'Kalam', cursive;
+  font-family:'Josefin Sans Variable', sans-serif;
 color: #ffffff; 
   font-weight: 400;
   width: 100%;
