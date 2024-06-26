@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import icons from '../../assets/img/symbol-defs.svg';
 import { motion } from 'framer-motion'
-import myFoto from '../../assets/img/foto-1.jpg';
+// import myFoto from '../../assets/img/foto-1.jpg';
 import css from './AboutMe.module.css';
 import cv from '../../assets/img/CV.jpg';
 import certificate from '../../assets/img/certificate.jpg';
@@ -11,7 +11,6 @@ import certificate from '../../assets/img/certificate.jpg';
 const AboutMe = () => {
     return (
         <div className={css.wrapper}>
-                <div className={css.container}>
                       
             <p className={css.text}>Hello, I am Kristina, a junior full-stack developer.
                 I am eager to wholeheartedly dive into the world of programming.
@@ -20,8 +19,7 @@ const AboutMe = () => {
                 of working in a team and learning from experienced colleagues
                 to become a true professional in my field. My goal is to combine my
                             creative passion for learning and development to create quality and innovative products.</p>
-                      <img className={css.foto} src={myFoto} alt="myFoto" />
-                </div>
+                      
             <h3 className={css.title}>Hard skills</h3>
             <ul className={css.list}>
                 <li className={css.item}><svg className={css.icon}>

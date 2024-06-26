@@ -5,28 +5,8 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-	 box-shadow: 
-    0 0 5px rgba(0, 0, 0, 0.1),
-    0 0 10px rgba(0, 0, 0, 0.1),
-    0 0 20px rgba(0, 0, 0, 0.1),
-    0 0 40px rgba(0, 0, 0, 0.1),
-    0 0 80px rgba(0, 0, 0, 0.1);
+}
 
-}
-@keyframes portal-effect {
-    0% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.5);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
 
  h2.fifthFrame {
 	-webkit-animation: none;
@@ -40,43 +20,11 @@ font-size: 40px;
     margin-bottom: 100px;
 	margin-top: 100px;
 }
- h2.fifthFrame span {
-	-webkit-animation: blurFadeIn 3s ease-in 1s backwards;
-	-moz-animation: blurFadeIn 1s ease-in 1s backwards;
-	-ms-animation: blurFadeIn 3s ease-in 1s backwards;
-	animation: blurFadeIn 3s ease-in 1s backwards;
-	color: transparent;
-	text-shadow: 0px 0px 1px #fff;
-}
-h2.fifthFrame span:nth-child(2) {
-	-webkit-animation-delay: 2s;
-	-moz-animation-delay: 2s;
-	-ms-animation-delay: 2s;
-	animation-delay: 2s;
-  
-}
-h2.fifthFrame span:nth-child(3) {
-	-webkit-animation-delay: 3s;
-	-moz-animation-delay: 3s;
-	-ms-animation-delay: 3s;
-	animation-delay: 3s;
-}
-h2.fifthFrame span:nth-child(4) {
-	-webkit-animation-delay: 4s;
-	-moz-animation-delay: 4s;
-	-ms-animation-delay: 4s;
-	animation-delay: 4s;
-}
+
 
 .item {
    background-color: transparent;
    font-family: 'Kalam', cursive;
-   box-shadow: 
-    0 0 5px rgba(0, 0, 0, 0.1),
-    0 0 10px rgba(0, 0, 0, 0.1),
-    0 0 20px rgba(0, 0, 0, 0.1),
-    0 0 40px rgba(0, 0, 0, 0.1),
-    0 0 80px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
     border-radius: 10px;
     border: 1px solid #ffffff;
@@ -87,10 +35,10 @@ h2.fifthFrame span:nth-child(4) {
     transition: all 0.3s;
     width: auto;
     height: auto;
-    -webkit-animation: fadeInRotate 1s linear 6s backwards;
-	-moz-animation: fadeInRotate 1s linear 6s backwards;
-	-ms-animation: fadeInRotate 1s linear 6s backwards;
-	animation: fadeInRotate 1s linear 6s backwards;
+    -webkit-animation: fadeInRotate 1s linear 2s backwards;
+	-moz-animation: fadeInRotate 1s linear 2s backwards;
+	-ms-animation: fadeInRotate 1s linear 2s backwards;
+	animation: fadeInRotate 1s linear 2s backwards;
 	-webkit-transform: scale(1) rotate(0deg);
 	-moz-transform: scale(1) rotate(0deg);
 	-o-transform: scale(1) rotate(0deg);
@@ -136,7 +84,7 @@ h2.fifthFrame span:nth-child(4) {
   margin-bottom: 100px;
    opacity: 0;
     transform: translateY(100px);
-    animation: slide-up 1s 6s forwards;
+    animation: slide-up 1s 2s forwards;
 }
 @keyframes slide-up {
     to {

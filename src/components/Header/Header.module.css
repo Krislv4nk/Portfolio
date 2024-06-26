@@ -1,18 +1,45 @@
 .header {
     align-items: center;
-    justify-content: flex-end;
+   justify-content: center;
     display: flex;
+    flex-direction: column;
     padding: 50px;
     max-width: 1440px;
-   height: 140px;
-   box-shadow: 
-    0 0 5px rgba(0, 0, 0, 0.1),
-    0 0 10px rgba(0, 0, 0, 0.1),
-    0 0 20px rgba(0, 0, 0, 0.1),
-    0 0 40px rgba(0, 0, 0, 0.1),
-    0 0 80px rgba(0, 0, 0, 0.1);
+   height: auto;
+  
 }
-
+.hero {
+  max-width: 1440px;
+  height: auto;
+    border-radius: 20px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 50px;
+}
+.photo {
+  width: 500px;
+  height: auto;
+  box-shadow: 
+    0 0 5px rgba(240, 237, 237, 0.1),
+    0 0 10px rgba(240, 237, 237, 0.1),
+    0 0 20px rgba(240, 237, 237, 0.1),
+    0 0 40px rgba(240, 237, 237, 0.1),
+    0 0 80px rgba(240, 237, 237, 0.1);
+    border-radius: 50%;
+}
+.linkItem {
+  box-shadow: 
+    0 0 5px rgba(240, 237, 237, 0.1),
+    0 0 10px rgba(240, 237, 237, 0.1),
+    0 0 20px rgba(240, 237, 237, 0.1),
+    0 0 40px rgba(240, 237, 237, 0.1),
+    0 0 80px rgba(240, 237, 237, 0.1);
+     border-radius: 20px;
+}
 .headerItem {
    padding: 26px;
    border-radius: 50%;
@@ -41,18 +68,13 @@ transform: translateY(20px);
 }
   
 .headerList {
+
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 50px;
     align-items: center;
-    margin-top: 50px;
     border-radius: 10px;
     padding: 10px 20px;
-    box-shadow: 
-    0 0 5px rgba(0, 0, 0, 0.1),
-    0 0 10px rgba(0, 0, 0, 0.1),
-    0 0 20px rgba(0, 0, 0, 0.1),
-    0 0 40px rgba(0, 0, 0, 0.1),
-    0 0 80px rgba(0, 0, 0, 0.1);
+    
 }
 
