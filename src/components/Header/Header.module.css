@@ -1,3 +1,5 @@
+
+
 .header {
     align-items: center;
    justify-content: center;
@@ -61,8 +63,7 @@ transform: translateY(20px);
   }
 }
 .active  {
-    font-size: 35px;
-    
+    font-size: 45px;
     transform: scale(1.2);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
