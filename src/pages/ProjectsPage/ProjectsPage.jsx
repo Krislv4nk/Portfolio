@@ -5,6 +5,7 @@ import CamperClubPage from 'pages/CamperClubPage/CamperClubPage';
 import WaterTrackerPage from 'pages/WaterTrackerPage/WaterTrackerPage';
 import PhoneBookPage from 'pages/PhoneBookPage/PhoneBookPage';
 import FoodStorePage from 'pages/FoodStorePage/FoodStorePage';
+import LearnLingoPage from 'pages/LearnLingoPage/LearnLingoPage';
 
 
 const ProjectsPage = () => {
@@ -13,6 +14,8 @@ const ProjectsPage = () => {
 
     const renderTabContent = () => {
         switch (activeTab) {
+            case 'LearnLingo':
+                return <LearnLingoPage className={css.tabContent}/>;
             case 'CamperClub':
                 return <CamperClubPage className={css.tabContent}/>;
             case 'WaterTracker':
@@ -37,6 +40,13 @@ const ProjectsPage = () => {
           <span> created.</span>
       </h2>
             <ul className={css.list}>
+                <li className={css.projectItem}>
+            <button className={`${css.item} ${activeTab === 'LearnLingo' ? css.active : ''}`}
+              onClick={() => setActiveTab('LearnLingo')} title='LearnLingo'>
+                        LearnLingo
+                    </button>
+                    
+                </li>
                 <li className={css.projectItem}>
             <button className={`${css.item} ${activeTab === 'CamperClub' ? css.active : ''}`}
               onClick={() => setActiveTab('CamperClub')} title='CamperClub'>

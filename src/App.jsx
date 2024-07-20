@@ -2,6 +2,7 @@
 import { useState, useEffect} from "react";
 import { Route, Routes } from 'react-router-dom';
 import SharedLayout from 'components/SharedLayout/SharedLayout';
+import LearnLingoPage from 'pages/LearnLingoPage/LearnLingoPage'
 import CamperClubPage from 'pages/CamperClubPage/CamperClubPage';
 import WaterTrackerPage from 'pages/WaterTrackerPage/WaterTrackerPage';
 import ErrorPage from 'pages/ErrorPage/ErrorPage';
@@ -36,7 +37,8 @@ const [isLoading, setIsLoading] = useState(true);
       <Routes >
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<AboutMe />} />
-          <Route path="/ProjectsPage" element={<ProjectsPage />}>
+        <Route path="/ProjectsPage" element={<ProjectsPage />}>
+          <Route path="LearnLingo" element={<LearnLingoPage />} />
             <Route path="CamperClub" element={<CamperClubPage />} />
             <Route path="WaterTracker" element={<WaterTrackerPage />} />
             <Route path="PhoneBook" element={<PhoneBookPage />} />
