@@ -3,7 +3,7 @@ import icons from '../../assets/img/symbol-defs.svg';
 import { motion } from 'framer-motion'
 // import myFoto from '../../assets/img/foto-1.jpg';
 import css from './AboutMe.module.css';
-import cv from '../../assets/img/CV.jpg';
+import cv from '../../assets/img/Photo.jpg';
 import certificate from '../../assets/img/certificate.jpg';
 
 
@@ -84,7 +84,7 @@ const AboutMe = () => {
                       <h3 className={css.title}>CV</h3>
                       
                             <Link title='View CV' rel="noreferrer" target='_blank'
-                                  to={'https://drive.google.com/file/d/19z0xpq_Rhn6VMV6VLpIkv3VNsAguXd4E/view?usp=sharing'}>
+                                  to={'https://drive.google.com/file/d/1c0M_8pnTKvAunSmRMFkSrko1_wsRg1Ep/view?usp=sharing'}>
                            <motion.img className={css.cv} src={cv} alt="cv"
                             whileHover={{ scale: 1.05 }}
                         /></Link></div></div>
