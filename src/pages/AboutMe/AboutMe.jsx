@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom';
 import icons from '../../assets/img/symbol-defs.svg';
-import { motion } from 'framer-motion'
-// import myFoto from '../../assets/img/foto-1.jpg';
+import { motion } from 'framer-motion';
 import css from './AboutMe.module.css';
-import cv from '../../assets/img/Photo.jpg';
+import cv from '../../assets/img/CVCV.jpg';
 import certificate from '../../assets/img/certificate.jpg';
 
 
@@ -84,7 +83,7 @@ const AboutMe = () => {
                       <h3 className={css.title}>CV</h3>
                       
                             <Link title='View CV' rel="noreferrer" target='_blank'
-                                  to={'https://drive.google.com/file/d/1c0M_8pnTKvAunSmRMFkSrko1_wsRg1Ep/view?usp=sharing'}>
+                                  to={'https://drive.google.com/file/d/1Tc38eglM92owQUbrYXHf_w_BkXGf_OC3/view?usp=sharing'}>
                            <motion.img className={css.cv} src={cv} alt="cv"
                             whileHover={{ scale: 1.05 }}
                         /></Link></div></div>
