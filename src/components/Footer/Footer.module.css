@@ -9,12 +9,6 @@ font-size: 30px;
   gap: 80px;
   max-width: 1440px;
 height: 170px;
-box-shadow: 
-    0 0 5px rgba(240, 237, 237, 0.1),
-    0 0 10px rgba(240, 237, 237, 0.1),
-    0 0 20px rgba(240, 237, 237, 0.1),
-    0 0 40px rgba(240, 237, 237, 0.1),
-    0 0 80px rgba(240, 237, 237, 0.1);
 }
 
 
@@ -55,7 +49,20 @@ box-shadow:
     fill: #0736a4;
     width: 60px;
     height: 60px;
+    animation: pulse 1.5s infinite;
    
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .contacts:hover  {
   animation: neonRainbow 1.5s infinite alternate;

@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const CamperClubPage = () => {
 
   return (
-    <div className={css.wrapper}>
+    <div className={css.wrapperRight}>
           
             <h2 className={css.title}>CamperClub</h2>
       

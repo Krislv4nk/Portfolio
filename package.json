@@ -17,6 +17,7 @@
     "@fontsource/kalam": "^5.0.13",
     "@mui/material": "^5.15.18",
     "@react-pdf/renderer": "^3.4.4",
+    "@react-spring/web": "^9.7.4",
     "@tsparticles/all": "^3.4.0",
     "@tsparticles/basic": "^3.4.0",
     "@tsparticles/react": "^3.0.0",
@@ -28,7 +29,8 @@
     "react-css-modules": "^4.7.11",
     "react-dom": "^18.2.0",
     "react-pdf": "^9.0.0",
-    "react-router-dom": "^6.23.1",
+    "react-router-dom": "^6.25.1",
+    "react-spring": "^9.7.4",
     "styled-components": "^6.0.7",
     "tsparticles": "^3.4.0",
     "vite-plugin-svgr": "^3.2.0"

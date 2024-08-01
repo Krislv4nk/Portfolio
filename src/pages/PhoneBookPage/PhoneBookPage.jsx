@@ -5,7 +5,7 @@ import phoneBook from '../../assets/img/phone-book.png';
 import { Link } from 'react-router-dom';
 
 const PhoneBookPage = () => {
-  return <div className={css.wrapper}>
+  return <div className={css.wrapperRight}>
     <h2 className={css.title}>PhoneBook</h2>
       
       <div className={css.listWrapper}>
