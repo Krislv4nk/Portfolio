@@ -83,7 +83,7 @@ const AboutMe = () => {
                       <h3 className={css.title}>CV</h3>
                       
                             <Link title='View CV' rel="noreferrer" target='_blank'
-                                  to={'https://drive.google.com/file/d/1Tc38eglM92owQUbrYXHf_w_BkXGf_OC3/view?usp=sharing'}>
+                                  to={'https://drive.google.com/file/d/1vHitXaO5jd8CeCqytpsEXbkKFdmt4mYK/view?usp=sharing'}>
                            <motion.img className={css.cv} src={cv} alt="cv"
                             whileHover={{ scale: 1.05 }}
                         /></Link></div></div>
