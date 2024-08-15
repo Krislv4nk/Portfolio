@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 import icons from '../../assets/img/symbol-defs.svg';
 import { motion } from 'framer-motion';
 import css from './AboutMe.module.css';
-import cv from '../../assets/img/cv.jpg';
-import certificate from '../../assets/img/certificate.jpg';
+import cv from '../../assets/cv.jpg';
+import certificate from '../../assets/certificate.jpg';
 
 
 
