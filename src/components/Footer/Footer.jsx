@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export const Footer = () => {
     return (
         <footer className={css.footer}>
-            <h2 className={css.title}>Contact me</h2>
+            <h3 className={css.title}>Contact me</h3>
             <ul className={css.list}>
               <li><Link href="mailto:kristinalev4enko89@gmail.com" title="kristinalev4enko89@gmail.com" className={css.contacts}
                   target="_blank" rel="noopener noreferrer"><svg className={css.icon}>
