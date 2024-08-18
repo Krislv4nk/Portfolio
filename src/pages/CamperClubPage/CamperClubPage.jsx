@@ -5,6 +5,7 @@ import camperA from '../../assets/img/camper-1.png';
 import css from './CamperClubPage.module.css';
 import icons from '../../assets/img/symbol-defs.svg';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const CamperClubPage = () => {
 
@@ -14,8 +15,8 @@ const CamperClubPage = () => {
             <h2 className={css.title}>CamperClub</h2>
       
       <div className={css.listWrapper}>
-       <img className={css.imgCamper} src={camper} alt="camper" />
-        <img  className={css.imgCamper} src={camperA} alt="camper" />
+       <motion.img className={css.imgCamper} src={camper} alt="camper" whileHover={{ scale: 1.5 }}/>
+        <motion.img  className={css.imgCamper} src={camperA} alt="camper" whileHover={{ scale: 1.5 }}/>
        
       </div>
       <ul className={css.linksWrapper}>

@@ -60,9 +60,10 @@
     margin: 50px 0px;
 }
 .imgCamper {
-    width: 500px;
+    width: 300px;
     height: auto;
     border-radius: 8px;
+    transition: width 0.3s ease-in-out;
 }
 
 .linksWrapper {
@@ -156,24 +157,31 @@
   }
   .imgWater {
     margin-bottom: 50px;
-    width: 700px;
-    height: auto;
-    border-radius: 8px;
-    }
-  .phoneBook {
-    width: 700px;
-    height: auto;
-    border-radius: 8px;
-}
-.imgPhone {
     width: 300px;
     height: auto;
     border-radius: 8px;
+     transition: width 0.3s ease-in-out;
+    }
+    .imgWater:hover {
+  width: 500px;
+}
+  .phoneBook {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+     transition: width 0.3s ease-in-out;
+}
+.imgPhone {
+    width: 220px;
+    height: auto;
+    border-radius: 8px;
+     transition: width 0.3s ease-in-out;
 }
 .img {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
+   transition: width 0.3s ease-in-out;
 }
 
 

@@ -5,6 +5,7 @@ import cover3 from '../../assets/img/cover3.jpg';
 import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../assets/img/symbol-defs.svg';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const LearnLingoPage = () => {
 
@@ -14,9 +15,9 @@ const LearnLingoPage = () => {
             <h2 className={css.title}>LearnLingo</h2>
       
       <div className={css.listWrapper}>
-       <img className={css.imgCamper} src={cover1} alt="camper" />
-              <img className={css.imgCamper} src={cover2} alt="camper" />
-              <img  className={css.imgCamper} src={cover3} alt="camper" />
+       <motion.img className={css.imgCamper} src={cover1} alt="camper" whileHover={{ scale: 1.5 }}/>
+              <motion.img className={css.imgCamper} src={cover2} alt="camper" whileHover={{ scale: 1.5 }}/>
+              <motion.img  className={css.imgCamper} src={cover3} alt="camper" whileHover={{ scale: 1.5 }}/>
        
       </div>
       <ul className={css.linksWrapper}>

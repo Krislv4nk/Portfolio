@@ -3,14 +3,15 @@ import icons from '../../assets/img/symbol-defs.svg';
 import phone from '../../assets/img/phone.png';
 import phoneBook from '../../assets/img/phone-book.png';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const PhoneBookPage = () => {
   return <div className={css.wrapperRight}>
     <h2 className={css.title}>PhoneBook</h2>
       
       <div className={css.listWrapper}>
-        <img className={css.phoneBook} src={phoneBook} alt="camper" />
-        <img  className={css.imgPhone} src={phone} alt="camper" />
+        <motion.img className={css.phoneBook} src={phoneBook} alt="camper" whileHover={{ scale: 1.5 }}/>
+        <motion.img  className={css.imgPhone} src={phone} alt="camper" whileHover={{ scale: 1.5 }}/>
        
       </div>
     <ul className={css.linksWrapper}>

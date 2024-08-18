@@ -18,15 +18,9 @@ export const Background = () => {
 
   const options = useMemo(
     () => ({
-     fpsLimit: 120,
+     fpsLimit: 20,
       interactivity: {
-        events: {
-         
-          onHover: {
-            enable: true,
-            mode: "repulse",
-          },
-        },
+       
         modes: {
           push: {
             quantity: 4,
@@ -39,12 +33,11 @@ export const Background = () => {
       },
       
       particles: {
-        
         color: {
           value: "#00baff",
           animation: {
             enable: true,
-            speed: 20,
+            speed: 10,
             sync: true,
           }
         },
@@ -63,10 +56,10 @@ export const Background = () => {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 20,
         },
         opacity: {
-          value: { min: 0.3, max: 2 }, 
+          value: { min: 0.1, max: 2 }, 
           animation: {
             enable: true,
             speed: 10, 
