@@ -31,9 +31,9 @@ const ProjectsPage = () => {
 
     return (
         <div className={css.wrapper}>
-            <h2 className={css.fifthFrame}>
+            <h3 className={css.fifthFrame}>
                 Let me show you what I have created
-            </h2>
+            </h3>
             <ul className={css.list}>
                 <li className={css.projectItemLeft}>
                     <button
