@@ -8,6 +8,7 @@ import FoodStorePage from 'pages/FoodStorePage/FoodStorePage';
 import LearnLingoPage from 'pages/LearnLingoPage/LearnLingoPage';
 
 
+
 const ProjectsPage = () => {
     
     const [activeTab, setActiveTab] = useState(null);
@@ -34,10 +35,7 @@ const ProjectsPage = () => {
     return (
         <div className={css.wrapper}>
             <h2 className={css.fifthFrame}>
-        <span>Let me</span>
-          <span> show you</span>
-          <span> what I have</span>
-          <span> created.</span>
+        Let me show you what I have created
       </h2>
             <ul className={css.list}>
                 <li className={css.projectItem}>
