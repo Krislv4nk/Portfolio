@@ -1,13 +1,21 @@
 import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../assets/img/symbol-defs.svg';
-import water from '../../assets/img/water-tracker.png';
+import water from '../../assets/img/water.jpg';
+import water1 from '../../assets/img/water1.jpg';
+import water2 from '../../assets/img/water2.jpg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const WaterTrackerPage = () => {
   return <div className={css.wrapper}>
     <h2 className={css.title}>Water-tracker</h2>
-   <motion.img src={water} alt="water" className={css.imgWater} whileHover={{ scale: 1.3 }}/>
+    <div className={css.listWrapper}>
+       <motion.img src={water} alt="water" className={css.imgWater} whileHover={{ scale: 1.3 }}/>
+              <motion.img src={water1} alt="water" className={css.imgWater} whileHover={{ scale: 1.3 }}/>
+              <motion.img src={water2} alt="water" className={css.imgWater} whileHover={{ scale: 1.3 }}/>
+       
+      </div>
+   
     <ul className={css.linksWrapper}>
       <li className={css.linksItem}>
                 <svg className={css.repoLinkIcon} >

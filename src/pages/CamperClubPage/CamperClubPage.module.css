@@ -56,7 +56,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 70px;
     margin: 50px 0px;
 }
 .imgCamper {
@@ -157,14 +157,12 @@
   }
   .imgWater {
     margin-bottom: 50px;
-    width: 300px;
-    height: auto;
+    width: 500px;
+    height: 300px;
     border-radius: 8px;
      transition: width 0.3s ease-in-out;
     }
-    .imgWater:hover {
-  width: 500px;
-}
+    
   .phoneBook {
     width: 500px;
     height: auto;

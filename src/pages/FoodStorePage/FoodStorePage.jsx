@@ -1,12 +1,18 @@
 import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../assets/img/symbol-defs.svg';
-import food from '../../assets/img/food.png';
+import food from '../../assets/img/food.jpg';
+import food1 from '../../assets/img/food2.jpg'
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const FoodStorePage = () => {
   return <div className={css.wrapper}>
     <h2 className={css.title}>FoodStore</h2>
-   <img src={food} alt="Water" className={css.imgWater}/>
+    <div className={css.listWrapper}>
+    <motion.img className={css.imgCamper} src={food} alt="camper" whileHover={{ scale: 1.5 }}/>
+        <motion.img  className={css.imgCamper} src={food1} alt="camper" whileHover={{ scale: 1.5 }}/>
+       
+      </div>
       <ul className={css.linksWrapper}>
           
       <li className={css.linksItem}>
