@@ -10,9 +10,9 @@ const WaterTrackerPage = () => {
   return <div className={css.wrapper}>
     <h2 className={css.title}>Water-tracker</h2>
     <div className={css.listWrapper}>
-       <motion.img src={water} alt="water" className={css.imgWater} whileHover={{ scale: 1.3 }}/>
-              <motion.img src={water1} alt="water" className={css.imgWater} whileHover={{ scale: 1.3 }}/>
-              <motion.img src={water2} alt="water" className={css.imgWater} whileHover={{ scale: 1.3 }}/>
+       <motion.img src={water} alt="water" className={css.imgCamper} whileHover={{ scale: 1.3 }}/>
+              <motion.img src={water1} alt="water" className={css.imgCamper} whileHover={{ scale: 1.3 }}/>
+              <motion.img src={water2} alt="water" className={css.imgCamper} whileHover={{ scale: 1.3 }}/>
        
       </div>
    

@@ -2,7 +2,7 @@
 
 .header {
     align-items: center;
-   justify-content: flex-end;
+   justify-content: space-between;
     display: flex;
     padding: 20px;
     max-width: 1340px;
@@ -12,6 +12,7 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.858);
     margin: 0 auto;
+     border-radius: 30px;
 }
 
 

@@ -42,7 +42,7 @@ export const Background = () => {
           }
         },
         stroke: {
-        width: 3, 
+        width: 2, 
         color: {
           value: "#00baff",
           animation: {

@@ -122,14 +122,14 @@
 
   
   .descriptionTitle {
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 20px;
     text-align: center;
   }
   .featuresList {
     display: flex;
     flex-wrap: wrap;
-    font-size: 25px;
+    font-size: 18px;
     gap: 10px;
     margin-bottom: 20px;
     align-items: center;
@@ -139,13 +139,13 @@
   .description {
     margin-bottom: 35px;
     padding: 0 50px;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
   }
   .toolsList {
     display: flex;
     flex-wrap: wrap;
-    font-size: 25px;
+    font-size: 18px;
     gap: 10px;
     margin-bottom: 20px;
     align-items: center;
@@ -153,7 +153,7 @@
     margin-bottom: 20px;
   }
   .tool {
-    font-size: 25px;
+    font-size: 18px;
   }
   .imgWater {
     margin-bottom: 50px;

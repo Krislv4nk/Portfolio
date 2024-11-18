@@ -1,11 +1,13 @@
 
 
 import { NavLink } from 'react-router-dom';
+import { Footer } from './../Footer/Footer';
 import css from './Header.module.css';
 
 export const Header = () => {
   return (
     <header className={css.header}>
+      <Footer/>
       <nav className={css.wrapper}>
         <ul className={css.headerList}>
           <li className={css.linkItem}>
