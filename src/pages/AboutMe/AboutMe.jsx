@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import icons from '../../assets/img/symbol-defs.svg';
 import { motion } from 'framer-motion';
 import css from './AboutMe.module.css';
 import cv from '../../assets/cv.jpg';
@@ -22,56 +21,25 @@ const AboutMe = () => {
                             creative passion for learning and development to create quality and innovative products.</p>
                       </div>
             <h3 className={css.title}>Hard skills</h3>
-            <ul className={css.list}>
-                <li className={css.item}><svg className={css.icon}>
-          <use href={`${icons}#icon-html5`}></use>
-            </svg></li>
-            <li className={css.item}><svg className={css.icon}>
-          <use href={`${icons}#icon-css3`}></use>
-            </svg></li>
-            <li className={css.item}><svg className={css.iconItem}>
-          <use href={`${icons}#icon-javascript`}></use>
-            </svg></li>
-            <li className={css.item}><svg className={css.iconItem}>
-          <use href={`${icons}#icon-reactjs`}></use>
-            </svg></li>
-            <li className={css.item}><svg className={css.icon}>
-          <use href={`${icons}#icon-nodejs`}></use>
-            </svg></li>
-                <li className={css.item}><svg className={css.icon}>
-          <use href={`${icons}#icon-nextjs`}></use>
-                </svg></li>
-                <li className={css.item}><svg className={css.icon}>
-          <use href={`${icons}#icon-typescript`}></use>
-                </svg></li>
-                <li className={css.item}><svg className={css.icon}>
-          <use href={`${icons}#icon-redux`}></use>
-                </svg></li>
-                <li className={css.item}><svg className={css.icon}>
-          <use href={`${icons}#icon-express`}></use>
-                </svg></li>
-                <li className={css.item}><svg className={css.icon}>
-          <use href={`${icons}#icon-git`}></use>
-                </svg></li>
-                <li className={css.item}><svg className={css.icon}>
-          <use href={`${icons}#icon-vscode`}></use>
-                </svg></li>
-                <li className={css.item}><svg className={css.icon}>
-          <use href={`${icons}#icon-figma`}></use>
-                </svg></li>
-                <li className={css.item}><svg className={css.icon}>
-          <use href={`${icons}#icon-postman`}></use>
-                </svg></li>
-                <li className={css.item}><svg className={css.icon}>
-          <use href={`${icons}#icon-jwt`}></use>
-                </svg></li>
-                <li className={css.item}><svg className={css.icon}>
-          <use href={`${icons}#icon-nodemon`}></use>
-                </svg></li>
-                <li className={css.item}><svg className={css.icon}>
-          <use href={`${icons}#icon-axios`}></use>
-                </svg></li>
-                </ul>
+<ul className={css.list}>
+  <li className={css.item}>HTML5</li>
+  <li className={css.item}>CSS3</li>
+  <li className={css.item}>JavaScript</li>
+  <li className={css.item}>React.js</li>
+  <li className={css.item}>Node.js</li>
+  <li className={css.item}>Next.js</li>
+  <li className={css.item}>TypeScript</li>
+  <li className={css.item}>Redux</li>
+  <li className={css.item}>Express</li>
+  <li className={css.item}>Git</li>
+  <li className={css.item}>VS Code</li>
+  <li className={css.item}>Figma</li>
+  <li className={css.item}>Postman</li>
+  <li className={css.item}>JWT</li>
+  <li className={css.item}>Nodemon</li>
+  <li className={css.item}>Axios</li>
+</ul>
+
                 <div className={css.docBox}>
                       <div className={css.education}>
             <h3 className={css.title}>Education</h3>

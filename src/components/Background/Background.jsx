@@ -41,15 +41,26 @@ export const Background = () => {
             sync: true,
           }
         },
+        stroke: {
+        width: 3, 
+        color: {
+          value: "#00baff",
+          animation: {
+            enable: true,
+            speed: 10,
+            sync: true,
+          }
+        },
+      },
         
         move: {
-          direction: "top",
+          direction: "none",
           enable: true,
           outModes: {
             default: "out",
           },
           random: false,
-          speed: 3,
+          speed: 0.5,
           straight: false,
         },
         number: {
@@ -59,18 +70,18 @@ export const Background = () => {
           value: 20,
         },
         opacity: {
-          value: { min: 0.1, max: 2 }, 
-          animation: {
-            enable: true,
-            speed: 10, 
-            sync: false, 
-          },
+          value: { min: 0.1, max: 0.2 }, 
+          // animation: {
+          //   enable: true,
+          //   speed: 10, 
+          //   sync: false, 
+          // },
         },
         shape: {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 10 },
+          value: { min: 10, max: 30 },
           
         },
         shadow: {
@@ -92,16 +103,10 @@ export const Background = () => {
     return null;
   } 
     return (
-  
       <Particles 
         id="tsparticles"
         init={initParticlesEngine}
         options={options}
-       
       />
-  
     );
-
-
-  
 };

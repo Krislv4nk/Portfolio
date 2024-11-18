@@ -6,13 +6,8 @@
     flex-direction: column;
     display: flex;
     margin: auto;
-   box-shadow: 
-    0 0 5px rgba(0, 0, 0, 0.1),
-    0 0 10px rgba(0, 0, 0, 0.1),
-    0 0 20px rgba(0, 0, 0, 0.1),
-    0 0 40px rgba(0, 0, 0, 0.1),
-    0 0 80px rgba(0, 0, 0, 0.1);
    overflow: hidden;
+   
    
 }
 
@@ -96,25 +91,24 @@
   }
 }
 .item {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #000000, #1e1e1e);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  box-shadow: 0 0 10px rgba(240, 237, 237, 0.1);
 }
-.iconItem {
-    fill: #00baff;
-    width: 60px;
-    height: 60px;
+
+.item:hover {
+  transform: translateY(-5px) scale(1.05);
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(72, 70, 70, 0.1), 0 0 30px rgba(240, 237, 237, 0.1);
 }
-    
-.icon {
-    width: 60px;
-    height: 60px;
-    
-}
+
 
 .docBox {
     display: flex;

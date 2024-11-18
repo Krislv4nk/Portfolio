@@ -48,17 +48,12 @@ position: relative;
   
 .headerList {
 border: 1px solid #ffffff;
-box-shadow: 
-    0 0 5px rgba(240, 237, 237, 0.1),
-    0 0 10px rgba(240, 237, 237, 0.1),
-    0 0 20px rgba(240, 237, 237, 0.1),
-    0 0 40px rgba(240, 237, 237, 0.1),
-    0 0 80px rgba(240, 237, 237, 0.1);
     display: flex;
     justify-content: flex-end;
     gap: 70px;
     border-radius: 10px;
     padding: 10px 20px;
-    
+    background: linear-gradient(90deg, #000000, #1e1e1e);
+  box-shadow: 0 0 10px rgba(240, 237, 237, 0.1);
 }
 

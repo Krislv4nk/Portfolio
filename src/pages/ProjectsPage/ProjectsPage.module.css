@@ -22,10 +22,10 @@ font-size: 40px;
 
 
 .item {
-   background-color: transparent;
+   padding: 10px 20px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #000000, #1e1e1e);
    font-family: 'Kalam', cursive;
-    padding: 10px 20px;
-    border-radius: 10px;
     border: 1px solid #ffffff;
     cursor: pointer; 
     color: #ffffff;
