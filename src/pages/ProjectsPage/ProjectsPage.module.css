@@ -64,7 +64,7 @@ font-size: 40px;
     justify-content: center;
     text-align: center;
     gap: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
     animation: slideInFromRight 2s forwards;
 }
 
@@ -85,7 +85,7 @@ font-size: 40px;
     justify-content: center;
     text-align: center;
     gap: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
     animation: slideInFromLeft 2s forwards;
 }
 
@@ -147,8 +147,7 @@ font-size: 40px;
                 opacity: 1;
             }
         }
-
-		
+	
 
 
 

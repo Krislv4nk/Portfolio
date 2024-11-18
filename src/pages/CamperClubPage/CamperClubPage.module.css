@@ -7,7 +7,7 @@
     flex-direction: column;
   opacity: 0;
   transform: translateY(100px);
-  animation: slideInFromLeft 0.5s forwards;
+  animation: slideInFromLeft 2s ease-in-out forwards;
     
 }
 
@@ -20,7 +20,7 @@
     flex-direction: column;
   opacity: 0;
   transform: translateY(100px);
-  animation: slideInFromRight 0.5s forwards;
+  animation: slideInFromRight 2s ease-in-out forwards;
     
 }
 

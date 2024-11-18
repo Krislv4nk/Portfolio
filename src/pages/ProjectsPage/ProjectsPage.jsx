@@ -83,7 +83,7 @@ const ProjectsPage = () => {
             </ul>
             <div className={css.tabContent}>
                 {renderTabContent()}
-            </div>
+                </div>
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import css from './Footer.module.css';
-import icons from '../../assets/img/symbol-defs.svg';
+import icons from '../../../assets/img/symbol-defs.svg';
 import { Link } from 'react-router-dom';
 
 
