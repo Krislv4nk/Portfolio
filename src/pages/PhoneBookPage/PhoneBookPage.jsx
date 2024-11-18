@@ -4,6 +4,8 @@ import phone from '../../assets/img/phone.png';
 import phoneBook from '../../assets/img/phone-book.png';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { ScrollableComponent } from '../../components/ScrollableComponent/ScrollableComponent';
+
 
 const PhoneBookPage = () => {
   return <div className={css.wrapperRight}>
@@ -32,7 +34,7 @@ const PhoneBookPage = () => {
             
               </ul>
             
-        
+        <ScrollableComponent>
           <h4 className={css.descriptionTitle}>Individual project</h4>
 
           <p className={css.description}>Within this individual project, I implemented restricted routes accessible
@@ -59,7 +61,7 @@ const PhoneBookPage = () => {
               </ul>
           <p className={css.description}>Duration: 2 weeks</p>
 
-   
+   </ScrollableComponent>
             </div >;
 };
 

@@ -6,6 +6,7 @@ import css from './CamperClubPage.module.css';
 import icons from '../../assets/img/symbol-defs.svg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { ScrollableComponent } from '../../components/ScrollableComponent/ScrollableComponent';
 
 const CamperClubPage = () => {
 
@@ -31,6 +32,7 @@ const CamperClubPage = () => {
               <Link className={css.links} to="https://github.com/Krislv4nk/CamperClub" rel="noreferrer" target='_blank'
           title="View Front-End Code on GitHub">Front-End GitHub</Link></li>
       </ul>
+      <ScrollableComponent>
 <h4 className={css.descriptionTitle}>Individual Project</h4>
           <p className={css.description}>Introducing my latest venture: the premier individual project following my
             graduation from IT school. Meet the
@@ -45,11 +47,11 @@ const CamperClubPage = () => {
             ideal camper experience. Welcome to a world of exploration, all at your fingertips.</p>
 <h4 className={css.descriptionTitle}>Key Features:</h4>
         <ul className={css.featuresList}>
-           <li className={css.tool}> - Browse Campers: Users can browse a list of available campers with images, prices, and other details.</li>
-            <li className={css.tool}>- Camper Details: Each camper has a dedicated page with detailed information, including description,
+           <li className={css.featuresItem}>  Browse Campers: Users can browse a list of available campers with images, prices, and other details.</li>
+            <li className={css.featuresItem}> Camper Details: Each camper has a dedicated page with detailed information, including description,
             location, rating,
             reviews, and specifications.</li>
-            <li className={css.tool}>- Add to Favorites: Users can add campers to their favorites list and remove them from it.
+            <li className={css.featuresItem}> Add to Favorites: Users can add campers to their favorites list and remove them from it.
             </li >
             </ul >
           <h4 className={css.descriptionTitle}>Tools: </h4>
@@ -61,7 +63,8 @@ const CamperClubPage = () => {
                 <li className={css.tool}>Formik,</li>
                 <li className={css.tool}>Yup;</li>
               </ul>
-      <p className={css.description}>Duration: 3 weeks</p>
+        <p className={css.description}>Duration: 3 weeks</p>
+        </ScrollableComponent>
     </div>
   );
 };

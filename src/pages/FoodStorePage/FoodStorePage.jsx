@@ -4,6 +4,8 @@ import food from '../../assets/img/food.jpg';
 import food1 from '../../assets/img/food2.jpg'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { ScrollableComponent } from '../../components/ScrollableComponent/ScrollableComponent';
+
 
 const FoodStorePage = () => {
   return <div className={css.wrapper}>
@@ -31,7 +33,7 @@ const FoodStorePage = () => {
               </li>
               </ul>
             
-        
+        <ScrollableComponent>
           <h4 className={css.descriptionTitle}>Team project</h4>
 
           <p className={css.description}>For the Food-Store project, I collaborated as part of a team working with
@@ -56,7 +58,7 @@ const FoodStorePage = () => {
             user
             expectations.</p>
     <p className={css.description}>Duration: 1 week</p>
-    
+    </ScrollableComponent>
     </div >;
     };
 

@@ -5,6 +5,9 @@ import water1 from '../../assets/img/water1.jpg';
 import water2 from '../../assets/img/water2.jpg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { ScrollableComponent } from '../../components/ScrollableComponent/ScrollableComponent';
+
+
 
 const WaterTrackerPage = () => {
   return <div className={css.wrapper}>
@@ -42,7 +45,7 @@ const WaterTrackerPage = () => {
               </li>
               </ul>
             
-        
+        <ScrollableComponent>
           <h4 className={css.descriptionTitle}>Team project</h4>
 
           <p className={css.description}>The web application is designed for tracking daily water intake and consists of the following functional components:
@@ -55,11 +58,11 @@ const WaterTrackerPage = () => {
 <h4 className={css.descriptionTitle}>Key Features:</h4>
 <ul className={css.featuresList}>
 
-<li className={css.tool}>- Private and Public Routes: The application implements private routes, which require user authentication, and public routes, accessible to all users. Private routes ensure data security and restrict unauthorized access to sensitive information.</li >
+<li className={css.featuresItem}> Private and Public Routes: The application implements private routes, which require user authentication, and public routes, accessible to all users. Private routes ensure data security and restrict unauthorized access to sensitive information.</li >
 
-<li className={css.tool}>- Backend Functionality: The application is powered by a backend system that manages user data, handles authentication, and facilitates communication between the frontend and the database. This backend infrastructure ensures the smooth functioning of features like data storage, retrieval, and security.</li >
+<li className={css.featuresItem}> Backend Functionality: The application is powered by a backend system that manages user data, handles authentication, and facilitates communication between the frontend and the database. This backend infrastructure ensures the smooth functioning of features like data storage, retrieval, and security.</li >
 
-<li className={css.tool}>- Adaptation for Different Devices: The application is optimized for various devices, including desktops, tablets, and mobile phones. It utilizes responsive design principles to ensure a seamless user experience across different screen sizes and resolutions.
+<li className={css.featuresItem}> Adaptation for Different Devices: The application is optimized for various devices, including desktops, tablets, and mobile phones. It utilizes responsive design principles to ensure a seamless user experience across different screen sizes and resolutions.
 
       By incorporating these enhancements, the description provides a clearer understanding of the Water-Tracker-APP project's functionality and features, encompassing both frontend and backend components.</li >
     </ul>
@@ -89,7 +92,7 @@ const WaterTrackerPage = () => {
             Formik, Yup),
             component MyDailyNorma with
             modal-window (MUI), component Background; on Back-End - Implemented logic for TodayWater component. </p>
-   
+   </ScrollableComponent>
   </div >;
 };
 

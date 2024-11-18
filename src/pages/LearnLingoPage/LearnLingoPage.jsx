@@ -6,6 +6,7 @@ import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../assets/img/symbol-defs.svg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { ScrollableComponent } from '../../components/ScrollableComponent/ScrollableComponent';
 
 const LearnLingoPage = () => {
 
@@ -32,6 +33,7 @@ const LearnLingoPage = () => {
               <Link className={css.links} to="https://github.com/Krislv4nk/LearnLingo" rel="noreferrer" target='_blank'
           title="View Front-End Code on GitHub">Front-End GitHub</Link></li>
       </ul>
+      <ScrollableComponent>
 <h4 className={css.descriptionTitle}>Individual Project</h4>
           <p className={css.description}>The Teachers App is a web application built with Firebase
               and React for viewing and interacting with a teacher database. Users can register,
@@ -39,14 +41,11 @@ const LearnLingoPage = () => {
               and secure user management.</p>
 <h4 className={css.descriptionTitle}>Key Features:</h4>
         <ul className={css.featuresList}>
-           <li className={css.tool}> - Authentication & Registration: Users can register, log in, and manage their sessions using Firebase Authentication. Forms are created with react-hook-form and yup for validation.</li>
-            <li className={css.tool}>- Teacher Cards: The Teachers page shows teacher profiles in card format with an option to load more. Users can favorite teachers with a “heart” button. Favorites are saved in Firebase or localStorage for authorized users.</li>
-            <li className={css.tool}>- Interactivity: Favorites persist on page refresh. Users can remove favorites, access detailed teacher info, and book trial lessons through modal forms.
-              </li >
-              <li className={css.tool}>- Private Favorites Page: Authorized users can view their saved favorite teachers on a dedicated page.
-              </li >
-              <li className={css.tool}>- Color Palette Customization: Users can adjust the app's color scheme to their preference..
-            </li >
+           <li className={css.featuresItem}>  Authentication & Registration: Users can register, log in, and manage their sessions using Firebase Authentication. Forms are created with react-hook-form and yup for validation.</li>
+            <li className={css.featuresItem}> Teacher Cards: The Teachers page shows teacher profiles in card format with an option to load more. Users can favorite teachers with a “heart” button. Favorites are saved in Firebase or localStorage for authorized users.</li>
+            <li className={css.featuresItem}> Interactivity: Favorites persist on page refresh. Users can remove favorites, access detailed teacher info, and book trial lessons through modal forms.</li >
+              <li className={css.featuresItem}> Private Favorites Page: Authorized users can view their saved favorite teachers on a dedicated page.</li >
+              <li className={css.featuresItem}> Color Palette Customization: Users can adjust the app's color scheme to their preference..</li >
             </ul >
           <h4 className={css.descriptionTitle}>Tools: </h4>
             <ul className={css.toolsList}>
@@ -59,7 +58,8 @@ const LearnLingoPage = () => {
                 <li className={css.tool}>Formik,</li>
                 <li className={css.tool}>Yup;</li>
               </ul>
-      <p className={css.description}>Duration: 6 weeks</p>
+        <p className={css.description}>Duration: 6 weeks</p>
+        </ScrollableComponent>
     </div>
   );
 };

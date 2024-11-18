@@ -124,23 +124,20 @@
   .descriptionTitle {
     font-size: 25px;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: start;
   }
   .featuresList {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 18px;
-    gap: 10px;
-    margin-bottom: 20px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
+  text-align: start;
+  display: block;
+  font-size: 18px;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-left: 20px; 
+}
   .description {
     margin-bottom: 35px;
-    padding: 0 50px;
     font-size: 18px;
-    text-align: center;
+    text-align: start;
   }
   .toolsList {
     display: flex;
@@ -148,12 +145,16 @@
     font-size: 18px;
     gap: 10px;
     margin-bottom: 20px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+    text-align: start;
   }
+  .featuresItem {
+  font-size: 18px;
+  list-style: disc; 
+  list-style-position: inside; 
+}
   .tool {
     font-size: 18px;
+    text-align: start;
   }
   .imgWater {
     margin-bottom: 50px;
