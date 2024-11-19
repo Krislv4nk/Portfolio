@@ -3,7 +3,7 @@
 
 .wrapper {
     height: auto;
-    padding: 50px 50px 150px 50px;
+    padding: 50px 50px 250px 50px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -11,9 +11,10 @@
 }
 
 
-.fifthFrame {
-	color: transparent;
-text-shadow: 0px 0px 1px #fff;
+.title {
+	background-color: rgba(0, 0, 0, 0.729);
+    padding: 10px 20px;
+  border-radius: 20px;
 font-size: 40px;
     font-weight: 600;
     margin-bottom: 100px;
@@ -123,6 +124,9 @@ font-size: 40px;
    opacity: 0;
     transform: translateY(100px);
     animation: slide-up 1s 2s forwards;
+    background-color: rgba(0, 0, 0, 0.729);
+    padding: 10px 20px;
+  border-radius: 20px;
 }
 @keyframes slide-up {
     to {

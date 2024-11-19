@@ -33,7 +33,8 @@ const FoodStorePage = () => {
               </li>
               </ul>
             
-        <ScrollableComponent>
+    <ScrollableComponent>
+      <div className={css.descriptionWrapper}>
           <h4 className={css.descriptionTitle}>Team project</h4>
 
           <p className={css.description}>For the Food-Store project, I collaborated as part of a team working with
@@ -57,7 +58,8 @@ const FoodStorePage = () => {
             effectively within a team to deliver a high-quality web application that meets both client requirements and
             user
             expectations.</p>
-    <p className={css.description}>Duration: 1 week</p>
+        <p className={css.description}>Duration: 1 week</p>
+        </div>
     </ScrollableComponent>
     </div >;
     };

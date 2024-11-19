@@ -28,6 +28,9 @@
      opacity: 0;
     transform: translateY(100px);
     animation: slide-up 1s 1s forwards;
+     background-color: rgba(0, 0, 0, 0.729);
+    padding: 10px 20px;
+  border-radius: 20px;
     }
 
     
@@ -50,6 +53,9 @@
     opacity: 0;
     transform: translateY(100px);
     animation: slide-up 1s 1s forwards;
+    background-color: rgba(0, 0, 0, 0.729);
+    padding: 10px 20px;
+  border-radius: 20px;
 }
 .list {
     display: flex;

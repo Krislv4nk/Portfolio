@@ -34,6 +34,7 @@ const LearnLingoPage = () => {
           title="View Front-End Code on GitHub">Front-End GitHub</Link></li>
       </ul>
       <ScrollableComponent>
+        <div className={css.descriptionWrapper}>
 <h4 className={css.descriptionTitle}>Individual Project</h4>
           <p className={css.description}>The Teachers App is a web application built with Firebase
               and React for viewing and interacting with a teacher database. Users can register,
@@ -58,7 +59,8 @@ const LearnLingoPage = () => {
                 <li className={css.tool}>Formik,</li>
                 <li className={css.tool}>Yup;</li>
               </ul>
-        <p className={css.description}>Duration: 6 weeks</p>
+          <p className={css.description}>Duration: 6 weeks</p>
+          </div>
         </ScrollableComponent>
     </div>
   );

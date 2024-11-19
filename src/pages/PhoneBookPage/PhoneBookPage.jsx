@@ -34,7 +34,8 @@ const PhoneBookPage = () => {
             
               </ul>
             
-        <ScrollableComponent>
+    <ScrollableComponent>
+      <div className={css.descriptionWrapper}>
           <h4 className={css.descriptionTitle}>Individual project</h4>
 
           <p className={css.description}>Within this individual project, I implemented restricted routes accessible
@@ -60,7 +61,7 @@ const PhoneBookPage = () => {
                 <li className={css.tool}>Yup;</li>
               </ul>
           <p className={css.description}>Duration: 2 weeks</p>
-
+</div>
    </ScrollableComponent>
             </div >;
 };

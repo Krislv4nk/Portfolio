@@ -45,7 +45,8 @@ const WaterTrackerPage = () => {
               </li>
               </ul>
             
-        <ScrollableComponent>
+    <ScrollableComponent>
+      <div className={css.descriptionWrapper}>
           <h4 className={css.descriptionTitle}>Team project</h4>
 
           <p className={css.description}>The web application is designed for tracking daily water intake and consists of the following functional components:
@@ -91,7 +92,8 @@ const WaterTrackerPage = () => {
           <p className={css.description}>Role: on Front-End - Implemented logic for SignUp/SignIn pages (Redux, Axios,
             Formik, Yup),
             component MyDailyNorma with
-            modal-window (MUI), component Background; on Back-End - Implemented logic for TodayWater component. </p>
+          modal-window (MUI), component Background; on Back-End - Implemented logic for TodayWater component. </p>
+        </div>
    </ScrollableComponent>
   </div >;
 };

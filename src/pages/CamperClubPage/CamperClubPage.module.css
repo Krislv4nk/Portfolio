@@ -10,6 +10,13 @@
   animation: slideInFromLeft 2s ease-in-out forwards;
     
 }
+.titleContainer {
+  display: flex;
+  gap: 150px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 
 .wrapperRight {
     height: auto;
@@ -46,10 +53,14 @@
             }
         }
 .title {
-    text-align: center;
-    font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.729);
+    padding: 10px 20px;
+  border-radius: 20px;
+    text-align: start;
+    font-size: 30px;
     font-weight: 600;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .listWrapper {
     display: flex;
@@ -65,12 +76,16 @@
     border-radius: 8px;
     transition: width 0.3s ease-in-out;
 }
+.descriptionWrapper {
+  background-color: rgba(0, 0, 0, 0.729);
+    padding: 10px 20px;
+  border-radius: 20px;
+}
 
 .linksWrapper {
     display: flex;
     gap: 50px;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     margin: 50px 0px;
 
 }
@@ -82,20 +97,22 @@
      
   }
 .repoLinkIcon {
- width: 50px;
-  height: 50px;
+ width: 30px;
+  height: 30px;
   fill: #ffffff;
   stroke: #00baff;
 }
 
-
-
-
 .links {
-    font-size: 35px;
+  text-decoration: underline;
+text-decoration-skip-ink: none;
+    font-size: 25px;
      padding: 8px 16px;
   color: #ffffff;;
   display: block;
+  background-color: rgba(0, 0, 0, 0.729);
+    padding: 10px 20px;
+  border-radius: 20px;
   
 }
 .links:hover,

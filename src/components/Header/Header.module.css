@@ -4,7 +4,7 @@
     align-items: center;
    justify-content: space-between;
     display: flex;
-    padding: 20px;
+    padding: 50px 20px 20px 20px;
     max-width: 1440px;
   position: sticky;
     top: 0;
@@ -12,7 +12,7 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.858);
     margin: 0 auto;
-     border-radius: 30px;
+     border-radius: 20px;
 }
 
 
@@ -48,7 +48,7 @@ position: relative;
 
   
 .headerList {
-border: 1px solid #ffffff;
+border: 1px solid rgba(240, 237, 237, 0.1);
     display: flex;
     justify-content: flex-end;
     gap: 70px;

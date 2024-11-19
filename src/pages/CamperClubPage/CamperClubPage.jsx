@@ -12,14 +12,9 @@ const CamperClubPage = () => {
 
   return (
     <div className={css.wrapperRight}>
-          
-            <h2 className={css.title}>CamperClub</h2>
-      
-      <div className={css.listWrapper}>
-       <motion.img className={css.imgCamper} src={camper} alt="camper" whileHover={{ scale: 1.5 }}/>
-        <motion.img  className={css.imgCamper} src={camperA} alt="camper" whileHover={{ scale: 1.5 }}/>
-       
-      </div>
+      <div className={css.titleContainer}>
+        <div>
+      <h2 className={css.title}>CamperClub</h2>
       <ul className={css.linksWrapper}>
            <li className={css.linksItem}> <svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>
@@ -32,7 +27,14 @@ const CamperClubPage = () => {
               <Link className={css.links} to="https://github.com/Krislv4nk/CamperClub" rel="noreferrer" target='_blank'
           title="View Front-End Code on GitHub">Front-End GitHub</Link></li>
       </ul>
+</div>
+      <div className={css.listWrapper}>
+       <motion.img className={css.imgCamper} src={camper} alt="camper" whileHover={{ scale: 1.5 }}/>
+        <motion.img  className={css.imgCamper} src={camperA} alt="camper" whileHover={{ scale: 1.5 }}/>
+        </div>
+        </div>
       <ScrollableComponent>
+        <div className={css.descriptionWrapper}>
 <h4 className={css.descriptionTitle}>Individual Project</h4>
           <p className={css.description}>Introducing my latest venture: the premier individual project following my
             graduation from IT school. Meet the
@@ -63,7 +65,8 @@ const CamperClubPage = () => {
                 <li className={css.tool}>Formik,</li>
                 <li className={css.tool}>Yup;</li>
               </ul>
-        <p className={css.description}>Duration: 3 weeks</p>
+          <p className={css.description}>Duration: 3 weeks</p>
+          </div>
         </ScrollableComponent>
     </div>
   );

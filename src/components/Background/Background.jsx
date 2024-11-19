@@ -54,7 +54,7 @@ export const Background = () => {
       },
         
         move: {
-          direction: "none",
+          direction: "top",
           enable: true,
           outModes: {
             default: "out",

@@ -32,7 +32,7 @@ const ProjectsPage = () => {
 
     return (
         <div className={css.wrapper}>
-            <h3 className={css.fifthFrame}>
+            <h3 className={css.title}>
                 Let me show you what I have created
             </h3>
             <ul className={css.list}>
