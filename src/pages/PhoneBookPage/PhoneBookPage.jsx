@@ -9,13 +9,9 @@ import { ScrollableComponent } from '../../components/ScrollableComponent/Scroll
 
 const PhoneBookPage = () => {
   return <div className={css.wrapperRight}>
+    <div className={css.titleContainer}>
+        <div>
     <h2 className={css.title}>PhoneBook</h2>
-      
-      <div className={css.listWrapper}>
-        <motion.img className={css.phoneBook} src={phoneBook} alt="camper" whileHover={{ scale: 1.5 }}/>
-        <motion.img  className={css.imgPhone} src={phone} alt="camper" whileHover={{ scale: 1.5 }}/>
-       
-      </div>
     <ul className={css.linksWrapper}>
       <li className={css.linksItem}>
                 <svg className={css.repoLinkIcon} >
@@ -31,9 +27,13 @@ const PhoneBookPage = () => {
             <Link className={css.links} to="https://github.com/Krislv4nk/goit-react-hw-08-phonebook" rel="noreferrer" target='_blank'
                   title="View Front-End Code on GitHub">Front-End GitHub</Link>
               </li>
-            
-              </ul>
-            
+        </ul>
+        </div>
+            <div className={css.listWrapper}>
+        <motion.img className={css.phoneBook} src={phoneBook} alt="camper" whileHover={{ scale: 1.5 }}/>
+        <motion.img  className={css.imgPhone} src={phone} alt="camper" whileHover={{ scale: 1.5 }}/>
+      </div>
+      </div>
     <ScrollableComponent>
       <div className={css.descriptionWrapper}>
           <h4 className={css.descriptionTitle}>Individual project</h4>

@@ -11,13 +11,10 @@ import { ScrollableComponent } from '../../components/ScrollableComponent/Scroll
 
 const WaterTrackerPage = () => {
   return <div className={css.wrapper}>
+    <div className={css.titleContainer}>
+        <div>
     <h2 className={css.title}>Water-tracker</h2>
-    <div className={css.listWrapper}>
-       <motion.img src={water} alt="water" className={css.imgCamper} whileHover={{ scale: 1.3 }}/>
-              <motion.img src={water1} alt="water" className={css.imgCamper} whileHover={{ scale: 1.3 }}/>
-              <motion.img src={water2} alt="water" className={css.imgCamper} whileHover={{ scale: 1.3 }}/>
-       
-      </div>
+    
    
     <ul className={css.linksWrapper}>
       <li className={css.linksItem}>
@@ -43,8 +40,14 @@ const WaterTrackerPage = () => {
             <Link className={css.links} to="https://github.com/SerhiiOberemchuk/watertracker-backand-codekartel/" 
                   rel="noreferrer" target='_blank' title="View Back-End Code on GitHub">Back-End GitHub</Link>
               </li>
-              </ul>
-            
+      </ul>
+      </div>
+      <div className={css.listWrapper}>
+       <motion.img src={water} alt="water" className={css.imgCamper} whileHover={{ scale: 1.3 }}/>
+              <motion.img src={water1} alt="water" className={css.imgCamper} whileHover={{ scale: 1.3 }}/>
+              <motion.img src={water2} alt="water" className={css.imgCamper} whileHover={{ scale: 1.3 }}/>
+      </div>
+            </div>
     <ScrollableComponent>
       <div className={css.descriptionWrapper}>
           <h4 className={css.descriptionTitle}>Team project</h4>

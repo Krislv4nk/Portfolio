@@ -12,15 +12,10 @@ const LearnLingoPage = () => {
 
   return (
     <div className={css.wrapper}>
-          
+          <div className={css.titleContainer}>
+        <div>
             <h2 className={css.title}>LearnLingo</h2>
-      
-      <div className={css.listWrapper}>
-       <motion.img className={css.imgCamper} src={cover1} alt="camper" whileHover={{ scale: 1.5 }}/>
-              <motion.img className={css.imgCamper} src={cover2} alt="camper" whileHover={{ scale: 1.5 }}/>
-              <motion.img  className={css.imgCamper} src={cover3} alt="camper" whileHover={{ scale: 1.5 }}/>
-       
-      </div>
+
       <ul className={css.linksWrapper}>
            <li className={css.linksItem}> <svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>
@@ -32,7 +27,14 @@ const LearnLingoPage = () => {
         </svg>
               <Link className={css.links} to="https://github.com/Krislv4nk/LearnLingo" rel="noreferrer" target='_blank'
           title="View Front-End Code on GitHub">Front-End GitHub</Link></li>
-      </ul>
+          </ul>
+          </div>
+        <div className={css.listWrapper}>
+       <motion.img className={css.imgCamper} src={cover1} alt="camper" whileHover={{ scale: 1.5 }}/>
+              <motion.img className={css.imgCamper} src={cover2} alt="camper" whileHover={{ scale: 1.5 }}/>
+              <motion.img  className={css.imgCamper} src={cover3} alt="camper" whileHover={{ scale: 1.5 }}/>
+       </div>
+      </div>
       <ScrollableComponent>
         <div className={css.descriptionWrapper}>
 <h4 className={css.descriptionTitle}>Individual Project</h4>

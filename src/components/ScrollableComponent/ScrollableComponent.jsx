@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 export const ScrollableComponent = ({ children }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.5, 
+    threshold: 0.3, 
   });
 
   return (
@@ -15,7 +15,7 @@ export const ScrollableComponent = ({ children }) => {
   style={{
     transform: inView ? 'translateX(0)' : 'translateX(-30px)',
     filter: inView ? 'blur(0)' : 'blur(20px)',
-    opacity: inView ? 1 : 0,
+    opacity: inView ? 1 : 0.5,
     transition: 'opacity 0.3s, transform 0.6s, filter 0.6s',
   }}
 >

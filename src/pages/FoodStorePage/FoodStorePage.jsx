@@ -9,12 +9,9 @@ import { ScrollableComponent } from '../../components/ScrollableComponent/Scroll
 
 const FoodStorePage = () => {
   return <div className={css.wrapper}>
+    <div className={css.titleContainer}>
+        <div>
     <h2 className={css.title}>FoodStore</h2>
-    <div className={css.listWrapper}>
-    <motion.img className={css.imgCamper} src={food} alt="camper" whileHover={{ scale: 1.5 }}/>
-        <motion.img  className={css.imgCamper} src={food1} alt="camper" whileHover={{ scale: 1.5 }}/>
-       
-      </div>
       <ul className={css.linksWrapper}>
           
       <li className={css.linksItem}>
@@ -31,8 +28,13 @@ const FoodStorePage = () => {
             <Link className={css.links} to="https://github.com/VuktorTS/js-team-project-FoodStore"  rel="noreferrer" target='_blank'
                   title="View Front-End Code on GitHub">Front-End GitHub</Link>
               </li>
-              </ul>
-            
+        </ul>
+        </div>
+            <div className={css.listWrapper}>
+    <motion.img className={css.imgCamper} src={food} alt="camper" whileHover={{ scale: 1.5 }}/>
+        <motion.img  className={css.imgCamper} src={food1} alt="camper" whileHover={{ scale: 1.5 }}/>
+      </div>
+      </div>
     <ScrollableComponent>
       <div className={css.descriptionWrapper}>
           <h4 className={css.descriptionTitle}>Team project</h4>
