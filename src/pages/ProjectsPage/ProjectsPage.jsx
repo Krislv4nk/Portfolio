@@ -1,15 +1,35 @@
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import css from './ProjectsPage.module.css';
 import CamperClubPage from 'pages/CamperClubPage/CamperClubPage';
 import WaterTrackerPage from 'pages/WaterTrackerPage/WaterTrackerPage';
 import PhoneBookPage from 'pages/PhoneBookPage/PhoneBookPage';
 import FoodStorePage from 'pages/FoodStorePage/FoodStorePage';
 import LearnLingoPage from 'pages/LearnLingoPage/LearnLingoPage';
-
+import symbol from '../../assets/symbol.svg';
 
 const ProjectsPage = () => {
     const [activeTab, setActiveTab] = useState(null);
+
+    const iconRefs = useRef([]); // Масив для зберігання посилань на SVG-елементи.
+
+    useEffect(() => {
+        // Анімація шляху для кожного SVG.
+        iconRefs.current.forEach(icon => {
+            if (icon) {
+                const paths = icon.querySelectorAll('path');
+                paths.forEach(path => {
+                    const length = path.getTotalLength();
+                    path.style.strokeDasharray = length;
+                    path.style.strokeDashoffset = length;
+
+                    // Додаємо плавну анімацію.
+                    path.style.transition = 'stroke-dashoffset 2s ease-in-out';
+                    path.style.strokeDashoffset = '0';
+                });
+            }
+        });
+    }, [activeTab]);
 
     const renderTabContent = () => {
         switch (activeTab) {
@@ -36,60 +56,40 @@ const ProjectsPage = () => {
                 Let me show you what I have created
             </h3>
             <ul className={css.list}>
-                <li className={css.projectItemLeft}>
-                    <button
-                        className={`${css.item} ${activeTab === 'LearnLingo' ? css.active : ''}`}
-                        onClick={() => setActiveTab('LearnLingo')}
-                        title='LearnLingo'
+                {[
+                    { name: 'LearnLingo', iconId: 'icon-Vector-1' },
+                    { name: 'CamperClub', iconId: 'icon-fluent_tent-28-regular' },
+                    { name: 'WaterTracker', iconId: 'icon-Vector-3' },
+                    { name: 'PhoneBook', iconId: 'icon-Vector-2' },
+                    { name: 'FoodStore', iconId: 'icon-Vector-4' },
+                ].map(({ name, iconId }, index) => (
+                    <li
+                        key={name}
+                        className={index % 2 === 0 ? css.projectItemLeft : css.projectItem}
                     >
-                        LearnLingo
-                    </button>
-                </li>
-                <li className={css.projectItem}>
-                    <button
-                        className={`${css.item} ${activeTab === 'CamperClub' ? css.active : ''}`}
-                        onClick={() => setActiveTab('CamperClub')}
-                        title='CamperClub'
-                    >
-                        CamperClub
-                    </button>
-                </li>
-                <li className={css.projectItemLeft}>
-                    <button
-                        className={`${css.item} ${activeTab === 'WaterTracker' ? css.active : ''}`}
-                        onClick={() => setActiveTab('WaterTracker')}
-                        title='WaterTracker'
-                    >
-                        Water Tracker
-                    </button>
-                </li>
-                <li className={css.projectItem}>
-                    <button
-                        className={`${css.item} ${activeTab === 'PhoneBook' ? css.active : ''}`}
-                        onClick={() => setActiveTab('PhoneBook')}
-                        title='PhoneBook'
-                    >
-                        Phone Book
-                    </button>
-                </li>
-                <li className={css.projectItemLeft}>
-                    <button
-                        className={`${css.item} ${activeTab === 'FoodStore' ? css.active : ''}`}
-                        onClick={() => setActiveTab('FoodStore')}
-                        title='FoodStore'
-                    >
-                        Food Store
-                    </button>
-                </li>
+                        <button
+                            className={`${css.item} ${activeTab === name ? css.active : ''}`}
+                            onClick={() => setActiveTab(name)}
+                            title={name}
+                        >
+                            <svg
+                                className={css.icon}
+                                ref={el => (iconRefs.current[index] = el)}
+                            >
+                                <use xlinkHref={`${symbol}#${iconId}`}></use>
+                            </svg>
+                            <span>{name}</span>
+                        </button>
+                    </li>
+                ))}
             </ul>
-            <div className={css.tabContent}>
-                {renderTabContent()}
-                </div>
+            <div className={css.tabContent}>{renderTabContent()}</div>
         </div>
     );
 };
 
 export default ProjectsPage;
+
 
 
 

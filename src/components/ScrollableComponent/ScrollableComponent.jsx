@@ -13,10 +13,10 @@ export const ScrollableComponent = ({ children }) => {
     <animated.div
   ref={ref}
   style={{
-    transform: inView ? 'translateX(0)' : 'translateX(-30px)',
-    filter: inView ? 'blur(0)' : 'blur(20px)',
-    opacity: inView ? 1 : 0.5,
-    transition: 'opacity 0.3s, transform 0.6s, filter 0.6s',
+    transform: inView ? 'scaleY(1)' : 'scaleY(0)',
+    transformOrigin: 'top',
+    opacity: inView ? 1 : 0,
+    transition: 'opacity 0.6s, transform 0.6s',
   }}
 >
       {children}

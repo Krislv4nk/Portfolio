@@ -4,6 +4,7 @@ import css from './AboutMe.module.css';
 import cv from '../../assets/cv.jpg';
 import certificate from '../../assets/certificate.jpg';
 import myPhoto from '../../assets/img/mainPhoto.png';
+import { ScrollableComponent } from '../../components/ScrollableComponent/ScrollableComponent';
 
 
 const AboutMe = () => {
@@ -19,6 +20,7 @@ const AboutMe = () => {
                 to become a true professional in my field. My goal is to combine my
                             creative passion for learning and development to create quality and innovative products.</p>
                 </div>
+                <ScrollableComponent>
             <h3 className={css.title}>Hard skills</h3>
 <ul className={css.list}>
   <li className={css.item}>HTML5</li>
@@ -37,7 +39,9 @@ const AboutMe = () => {
   <li className={css.item}>JWT</li>
   <li className={css.item}>Nodemon</li>
   <li className={css.item}>Axios</li>
-</ul>
+                      </ul>
+                </ScrollableComponent>
+                <ScrollableComponent>
                 <div className={css.docBox}>
                       <div className={css.education}>
             <h3 className={css.title}>Education</h3>
@@ -55,6 +59,7 @@ const AboutMe = () => {
                            <motion.img className={css.cv} src={cv} alt="cv"
                             whileHover={{ scale: 1.2 }}
                                         /></Link></div></div>
+                      </ScrollableComponent>
         </div>
     )
 }
