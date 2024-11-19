@@ -131,6 +131,7 @@ font-size: 40px;
     background-color: rgba(0, 0, 0, 0.729);
     padding: 10px 20px;
   border-radius: 20px;
+  font-size: 20px;
 }
 @keyframes slide-up {
     to {
@@ -155,7 +156,15 @@ font-size: 40px;
                 opacity: 1;
             }
         }
-	
+	.svgBgn {
+        background-color: black;
+         width: 80px;
+height: 80px;
+border-radius: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+    }
 .icon {
   width: 50px;
   height: 50px;
@@ -167,13 +176,9 @@ font-size: 40px;
   transition: stroke-dashoffset 0.3s ease, stroke 0.3s ease;
 }
 
-.item:hover .icon {
+.item:hover .icon, .item:focus .icon {
   stroke-dashoffset: 0;
-  stroke: #ff6347; 
+  stroke: #ab230b; 
 }
-.icon path {
-    stroke: #000;
-    stroke-width: 2;
-    fill: none; 
-}
+
 

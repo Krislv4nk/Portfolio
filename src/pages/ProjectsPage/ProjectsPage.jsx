@@ -11,10 +11,9 @@ import symbol from '../../assets/symbol.svg';
 const ProjectsPage = () => {
     const [activeTab, setActiveTab] = useState(null);
 
-    const iconRefs = useRef([]); // Масив для зберігання посилань на SVG-елементи.
+    const iconRefs = useRef([]); 
 
     useEffect(() => {
-        // Анімація шляху для кожного SVG.
         iconRefs.current.forEach(icon => {
             if (icon) {
                 const paths = icon.querySelectorAll('path');
@@ -22,8 +21,6 @@ const ProjectsPage = () => {
                     const length = path.getTotalLength();
                     path.style.strokeDasharray = length;
                     path.style.strokeDashoffset = length;
-
-                    // Додаємо плавну анімацію.
                     path.style.transition = 'stroke-dashoffset 2s ease-in-out';
                     path.style.strokeDashoffset = '0';
                 });
@@ -58,9 +55,9 @@ const ProjectsPage = () => {
             <ul className={css.list}>
                 {[
                     { name: 'LearnLingo', iconId: 'icon-Vector-1' },
-                    { name: 'CamperClub', iconId: 'icon-fluent_tent-28-regular' },
+                    { name: 'CamperClub', iconId: 'icon-camper' },
                     { name: 'WaterTracker', iconId: 'icon-Vector-3' },
-                    { name: 'PhoneBook', iconId: 'icon-Vector-2' },
+                    { name: 'PhoneBook', iconId: 'icon-bi_phone' },
                     { name: 'FoodStore', iconId: 'icon-Vector-4' },
                 ].map(({ name, iconId }, index) => (
                     <li
@@ -72,12 +69,12 @@ const ProjectsPage = () => {
                             onClick={() => setActiveTab(name)}
                             title={name}
                         >
-                            <svg
+                            <span className={css.svgBgn}><svg
                                 className={css.icon}
                                 ref={el => (iconRefs.current[index] = el)}
                             >
                                 <use xlinkHref={`${symbol}#${iconId}`}></use>
-                            </svg>
+                            </svg></span>
                             <span>{name}</span>
                         </button>
                     </li>
