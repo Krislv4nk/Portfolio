@@ -12,7 +12,7 @@ const AboutMe = () => {
           <div className={css.wrapper}>
                 <div className={css.container}>
                        <img className={css.photo} src={myPhoto} alt="myPhoto" />
-            <p className={css.text}>Hello, I am Kristina, a junior full-stack developer.
+            <p className={css.text}><span className={css.helloSpan}>Hello</span>,<br/> I am Kristina, a junior full-stack developer.
                 I am eager to wholeheartedly dive into the world of programming.
                 My skills and knowledge are constantly evolving, and I am always
                 open to new challenges and opportunities for growth. I dream
