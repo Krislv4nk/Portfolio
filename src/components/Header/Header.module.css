@@ -23,7 +23,7 @@
   align-items: flex-end;
   justify-content: flex-end;
   cursor: pointer;
-    font-size: 15px;
+    font-size: 18px;
 font-weight: 400;
 position: relative;
 }
@@ -52,7 +52,7 @@ border: 1px solid rgba(240, 237, 237, 0.1);
     display: flex;
     justify-content: flex-end;
     gap: 70px;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px 20px;
     background: linear-gradient(90deg, #000000, #1e1e1e);
   box-shadow: 0 0 10px rgba(240, 237, 237, 0.1);

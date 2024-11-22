@@ -68,14 +68,13 @@ const ProjectsPage = () => {
                             className={`${css.item} ${activeTab === name ? css.active : ''}`}
                             onClick={() => setActiveTab(name)}
                             title={name}
-                        >
-                            <span className={css.svgBgn}><svg
+                        ><svg
                                 className={css.icon}
                                 ref={el => (iconRefs.current[index] = el)}
                             >
                                 <use xlinkHref={`${symbol}#${iconId}`}></use>
-                            </svg></span>
-                            <span>{name}</span>
+                            </svg>
+                            <span className={css.spanName}>{name}</span>
                         </button>
                     </li>
                 ))}
