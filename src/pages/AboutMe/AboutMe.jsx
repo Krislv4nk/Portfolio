@@ -5,13 +5,20 @@ import cv from '../../assets/cv.jpg';
 import certificate from '../../assets/certificate.jpg';
 import myPhoto from '../../assets/img/mainPhoto.png';
 import { ScrollableComponent } from '../../components/ScrollableComponent/ScrollableComponent';
+// import { IconCloud } from '../../components/Cloud/Cloud';
 
 
 const AboutMe = () => {
+
+//       const iconSlugs = [
+//         "react", "javascript", "node-dot-js", "html5", "css3", "git", "postman", "vite",
+//             "redux", "typescript", "express", "mongodb", "git", "figma", "material-ui",
+//         "axios", "jwt","rest-api"
+//     ];
     return (
           <div className={css.wrapper}>
                 <div className={css.container}>
-                       <img className={css.photo} src={myPhoto} alt="myPhoto" />
+                      <img className={css.photo} src={myPhoto} alt="myPhoto" />
             <p className={css.text}><span className={css.helloSpan}>Hello</span>,<br/> I am Kristina, a junior full-stack developer.
                 I am eager to wholeheartedly dive into the world of programming.
                 My skills and knowledge are constantly evolving, and I am always
@@ -21,8 +28,8 @@ const AboutMe = () => {
                             creative passion for learning and development to create quality and innovative products.</p>
                 </div>
                 <ScrollableComponent>
-            <h3 className={css.title}>Hard skills</h3>
-<ul className={css.list}>
+                      <h3 className={css.title}>Hard skills</h3>
+                      <ul className={css.list}>
   <li className={css.item}>HTML5</li>
   <li className={css.item}>CSS3</li>
   <li className={css.item}>JavaScript</li>
@@ -46,6 +53,10 @@ const AboutMe = () => {
   <li className={css.item}>Nodemon</li>
   <li className={css.item}>Axios</li>
                       </ul>
+                      {/* <div className={css.cloudBgn}>
+                            
+                            <IconCloud iconSlugs={iconSlugs} />
+                            </div> */}
                 </ScrollableComponent>
                 <ScrollableComponent>
                 <div className={css.docBox}>
