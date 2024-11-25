@@ -7,6 +7,8 @@
     display: flex;
     margin: auto;
    overflow: hidden;
+   padding: 0px 50px;
+
 }
 
 .helloSpan {
@@ -14,14 +16,6 @@
   font-weight: 700;
 }
 
-.spanName {
-  background: linear-gradient(84deg, #9845e8 0%, #33d2ff 54.95%, #dd5789 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-size: 30px;
-    font-weight: 600;
-}
 
         @keyframes slide-up {
     to {
@@ -43,24 +37,16 @@ font-size: 30px;
   border-radius: 20px;
     }
 
-    .cloudBgn {
-      width: auto;
-      height: auto;
-      background-color: rgb(0, 0, 0);
-      margin: 0 auto;
-    }
-
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 100px;
-    padding: 0px 50px;
     margin-bottom: 50px;
     position: relative;
 }
 .title {
-    text-align: start;
+    text-align: center;
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 50px;
@@ -72,19 +58,27 @@ font-size: 30px;
     padding: 10px 20px;
   border-radius: 20px;
 }
-.list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    gap: 50px;
-    margin: 30px 0;
-   padding: 0 80px;
-   margin-bottom: 80px;
-  opacity: 0;
-    transform: translateY(100px);
-    animation: slide-up 1s 1s forwards;
+.skillList {
+  display: flex;
+margin: 30px 0;
+margin-bottom: 80px;
+
+
 }
+.item {
+  border: 1px solid rgba(240, 237, 237, 0.1);
+  padding: 10px 20px;
+  border-radius: 20px;
+background: linear-gradient(90deg, #000000, #202020, #383838, #202020, #000000);
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(240, 237, 237, 0.1);
+
+}
+
 .photo {
   width: 250px;
   height: auto;
@@ -110,25 +104,7 @@ font-size: 30px;
     opacity: 1;
   }
 }
-.item {
-  border: 1px solid rgba(240, 237, 237, 0.1);
-  padding: 10px 20px;
-  border-radius: 20px;
-  background: linear-gradient(90deg, #000000, #1e1e1e);
-  color: #ffffff;
-  font-size: 25px;
-  font-weight: 600;
-  text-align: center;
-  display: inline-block;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-  box-shadow: 0 0 10px rgba(240, 237, 237, 0.1);
-}
 
-.item:hover {
-  transform: translateY(-5px) scale(1.05);
-  color: #ffffff;
-  box-shadow: 0 0 20px rgba(72, 70, 70, 0.1), 0 0 30px rgba(240, 237, 237, 0.1);
-}
 
 
 .docBox {

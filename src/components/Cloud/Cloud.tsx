@@ -90,3 +90,49 @@ export function IconCloud({ iconSlugs }: DynamicCloudProps) {
     </Cloud>
   );
 }
+
+
+// const iconSlugs = [
+      //   "react", "javascript", "node-dot-js", "html5", "css3", "git", "postman", "vite",
+      //       "redux", "typescript", "express", "mongodb", "git", "figma", "material-ui",
+      //   "axios", "jwt","rest-api"
+      //     ];
+      
+
+//       const slugs = [
+//   "typescript",
+//   "javascript",
+//   "dart",
+//   "java",
+//   "react",
+//   "flutter",
+//   "android",
+//   "html5",
+//   "css3",
+//   "nodedotjs",
+//   "express",
+//   "nextdotjs",
+//   "prisma",
+//   "amazonaws",
+//   "postgresql",
+//   "firebase",
+//   "nginx",
+//   "vercel",
+//   "testinglibrary",
+//   "jest",
+//   "cypress",
+//   "docker",
+//   "git",
+//   "jira",
+//   "github",
+//   "gitlab",
+//   "visualstudiocode",
+//   "androidstudio",
+//   "sonarqube",
+//   "figma",
+// ];
+
+{/* <div className={css.cloudBgn}>
+                            
+                            <IconCloud iconSlugs={iconSlugs} />
+                            </div> */}
