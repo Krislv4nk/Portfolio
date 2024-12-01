@@ -32,9 +32,9 @@ const AboutMe = () => {
           and development to create quality and innovative products.
         </p>
       </div>
+
       <ScrollableComponent>
         <h3 className={css.title}>Tech Stack, Tools and Technologies:</h3>
-
         <Marquee pauseOnHover className={css.marquee}>
           {firstRow.map((skill, index) => (
             <div key={index} className={css.skillList}>
