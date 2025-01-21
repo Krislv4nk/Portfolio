@@ -30,9 +30,21 @@ const LearnLingoPage = () => {
           </ul>
           </div>
         <div className={css.listWrapper}>
-       <motion.img className={css.imgCamper} src={cover1} alt="camper" whileHover={{ scale: 1.5 }}/>
-              <motion.img className={css.imgCamper} src={cover2} alt="camper" whileHover={{ scale: 1.5 }}/>
-              <motion.img  className={css.imgCamper} src={cover3} alt="camper" whileHover={{ scale: 1.5 }}/>
+       <motion.img className={css.imgCamper} src={cover1} alt="camper" whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' }, 
+  }}
+  initial={{ scale: 1 }}/>
+              <motion.img className={css.imgCamper} src={cover2} alt="camper" whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' }, 
+  }}
+  initial={{ scale: 1 }}/>
+              <motion.img  className={css.imgCamper} src={cover3} alt="camper" whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' }, 
+  }}
+  initial={{ scale: 1 }}/>
        </div>
       </div>
       <ScrollableComponent>

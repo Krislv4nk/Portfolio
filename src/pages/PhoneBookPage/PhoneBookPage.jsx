@@ -30,8 +30,16 @@ const PhoneBookPage = () => {
         </ul>
         </div>
             <div className={css.listWrapper}>
-        <motion.img className={css.phoneBook} src={phoneBook} alt="camper" whileHover={{ scale: 1.5 }}/>
-        <motion.img  className={css.imgPhone} src={phone} alt="camper" whileHover={{ scale: 1.5 }}/>
+        <motion.img className={css.phoneBook} src={phoneBook} alt="camper" whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' }, 
+  }}
+  initial={{ scale: 1 }}/>
+        <motion.img  className={css.imgPhone} src={phone} alt="camper" whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' }, 
+  }}
+  initial={{ scale: 1 }}/>
       </div>
       </div>
     <ScrollableComponent>

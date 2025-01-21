@@ -1,32 +1,38 @@
 
 
-import { NavLink } from 'react-router-dom';
+
 import { Footer } from './Footer/Footer';
 import css from './Header.module.css';
 
 export const Header = () => {
+
+  const handleScrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
-    <header className={css.header}>
-      <Footer/>
+
+<header className={css.header}>
+      <Footer />
       <nav className={css.wrapper}>
         <ul className={css.headerList}>
           <li className={css.linkItem}>
-            
-              <NavLink 
-                to="/" 
-                title="About me"
-                className={({ isActive }) => `${css.headerItem} ${isActive ? css.active : ''}`} 
-              >About me</NavLink>
-           
+            <button
+              onClick={() => handleScrollToSection('about-me')}
+              className={({ isActive }) => `${css.headerItem} ${isActive ? css.active : ''}`}
+            >
+              About me
+            </button>
           </li>
           <li className={css.linkItem}>
-           
-              <NavLink 
-                to="/ProjectsPage" 
-                title="Projects"
-                className={({ isActive }) => `${css.headerItem} ${isActive ? css.active : ''}`} 
-            >Projects</NavLink>
-           
+            <button
+              onClick={() => handleScrollToSection('projects')}
+              className={({ isActive }) => `${css.headerItem} ${isActive ? css.active : ''}`}
+            >
+              Projects
+            </button>
           </li>
         </ul>
       </nav>

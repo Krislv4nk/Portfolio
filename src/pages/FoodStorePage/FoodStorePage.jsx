@@ -31,8 +31,16 @@ const FoodStorePage = () => {
         </ul>
         </div>
             <div className={css.listWrapper}>
-    <motion.img className={css.imgCamper} src={food} alt="camper" whileHover={{ scale: 1.5 }}/>
-        <motion.img  className={css.imgCamper} src={food1} alt="camper" whileHover={{ scale: 1.5 }}/>
+    <motion.img className={css.imgCamper} src={food} alt="camper" whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' }, 
+  }}
+  initial={{ scale: 1 }}/>
+        <motion.img  className={css.imgCamper} src={food1} alt="camper" whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' }, 
+  }}
+  initial={{ scale: 1 }}/>
       </div>
       </div>
     <ScrollableComponent>

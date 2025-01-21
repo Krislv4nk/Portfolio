@@ -67,7 +67,11 @@ const AboutMe = () => {
                 className={css.cv}
                 src={certificate}
                 alt="cv"
-                whileHover={{ scale: 1.5 }}
+                whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' }, 
+  }}
+  initial={{ scale: 1 }} 
               />
             </Link>
           </div>
@@ -86,7 +90,11 @@ const AboutMe = () => {
                 className={css.cv}
                 src={cv}
                 alt="cv"
-                whileHover={{ scale: 1.5 }}
+                whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' },
+  }}
+  initial={{ scale: 1 }} 
               />
             </Link>
           </div>

@@ -43,9 +43,21 @@ const WaterTrackerPage = () => {
       </ul>
       </div>
       <div className={css.listWrapper}>
-       <motion.img src={water} alt="water" className={css.imgCamper} whileHover={{ scale: 1.3 }}/>
-              <motion.img src={water1} alt="water" className={css.imgCamper} whileHover={{ scale: 1.3 }}/>
-              <motion.img src={water2} alt="water" className={css.imgCamper} whileHover={{ scale: 1.3 }}/>
+       <motion.img src={water} alt="water" className={css.imgCamper} whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' }, 
+  }}
+  initial={{ scale: 1 }}/>
+              <motion.img src={water1} alt="water" className={css.imgCamper} whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' }, 
+  }}
+  initial={{ scale: 1 }}/>
+              <motion.img src={water2} alt="water" className={css.imgCamper} whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' }, 
+  }}
+  initial={{ scale: 1 }}/>
       </div>
             </div>
     <ScrollableComponent>
