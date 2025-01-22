@@ -6,7 +6,7 @@ import certificate from "../../assets/certificate.jpg";
 import myPhoto from "../../assets/img/mainPhoto.png";
 import { ScrollableComponent } from "../../components/ScrollableComponent/ScrollableComponent";
 import { Marquee } from "../../components/Marquee/Marquee.tsx";
-
+// import icons from "../../assets/sprite.svg";
 
 const AboutMe = () => {
   const skills = [
@@ -39,7 +39,11 @@ const AboutMe = () => {
         <Marquee pauseOnHover className={css.marquee}>
           {firstRow.map((skill, index) => (
             <div key={index} className={css.skillList}>
-              <span className={css.item}>{skill}</span>
+              <span className={css.item}>
+                {/* <svg className={css.icon}>
+        <use href={`${icons}#icon-${skill}`} />
+              </svg> */}
+                {skill}</span>
             </div>
           ))}
         </Marquee>
