@@ -6,18 +6,28 @@ import certificate from "../../assets/certificate.jpg";
 import myPhoto from "../../assets/img/mainPhoto.png";
 import { ScrollableComponent } from "../../components/ScrollableComponent/ScrollableComponent";
 import { Marquee } from "../../components/Marquee/Marquee.tsx";
-// import icons from "../../assets/sprite.svg";
+import { Icons } from "../../components/Icons/Icons.tsx";
+
 
 const AboutMe = () => {
   const skills = [
     "React", "JavaScript", "Node.js", "CSS", "HTML",
-    "Next.js", "TypeScript", "Axios", "MongoDB", "Material-UI", "Redux", "Express.js",
+    "Next.js", "TypeScript",
+    "Axios", "MongoDB", "Material-UI", "Redux", "Express.js", "Firebase",
     "Git", "GitHub", "VS Code", "Figma", "@emotion/styled", "Postman", "Vite",
     "Nodemailer", "JWT", "Nodemon", "Yup", "Formik", "TailwindCSS", "SASS",
-    "CssGrid", "Parcel", "i18next", "ChatGPT",
+    "CssGrid", "Parcel", "i18next", "Vercel", "ChatGPT", "REST API"
   ];
-
+const iconSlugs = [
+  "react", "javascript", "node-dot-js", "css3", "html5", 
+  "nextdotjs", "typescript",
+  "axios", "mongodb", "material-ui", "redux", "express", "firebase",
+  "git", "github", "visualstudiocode", "figma", "emotionstyled", "Postman", "vite",
+  "nodemailer", "jwt", "nodemon", "yup", "formik", "tailwindcss", "sass", "cssgrid", "parcel", "i18next", "vercel", "chatgpt","rest-api"
+  ];
   
+  
+
   const firstRow = skills.slice(0, Math.ceil(skills.length / 2));
   const secondRow = skills.slice(Math.ceil(skills.length / 2));
 
@@ -40,9 +50,7 @@ const AboutMe = () => {
           {firstRow.map((skill, index) => (
             <div key={index} className={css.skillList}>
               <span className={css.item}>
-                {/* <svg className={css.icon}>
-        <use href={`${icons}#icon-${skill}`} />
-              </svg> */}
+                <Icons iconSlugs={[iconSlugs[index]]} />
                 {skill}</span>
             </div>
           ))}
@@ -51,7 +59,9 @@ const AboutMe = () => {
         <Marquee reverse pauseOnHover className={css.marquee}>
           {secondRow.map((skill, index) => (
             <div key={index} className={css.skillList}>
-              <span className={css.item}>{skill}</span>
+              <span className={css.item}>
+                <Icons iconSlugs={[iconSlugs[firstRow.length + index]]} />
+                {skill}</span>
             </div>
           ))}
         </Marquee>

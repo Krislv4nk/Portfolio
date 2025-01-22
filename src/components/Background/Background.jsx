@@ -18,7 +18,7 @@ export const Background = () => {
 
   const options = useMemo(
     () => ({
-     fpsLimit: 20,
+     fpsLimit: 70,
       interactivity: {
        
         modes: {
@@ -67,7 +67,7 @@ export const Background = () => {
           density: {
             enable: true,
           },
-          value: 20,
+          value: 60,
         },
         opacity: {
           value: { min: 0.1, max: 0.2 }, 
@@ -81,7 +81,7 @@ export const Background = () => {
           type: "circle",
         },
         size: {
-          value: { min: 10, max: 30 },
+          value: { min: 5, max: 8 },
           
         },
         shadow: {
