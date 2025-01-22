@@ -1,5 +1,5 @@
 import css from '../CamperClubPage/CamperClubPage.module.css';
-import icons from '../../assets/img/symbol-defs.svg';
+import icons from '../../assets/sprite.svg';
 import phone from '../../assets/img/phone.png';
 import phoneBook from '../../assets/img/phone-book.png';
 import { Link } from 'react-router-dom';

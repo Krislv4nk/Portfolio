@@ -3,7 +3,7 @@ import cover1 from '../../assets/img/cover1.jpg';
 import cover2 from '../../assets/img/cover2.jpg';
 import cover3 from '../../assets/img/cover3.jpg';
 import css from '../CamperClubPage/CamperClubPage.module.css';
-import icons from '../../assets/img/symbol-defs.svg';
+import icons from '../../assets/sprite.svg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ScrollableComponent } from '../../components/ScrollableComponent/ScrollableComponent';
@@ -60,7 +60,7 @@ const LearnLingoPage = () => {
             <li className={css.featuresItem}> Teacher Cards: The Teachers page shows teacher profiles in card format with an option to load more. Users can favorite teachers with a “heart” button. Favorites are saved in Firebase or localStorage for authorized users.</li>
             <li className={css.featuresItem}> Interactivity: Favorites persist on page refresh. Users can remove favorites, access detailed teacher info, and book trial lessons through modal forms.</li >
               <li className={css.featuresItem}> Private Favorites Page: Authorized users can view their saved favorite teachers on a dedicated page.</li >
-              <li className={css.featuresItem}> Color Palette Customization: Users can adjust the app's color scheme to their preference..</li >
+              <li className={css.featuresItem}> Color Palette Customization: Users can adjust the app&apos;s color scheme to their preference..</li >
             </ul >
           <h4 className={css.descriptionTitle}>Tools: </h4>
             <ul className={css.toolsList}>

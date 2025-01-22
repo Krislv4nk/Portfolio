@@ -21,7 +21,7 @@ export const Header = () => {
           <li className={css.linkItem}>
             <button
               onClick={() => handleScrollToSection('about-me')}
-              className={({ isActive }) => `${css.headerItem} ${isActive ? css.active : ''}`}
+              className={css.headerItem}
             >
               About me
             </button>
@@ -29,7 +29,7 @@ export const Header = () => {
           <li className={css.linkItem}>
             <button
               onClick={() => handleScrollToSection('projects')}
-              className={({ isActive }) => `${css.headerItem} ${isActive ? css.active : ''}`}
+              className={css.headerItem}
             >
               Projects
             </button>

@@ -7,6 +7,7 @@ import myPhoto from "../../assets/img/mainPhoto.png";
 import { ScrollableComponent } from "../../components/ScrollableComponent/ScrollableComponent";
 import { Marquee } from "../../components/Marquee/Marquee.tsx";
 
+
 const AboutMe = () => {
   const skills = [
     "React", "JavaScript", "Node.js", "CSS", "HTML",

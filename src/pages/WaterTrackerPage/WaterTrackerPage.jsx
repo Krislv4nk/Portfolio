@@ -1,5 +1,5 @@
 import css from '../CamperClubPage/CamperClubPage.module.css';
-import icons from '../../assets/img/symbol-defs.svg';
+import icons from '../../assets/sprite.svg';
 import water from '../../assets/img/water.jpg';
 import water1 from '../../assets/img/water1.jpg';
 import water2 from '../../assets/img/water2.jpg';
@@ -80,7 +80,7 @@ const WaterTrackerPage = () => {
 
 <li className={css.featuresItem}> Adaptation for Different Devices: The application is optimized for various devices, including desktops, tablets, and mobile phones. It utilizes responsive design principles to ensure a seamless user experience across different screen sizes and resolutions.
 
-      By incorporating these enhancements, the description provides a clearer understanding of the Water-Tracker-APP project's functionality and features, encompassing both frontend and backend components.</li >
+      By incorporating these enhancements, the description provides a clearer understanding of the Water-Tracker-APP project&apos;s functionality and features, encompassing both frontend and backend components.</li >
     </ul>
     <h4 className={css.descriptionTitle}>Tools: </h4>
           

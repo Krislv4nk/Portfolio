@@ -49,7 +49,7 @@ const ProjectsPage = () => {
 
     return (
         <div className={css.wrapper}>
-            <h3 className={css.title}>
+                       <h3 className={css.title}>
                 Let me show you what I have created
             </h3>
             <ul className={css.list}>
@@ -77,8 +77,9 @@ const ProjectsPage = () => {
                             <span className={css.spanName}>{name}</span>
                         </button>
                     </li>
+                    
                 ))}
-            </ul>
+                </ul>
             <div className={css.tabContent}>{renderTabContent()}</div>
         </div>
     );

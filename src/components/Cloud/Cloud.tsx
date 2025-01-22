@@ -12,7 +12,7 @@ import {
   renderSimpleIcon,
   SimpleIcon,
 } from "react-icon-cloud";
-import React from "react";
+import * as React from "react";
 
 export const cloudProps: Omit<ICloud, "children"> = {
   containerProps: {

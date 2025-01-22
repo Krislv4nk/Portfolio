@@ -13,7 +13,7 @@
 .titleContainer {
   display: flex;
   gap: 90px;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   margin-bottom: 50px;
 }
@@ -108,7 +108,7 @@
     white-space: nowrap;
   text-decoration: underline;
 text-decoration-skip-ink: none;
-    font-size: 25px;
+    font-size: 30px;
      padding: 8px 16px;
   color: #ffffff;;
   display: block;
@@ -141,38 +141,38 @@ text-decoration-skip-ink: none;
 
   
   .descriptionTitle {
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 20px;
     text-align: start;
   }
   .featuresList {
   text-align: start;
   display: block;
-  font-size: 18px;
+  font-size: 23px;
   gap: 10px;
   margin-bottom: 20px;
   padding-left: 20px; 
 }
   .description {
     margin-bottom: 35px;
-    font-size: 18px;
+    font-size: 23px;
     text-align: start;
   }
   .toolsList {
     display: flex;
     flex-wrap: wrap;
-    font-size: 18px;
+    font-size: 23px;
     gap: 10px;
     margin-bottom: 20px;
     text-align: start;
   }
   .featuresItem {
-  font-size: 18px;
+  font-size: 23px;
   list-style: disc; 
   list-style-position: inside; 
 }
   .tool {
-    font-size: 18px;
+    font-size: 23px;
     text-align: start;
   }
   .imgWater {

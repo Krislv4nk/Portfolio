@@ -1,5 +1,5 @@
 import css from '../CamperClubPage/CamperClubPage.module.css';
-import icons from '../../assets/img/symbol-defs.svg';
+import icons from '../../assets/sprite.svg';
 import food from '../../assets/img/food.jpg';
 import food1 from '../../assets/img/food2.jpg'
 import { Link } from 'react-router-dom';
