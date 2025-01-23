@@ -3,15 +3,10 @@
 import { useTransition, animated } from 'react-spring';
 import { useLocation, Routes, Route } from 'react-router-dom';
 import SharedLayout from 'components/SharedLayout/SharedLayout';
-import LearnLingoPage from 'pages/LearnLingoPage/LearnLingoPage';
-import CamperClubPage from 'pages/CamperClubPage/CamperClubPage';
-import WaterTrackerPage from 'pages/WaterTrackerPage/WaterTrackerPage';
 import ErrorPage from 'pages/ErrorPage/ErrorPage';
-import FoodStorePage from 'pages/FoodStorePage/FoodStorePage';
-import PhoneBookPage from 'pages/PhoneBookPage/PhoneBookPage'; 
-import AboutAndProjects from 'pages/AboutAndProjects/AboutAndProjects'
-// import ProjectsPage from 'pages/ProjectsPage/ProjectsPage';
-// import AboutMe from 'pages/AboutMe/AboutMe';
+import AboutAndProjects from 'pages/AboutAndProjects/AboutAndProjects';
+
+
 
 function App() {
   const location = useLocation();
@@ -32,15 +27,8 @@ function App() {
           <Routes location={item}>
             <Route path="/" element={<SharedLayout />}>
               <Route index element={<AboutAndProjects />} />
-              <Route path="LearnLingo" element={<LearnLingoPage />} />
-              <Route path="CamperClub" element={<CamperClubPage />} />
-              <Route path="WaterTracker" element={<WaterTrackerPage />} />
-              <Route path="PhoneBook" element={<PhoneBookPage />} />
-              <Route path="FoodStore" element={<FoodStorePage />} />
               <Route path="*" element={<ErrorPage />} />
             </Route>
-
-
           </Routes>
         </animated.div>
       ))}

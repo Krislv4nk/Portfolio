@@ -1,10 +1,10 @@
 import css from '../CamperClubPage/CamperClubPage.module.css';
-import icons from '../../assets/sprite.svg';
-import food from '../../assets/img/food.jpg';
-import food1 from '../../assets/img/food2.jpg'
+import icons from '../../../assets/sprite.svg';
+import food from '../../../assets/img/food.jpg';
+import food1 from '../../../assets/img/food2.jpg'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ScrollableComponent } from '../../components/ScrollableComponent/ScrollableComponent';
+import { ScrollableComponent } from '../../ScrollableComponent/ScrollableComponent';
 
 
 const FoodStorePage = () => {

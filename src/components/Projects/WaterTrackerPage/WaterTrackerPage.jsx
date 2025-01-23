@@ -1,11 +1,11 @@
 import css from '../CamperClubPage/CamperClubPage.module.css';
-import icons from '../../assets/sprite.svg';
-import water from '../../assets/img/water.jpg';
-import water1 from '../../assets/img/water1.jpg';
-import water2 from '../../assets/img/water2.jpg';
+import icons from '../../../assets/sprite.svg';
+import water from '../../../assets/img/water.jpg';
+import water1 from '../../../assets/img/water1.jpg';
+import water2 from '../../../assets/img/water2.jpg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ScrollableComponent } from '../../components/ScrollableComponent/ScrollableComponent';
+import { ScrollableComponent } from '../../ScrollableComponent/ScrollableComponent';
 
 
 

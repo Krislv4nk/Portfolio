@@ -1,12 +1,12 @@
 
 
-import camper from '../../assets/img/camper.png';
-import camperA from '../../assets/img/camper-1.png';
+import camper from '../../../assets/img/camper.png';
+import camperA from '../../../assets/img/camper-1.png';
 import css from './CamperClubPage.module.css';
-import icons from '../../assets/sprite.svg';
+import icons from '../../../assets/sprite.svg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ScrollableComponent } from '../../components/ScrollableComponent/ScrollableComponent';
+import { ScrollableComponent } from '../../ScrollableComponent/ScrollableComponent';
 
 const CamperClubPage = () => {
 

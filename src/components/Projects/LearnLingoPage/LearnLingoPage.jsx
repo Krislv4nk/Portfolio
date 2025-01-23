@@ -1,12 +1,12 @@
 
-import cover1 from '../../assets/img/cover1.jpg';
-import cover2 from '../../assets/img/cover2.jpg';
-import cover3 from '../../assets/img/cover3.jpg';
+import cover1 from '../../../assets/img/cover1.jpg';
+import cover2 from '../../../assets/img/cover2.jpg';
+import cover3 from '../../../assets/img/cover3.jpg';
 import css from '../CamperClubPage/CamperClubPage.module.css';
-import icons from '../../assets/sprite.svg';
+import icons from '../../../assets/sprite.svg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ScrollableComponent } from '../../components/ScrollableComponent/ScrollableComponent';
+import { ScrollableComponent } from '../../ScrollableComponent/ScrollableComponent';
 
 const LearnLingoPage = () => {
 
