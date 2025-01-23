@@ -11,9 +11,17 @@
 
 }
 
-.helloSpan {
+.helloDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.helloTitle {
   font-size: 65px;
   font-weight: 700;
+  animation: slide-up 4s 2s forwards;
 }
 
 
@@ -23,15 +31,27 @@
         transform: translateY(0);
     }
 }
+
+@keyframes slideInFromRight {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
 .text {
     text-align: left;
     font-size: 20px;
     font-weight: 400;
-    margin: 100px 0px;
     color: #ffffff;
      opacity: 0;
     transform: translateY(100px);
-    animation: slide-up 1s 1s forwards;
+    animation: slideInFromRight 2s 1s forwards;
+    /* animation: slide-up 3s 1s forwards; */
      background-color: rgba(0, 0, 0, 0.729);
     padding: 10px 20px;
   border-radius: 20px;
@@ -60,7 +80,7 @@
 }
 .skillList {
   display: flex;
-  gap: 50px;
+  gap: 70px;
 margin: 30px 0px;
 }
 .item {
@@ -81,7 +101,7 @@ background: linear-gradient(90deg, #000000, #202020, #383838, #202020, #000000);
 display: flex;
 align-items: center;
 flex-direction: column;
-gap: 10px;
+gap: 20px;
 }
 
 .icon {
