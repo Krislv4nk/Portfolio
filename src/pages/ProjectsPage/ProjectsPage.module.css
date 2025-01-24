@@ -29,43 +29,17 @@ font-size: 50px;
     margin-bottom: 70px;
 }
 
-/* .item {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  padding: 20px;
-  background-color: transparent;
-   font-family: 'Roboto', cursive;
-    cursor: pointer; 
-    transition: all 0.3s;
-    width: auto;
-    height: auto;
-    border: none;
-}
 
-.spanName {
-border-radius: 20px;
-padding: 10px 20px;
-border: 1px solid rgba(240, 237, 237, 0.1);
-    box-shadow: 0 0 10px rgba(240, 237, 237, 0.1);
-    background: linear-gradient(90deg, #000000, #202020, #383838, #202020, #000000);
-    width: auto;
-    height: auto;
-    color: #ffffff;
-  font-size: 25px;
-  font-weight: 600;
-}
-  
+
 .list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    gap: 30px;
     margin: 0px auto;
-    width: auto;
-} */
+    flex-direction: column;
+}
+
+
+
 
 @keyframes slideInFromRight {
             0% {

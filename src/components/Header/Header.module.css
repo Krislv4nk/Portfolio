@@ -54,7 +54,7 @@ border: 1px solid rgba(240, 237, 237, 0.1);
     gap: 70px;
     border-radius: 20px;
     padding: 10px 20px;
-   background: linear-gradient(90deg, #000000, #202020, #383838, #202020, #000000);
+   background: linear-gradient(90deg, #000000, #202020, #000000);
   box-shadow: 0 0 10px rgba(240, 237, 237, 0.1);
 }
 

@@ -1,3 +1,5 @@
+
+import { useState } from 'react';
 import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../../assets/sprite.svg';
 import phone from '../../../assets/img/phone.png';
@@ -8,10 +10,27 @@ import { ScrollableComponent } from '../../ScrollableComponent/ScrollableCompone
 
 
 const PhoneBookPage = () => {
-  return <div className={css.wrapperRight}>
+  const [isExpanded, setIsExpanded] = useState(false);
+  
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+  return <div className={`${css.wrapperRight} ${isExpanded ? css.expanded : ''}`}>
     <div className={css.titleContainer}>
-        <div>
-    <h2 className={css.title}>PhoneBook</h2>
+      <h2 className={css.title}>PhoneBook</h2>
+        <div className={css.container}>
+  <div className={css.listWrapper}>
+        <motion.img className={css.phoneBook} src={phoneBook} alt="camper" whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' }, 
+  }}
+  initial={{ scale: 1 }}/>
+        <motion.img  className={css.imgPhone} src={phone} alt="camper" whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' }, 
+  }}
+  initial={{ scale: 1 }}/>
+      </div>
     <ul className={css.linksWrapper}>
       <li className={css.linksItem}>
                 <svg className={css.repoLinkIcon} >
@@ -29,21 +48,13 @@ const PhoneBookPage = () => {
               </li>
         </ul>
         </div>
-            <div className={css.listWrapper}>
-        <motion.img className={css.phoneBook} src={phoneBook} alt="camper" whileHover={{
-    scale: 1.5, 
-    transition: { duration: 0.5, ease: 'easeInOut' }, 
-  }}
-  initial={{ scale: 1 }}/>
-        <motion.img  className={css.imgPhone} src={phone} alt="camper" whileHover={{
-    scale: 1.5, 
-    transition: { duration: 0.5, ease: 'easeInOut' }, 
-  }}
-  initial={{ scale: 1 }}/>
-      </div>
-      </div>
-    <ScrollableComponent>
-      <div className={css.descriptionWrapper}>
+    </div>
+    <button className={css.toggleExpand} onClick={toggleExpand} type='button'>
+              {isExpanded ? 'Show less' : 'Read more'}
+          </button>
+    {isExpanded && (
+      <ScrollableComponent>
+        <div className={css.descriptionWrapper}>
           <h4 className={css.descriptionTitle}>Individual project</h4>
 
           <p className={css.description}>Within this individual project, I implemented restricted routes accessible
@@ -59,18 +70,19 @@ const PhoneBookPage = () => {
             styling icons and interface components. This project is implemented following best practices in web
             development and
             includes testing to confirm its functionality</p>
-    <h4 className={css.descriptionTitle}>Tools: </h4>
-              <ul className={css.toolsList} >
-                <li className={css.tool}>React,</li>
-                <li className={css.tool}>Redux,</li>
-                <li className={css.tool}>MUi (Material-UI),</li>
-                <li className={css.tool}>Axios,</li>
-                <li className={css.tool}>Formik,</li>
-                <li className={css.tool}>Yup;</li>
-              </ul>
+          <h4 className={css.descriptionTitle}>Tools: </h4>
+          <ul className={css.toolsList} >
+            <li className={css.tool}>React,</li>
+            <li className={css.tool}>Redux,</li>
+            <li className={css.tool}>MUi (Material-UI),</li>
+            <li className={css.tool}>Axios,</li>
+            <li className={css.tool}>Formik,</li>
+            <li className={css.tool}>Yup;</li>
+          </ul>
           <p className={css.description}>Duration: 2 weeks</p>
-</div>
-   </ScrollableComponent>
+        </div>
+      </ScrollableComponent>
+    )};
             </div >;
 };
 

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../../assets/sprite.svg';
 import food from '../../../assets/img/food.jpg';
@@ -8,10 +9,27 @@ import { ScrollableComponent } from '../../ScrollableComponent/ScrollableCompone
 
 
 const FoodStorePage = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+    
+    const toggleExpand = () => {
+      setIsExpanded(!isExpanded);
+    };
   return <div className={css.wrapper}>
     <div className={css.titleContainer}>
-        <div>
-    <h2 className={css.title}>FoodStore</h2>
+        <h2 className={css.title}>FoodStore</h2>
+        <div className={css.container}>
+        <div className={css.listWrapper}>
+    <motion.img className={css.imgCamper} src={food} alt="camper" whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' }, 
+  }}
+  initial={{ scale: 1 }}/>
+        <motion.img  className={css.imgCamper} src={food1} alt="camper" whileHover={{
+    scale: 1.5, 
+    transition: { duration: 0.5, ease: 'easeInOut' }, 
+  }}
+  initial={{ scale: 1 }}/>
+      </div>
       <ul className={css.linksWrapper}>
           
       <li className={css.linksItem}>
@@ -30,21 +48,13 @@ const FoodStorePage = () => {
               </li>
         </ul>
         </div>
-            <div className={css.listWrapper}>
-    <motion.img className={css.imgCamper} src={food} alt="camper" whileHover={{
-    scale: 1.5, 
-    transition: { duration: 0.5, ease: 'easeInOut' }, 
-  }}
-  initial={{ scale: 1 }}/>
-        <motion.img  className={css.imgCamper} src={food1} alt="camper" whileHover={{
-    scale: 1.5, 
-    transition: { duration: 0.5, ease: 'easeInOut' }, 
-  }}
-  initial={{ scale: 1 }}/>
-      </div>
-      </div>
-    <ScrollableComponent>
-      <div className={css.descriptionWrapper}>
+    </div>
+    <button className={css.toggleExpand} onClick={toggleExpand} type='button'>
+              {isExpanded ? 'Show less' : 'Read more'}
+          </button>
+    {isExpanded && (
+      <ScrollableComponent>
+        <div className={css.descriptionWrapper}>
           <h4 className={css.descriptionTitle}>Team project</h4>
 
           <p className={css.description}>For the Food-Store project, I collaborated as part of a team working with
@@ -68,9 +78,10 @@ const FoodStorePage = () => {
             effectively within a team to deliver a high-quality web application that meets both client requirements and
             user
             expectations.</p>
-        <p className={css.description}>Duration: 1 week</p>
+          <p className={css.description}>Duration: 1 week</p>
         </div>
-    </ScrollableComponent>
+      </ScrollableComponent>
+    )};
     </div >;
     };
 

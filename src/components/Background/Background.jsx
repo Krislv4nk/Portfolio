@@ -47,7 +47,7 @@ export const Background = () => {
           value: "#00baff",
           animation: {
             enable: true,
-            speed: 10,
+            speed: 5,
             sync: true,
           }
         },
