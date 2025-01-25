@@ -10,7 +10,6 @@ const ProjectsPage = () => {
     return (
         <div className={css.wrapper}>
             <h3 className={css.title}>Let me show you what I have created</h3>
-            
                 <ul className={css.list}>
                     <li><LearnLingoPage /></li>
                     <li><CamperClubPage /></li>
