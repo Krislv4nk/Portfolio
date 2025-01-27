@@ -38,8 +38,6 @@ const AboutMe = () => {
           </p>
           </div>
       </div>
-
-      <ScrollableComponent>
         <h3 className={css.title}>Tech Stack, Tools and Technologies:</h3>
         <Marquee pauseOnHover className={css.marquee}>
           {firstRow.map(({ name, iconId }, index) => (
@@ -57,7 +55,6 @@ const AboutMe = () => {
             </div>
           ))}
         </Marquee>
-      </ScrollableComponent>
       <ScrollableComponent>
         <div className={css.docBox}>
           <div className={css.education}>
