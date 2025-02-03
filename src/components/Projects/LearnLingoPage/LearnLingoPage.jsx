@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import cover1 from '../../../assets/img/cover1.jpg';
 import cover2 from '../../../assets/img/cover2.jpg';
@@ -9,9 +8,11 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ScrollableComponent } from '../../ScrollableComponent/ScrollableComponent';
 
+
+
+
 const LearnLingoPage = () => {
 const [isExpanded, setIsExpanded] = useState(false);
-  
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
@@ -54,7 +55,7 @@ const [isExpanded, setIsExpanded] = useState(false);
       <button className={css.toggleExpand} onClick={toggleExpand} type='button'>
                 {isExpanded ? 'Show less' : 'Read more'}
             </button>
-      {isExpanded && (
+       {isExpanded && (
         <ScrollableComponent>
           <div className={css.descriptionWrapper}>
             <h4 className={css.descriptionTitle}>Individual Project</h4>
@@ -84,7 +85,7 @@ const [isExpanded, setIsExpanded] = useState(false);
             <p className={css.description}>Duration: 6 weeks</p>
           </div>
         </ScrollableComponent>
-      )}
+      )};
     </div>
   );
 };

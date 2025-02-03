@@ -48,7 +48,7 @@ const CamperClubPage = () => {
        <button className={css.toggleExpand} onClick={toggleExpand} type='button'>
           {isExpanded ? 'Show less' : 'Read more'}
       </button>
-      {isExpanded && (
+       {isExpanded && (
         <ScrollableComponent>
           <div className={css.descriptionWrapper}>
             <h4 className={css.descriptionTitle}>Individual Project</h4>
@@ -83,7 +83,7 @@ const CamperClubPage = () => {
             <p className={css.description}>Duration: 3 weeks</p>
           </div>
         </ScrollableComponent>
-      )}
+      )};
     </div>
   );
 };

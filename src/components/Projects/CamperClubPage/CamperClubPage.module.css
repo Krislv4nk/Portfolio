@@ -180,7 +180,9 @@ border: 1px solid rgba(240, 237, 237, 0.1);
   animation: left-edge 0.5s linear 1;
 }
   
-
+.expanded {
+  overflow: hidden;
+}
   .descriptionTitle {
     font-size: 25px;
     margin-bottom: 20px;
