@@ -68,7 +68,7 @@ height: auto;
   animation: neonRainbow 1.5s infinite alternate;
 }
 
-/* @keyframes neonRainbow {
+@keyframes neonRainbow {
   0% {
     box-shadow: 0 0 5px #ff0099, 0 0 10px #ff0099, 0 0 15px #ff0099, 0 0 20px #ff0099, 0 0 25px #ff0099;
   }
@@ -87,4 +87,4 @@ height: auto;
   100% {
     box-shadow: 0 0 5px #3399ff, 0 0 10px #3399ff, 0 0 15px #3399ff, 0 0 20px #3399ff, 0 0 25px #3399ff;
   }
-} */
+}

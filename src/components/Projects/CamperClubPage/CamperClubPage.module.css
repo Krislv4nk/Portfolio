@@ -11,10 +11,9 @@
   animation: slideInFromLeft 2s ease-in-out forwards;
     position: relative;
     border-radius: 20px;
-    border: 1px solid rgba(240, 237, 237, 0.1);
+    border: 2px solid rgba(240, 237, 237, 0.1);
   box-shadow: 0 0 10px rgba(240, 237, 237, 0.1),
-    0 0 20px rgba(240, 237, 237, 0.1),
-    0 0 30px rgba(240, 237, 237, 0.1);
+    0 0 20px rgba(240, 237, 237, 0.1);
 }
 .titleContainer {
   display: flex;
@@ -40,22 +39,21 @@ flex-direction: column;
   animation: slideInFromRight 2s ease-in-out forwards;
     position: relative;
     border-radius: 20px;
-    border: 1px solid rgba(240, 237, 237, 0.1);
+    border: 2px solid rgba(240, 237, 237, 0.1);
   box-shadow: 0 0 10px rgba(240, 237, 237, 0.1),
-    0 0 20px rgba(240, 237, 237, 0.1),
-    0 0 30px rgba(240, 237, 237, 0.1);
+    0 0 20px rgba(240, 237, 237, 0.1);
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
 
-}
-@keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
 
 .wrapperRight:hover, .wrapper:hover {
   background: linear-gradient(84deg , rgba(12, 12, 12, 0.953) 0%, rgba(6, 6, 22, 0.953) 70%, rgb(9, 9, 9) 100%);
+  box-shadow: 0 0 30px rgba(240, 237, 237, 0.1),
+  0 0 40px rgba(240, 237, 237, 0.1);
 }
-
+.wrapperRight:hover .title, .wrapper:hover .title {
+  font-size: 40px;
+}
 
 
 @keyframes slideInFromRight {
@@ -85,6 +83,7 @@ flex-direction: column;
     font-weight: 600;
     margin-bottom: 20px;
     margin-top: 20px;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
 }
 .listWrapper {
     display: flex;

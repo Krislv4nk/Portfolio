@@ -17,15 +17,15 @@
 }
 
 .title {
-  background: linear-gradient(84deg, #9845e8, #33d2ff, #dd5789);
+  background: linear-gradient(84deg, #9845e8, #33d2ff, #dd5789, #24b832);
   background-size: 200% 200%;
   animation: gradient 4s ease infinite;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 10px 20px;
   border-radius: 20px;
-font-size: 50px;
-    font-weight: 700;
+font-size: 55px;
+    font-weight: 900;
     margin-bottom: 70px;
 }
 
