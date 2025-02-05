@@ -4,7 +4,6 @@ import css from "./AboutMe.module.css";
 import cv from "../../assets/cv.jpg";
 import certificate from "../../assets/certificate.jpg";
 import myPhoto from "../../assets/img/mainPhoto.png";
-import { ScrollableComponent } from "../../components/ScrollableComponent/ScrollableComponent";
 import { Marquee } from "../../components/Marquee/Marquee.tsx";
 import { skills } from "../../lib/variables/variables";
 import Icon from "../../components/Icon/Icon";
@@ -55,7 +54,6 @@ const AboutMe = () => {
             </div>
           ))}
         </Marquee>
-      <ScrollableComponent>
         <div className={css.docBox}>
           <div className={css.education}>
             <h3 className={css.title}>Education</h3>
@@ -91,7 +89,7 @@ const AboutMe = () => {
               }
             >
               <motion.img
-                className={css.cv}
+                className={css.cvRight}
                 src={cv}
                 alt="cv"
                 whileHover={{
@@ -103,7 +101,6 @@ const AboutMe = () => {
             </Link>
           </div>
         </div>
-      </ScrollableComponent>
     </div>
   );
 };

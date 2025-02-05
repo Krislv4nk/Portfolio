@@ -49,9 +49,6 @@ const FoodStorePage = () => {
         </ul>
         </div>
     </div>
-    <button className={css.toggleExpand} onClick={toggleExpand} type='button'>
-              {isExpanded ? 'Show less' : 'Read more'}
-          </button>
     {isExpanded && (
       <ScrollableComponent>
         <div className={css.descriptionWrapper}>
@@ -82,6 +79,9 @@ const FoodStorePage = () => {
         </div>
       </ScrollableComponent>
     )}
+     <button className={css.toggleExpand} onClick={toggleExpand} type='button'>
+              {isExpanded ? 'Show less' : 'Read more'}
+          </button>
     </div >
     };
 

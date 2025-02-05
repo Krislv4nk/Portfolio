@@ -49,9 +49,6 @@ const PhoneBookPage = () => {
         </ul>
         </div>
     </div>
-    <button className={css.toggleExpand} onClick={toggleExpand} type='button'>
-              {isExpanded ? 'Show less' : 'Read more'}
-          </button>
     {isExpanded && (
       <ScrollableComponent>
         <div className={css.descriptionWrapper}>
@@ -83,6 +80,9 @@ const PhoneBookPage = () => {
         </div>
       </ScrollableComponent>
     )}
+    <button className={css.toggleExpand} onClick={toggleExpand} type='button'>
+              {isExpanded ? 'Show less' : 'Read more'}
+          </button>
             </div >
 };
 

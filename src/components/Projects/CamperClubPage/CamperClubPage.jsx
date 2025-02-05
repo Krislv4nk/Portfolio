@@ -19,36 +19,33 @@ const CamperClubPage = () => {
       <div className={css.titleContainer}>
         <h2 className={css.title}>CamperClub</h2>
         <div className={css.container}>
-  <div className={css.listWrapper}>
-       <motion.img className={css.imgCamper} src={camper} alt="camper" whileHover={{
-    scale: 1.5, 
-    transition: { duration: 0.5, ease: 'easeInOut' }, 
-  }}
-  initial={{ scale: 1 }}/>
-        <motion.img  className={css.imgCamper} src={camperA} alt="camper" whileHover={{
-    scale: 1.5, 
-    transition: { duration: 0.5, ease: 'easeInOut' }, 
-  }}
-  initial={{ scale: 1 }}/>
-        </div>
-      <ul className={css.linksWrapper}>
-           <li className={css.linksItem}> <svg className={css.repoLinkIcon}>
-          <use href={`${icons}#icon-link`}></use>
-        </svg>
+          <div className={css.listWrapper}>
+            <motion.img className={css.imgCamper} src={camper} alt="camper" whileHover={{
+              scale: 1.5,
+              transition: { duration: 0.5, ease: 'easeInOut' },
+            }}
+              initial={{ scale: 1 }} />
+            <motion.img className={css.imgCamper} src={camperA} alt="camper" whileHover={{
+              scale: 1.5,
+              transition: { duration: 0.5, ease: 'easeInOut' },
+            }}
+              initial={{ scale: 1 }} />
+          </div>
+          <ul className={css.linksWrapper}>
+            <li className={css.linksItem}> <svg className={css.repoLinkIcon}>
+              <use href={`${icons}#icon-link`}></use>
+            </svg>
               <Link className={css.links} to="https://krislv4nk.github.io/CamperClub/" rel="noreferrer" target='_blank'
-            title="View Live Demo of CamperClub">Live Demo</Link></li>
-        <li className={css.linksItem}><svg className={css.repoLinkIcon}>
-          <use href={`${icons}#icon-link`}></use>
-        </svg>
+                title="View Live Demo of CamperClub">Live Demo</Link></li>
+            <li className={css.linksItem}><svg className={css.repoLinkIcon}>
+              <use href={`${icons}#icon-link`}></use>
+            </svg>
               <Link className={css.links} to="https://github.com/Krislv4nk/CamperClub" rel="noreferrer" target='_blank'
-          title="View Front-End Code on GitHub">Front-End GitHub</Link></li>
-      </ul>
-</div>
+                title="View Front-End Code on GitHub">Front-End GitHub</Link></li>
+          </ul>
+        </div>
       </div>
-       <button className={css.toggleExpand} onClick={toggleExpand} type='button'>
-          {isExpanded ? 'Show less' : 'Read more'}
-      </button>
-       {isExpanded && (
+      {isExpanded && (
         <ScrollableComponent>
           <div className={css.descriptionWrapper}>
             <h4 className={css.descriptionTitle}>Individual Project</h4>
@@ -84,6 +81,9 @@ const CamperClubPage = () => {
           </div>
         </ScrollableComponent>
       )}
+      <button className={css.toggleExpand} onClick={toggleExpand} type='button'>
+        {isExpanded ? 'Show less' : 'Read more'}
+      </button>
     </div>
   );
 };

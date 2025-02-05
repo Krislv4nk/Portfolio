@@ -8,9 +8,16 @@
     margin: auto;
    overflow: hidden;
    padding: 0px 50px;
-
+margin: 100px 0px;
 }
-
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 50px;
+    position: relative;
+}
 .helloDiv {
     display: flex;
     justify-content: center;
@@ -57,14 +64,6 @@
   border-radius: 20px;
     }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    margin-bottom: 50px;
-    position: relative;
-}
 .title {
     text-align: center;
     font-size: 40px;
@@ -145,9 +144,6 @@ gap: 20px;
     padding: 30px;
     margin-bottom: 50px;
     width: auto;
-    opacity: 0;
-    transform: translateY(100px);
-    animation: slide-up 1s 2s forwards;
 }
 .education {
     display: flex;
@@ -156,11 +152,32 @@ gap: 20px;
     justify-content: center;
     gap: 50px;
     list-style: none;
-   
 }
+
+@keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
 .cv {
    width: 300px;
     height: auto;
     border-radius: 20px;
     cursor: pointer;
+    animation: slideInFromLeft 2s ease-in-out forwards;
 }
+
+.cvRight {
+   width: 300px;
+    height: auto;
+    border-radius: 20px;
+    cursor: pointer;
+    animation: slideInFromRight 2s ease-in-out forwards;
+}
+
+
