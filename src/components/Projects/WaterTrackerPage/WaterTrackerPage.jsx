@@ -117,7 +117,7 @@ const WaterTrackerPage = () => {
               modal-window (MUI), component Background; on Back-End - Implemented logic for TodayWater component. </p>
           </div>
         </ScrollableComponent>
-      )};
+      )}
     </div>
   );
 };

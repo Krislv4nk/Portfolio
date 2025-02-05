@@ -82,8 +82,8 @@ const PhoneBookPage = () => {
           <p className={css.description}>Duration: 2 weeks</p>
         </div>
       </ScrollableComponent>
-    )};
-            </div >;
+    )}
+            </div >
 };
 
 export default PhoneBookPage;

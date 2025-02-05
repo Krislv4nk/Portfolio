@@ -85,7 +85,7 @@ const [isExpanded, setIsExpanded] = useState(false);
             <p className={css.description}>Duration: 6 weeks</p>
           </div>
         </ScrollableComponent>
-      )};
+      )}
     </div>
   );
 };

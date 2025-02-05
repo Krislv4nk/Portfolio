@@ -18,16 +18,16 @@ export const Background = () => {
 
   const options = useMemo(
     () => ({
-     fpsLimit: 70,
+     fpsLimit: 40,
       interactivity: {
        
         modes: {
           push: {
-            quantity: 4,
+            quantity: 8,
           },
           repulse: {
             distance: 200,
-            duration: 0.4,
+            duration: 0.1,
           },
         },
       },
@@ -37,7 +37,7 @@ export const Background = () => {
           value: "#00baff",
           animation: {
             enable: true,
-            speed: 10,
+            speed: 0.5,
             sync: true,
           }
         },
@@ -47,30 +47,30 @@ export const Background = () => {
           value: "#00baff",
           animation: {
             enable: true,
-            speed: 5,
+            speed: 3,
             sync: true,
           }
         },
       },
         
         move: {
-          direction: "top",
+          direction: "none",
           enable: true,
           outModes: {
             default: "out",
           },
           random: false,
-          speed: 0.5,
+          speed: 0.2,
           straight: false,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 60,
+          value: 50,
         },
         opacity: {
-          value: { min: 0.1, max: 0.2 }, 
+          value: { min: 0.5, max: 0.9 }, 
           // animation: {
           //   enable: true,
           //   speed: 10, 
@@ -81,7 +81,7 @@ export const Background = () => {
           type: "circle",
         },
         size: {
-          value: { min: 5, max: 8 },
+          value: { min: 1, max: 5 },
           
         },
         shadow: {

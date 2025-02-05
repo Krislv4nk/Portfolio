@@ -83,7 +83,7 @@ const CamperClubPage = () => {
             <p className={css.description}>Duration: 3 weeks</p>
           </div>
         </ScrollableComponent>
-      )};
+      )}
     </div>
   );
 };

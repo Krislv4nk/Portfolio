@@ -14,8 +14,7 @@
     border: 1px solid rgba(240, 237, 237, 0.1);
   box-shadow: 0 0 10px rgba(240, 237, 237, 0.1),
     0 0 20px rgba(240, 237, 237, 0.1),
-    0 0 40px rgba(240, 237, 237, 0.1),
-    0 0 80px rgba(240, 237, 237, 0.1);
+    0 0 30px rgba(240, 237, 237, 0.1);
 }
 .titleContainer {
   display: flex;
@@ -44,9 +43,20 @@ flex-direction: column;
     border: 1px solid rgba(240, 237, 237, 0.1);
   box-shadow: 0 0 10px rgba(240, 237, 237, 0.1),
     0 0 20px rgba(240, 237, 237, 0.1),
-    0 0 40px rgba(240, 237, 237, 0.1),
-    0 0 80px rgba(240, 237, 237, 0.1);
+    0 0 30px rgba(240, 237, 237, 0.1);
+
 }
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.wrapperRight:hover, .wrapper:hover {
+  background: linear-gradient(84deg , rgba(12, 12, 12, 0.953) 0%, rgba(6, 6, 22, 0.953) 70%, rgb(9, 9, 9) 100%);
+}
+
+
 
 @keyframes slideInFromRight {
             0% {
@@ -70,9 +80,6 @@ flex-direction: column;
             }
         }
 .title {
-  background-color: rgba(0, 0, 0, 0.729);
-    padding: 10px 20px;
-  border-radius: 20px;
     text-align: center;
     font-size: 35px;
     font-weight: 600;
@@ -126,11 +133,8 @@ flex-direction: column;
 text-decoration-skip-ink: none;
     font-size: 30px;
      padding: 8px 16px;
-  color: #ffffff;;
+  color: #ffffff;
   display: block;
-  background-color: rgba(0, 0, 0, 0.729);
-    padding: 10px 20px;
-  border-radius: 20px;
   
 }
 .links:hover,

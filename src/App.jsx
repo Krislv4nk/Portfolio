@@ -7,7 +7,6 @@ import ErrorPage from 'pages/ErrorPage/ErrorPage';
 import AboutAndProjects from 'pages/AboutAndProjects/AboutAndProjects';
 
 
-
 function App() {
   const location = useLocation();
 

@@ -81,8 +81,8 @@ const FoodStorePage = () => {
           <p className={css.description}>Duration: 1 week</p>
         </div>
       </ScrollableComponent>
-    )};
-    </div >;
+    )}
+    </div >
     };
 
 export default FoodStorePage;
