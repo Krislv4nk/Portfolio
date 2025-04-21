@@ -1,7 +1,7 @@
 
 import { Marquee } from "../../Marquee/Marquee.tsx";
 import { skills } from "../../../lib/variables/variables.js";
-import Icon from "../../Icon/Icon.jsx";
+import Icon from "../Icon/Icon.jsx";
 import css from "./Tools.module.css";
 
 export const Tools = () => {

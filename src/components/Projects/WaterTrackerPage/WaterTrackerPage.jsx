@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../../assets/sprite.svg';
-import water from '../../../assets/img/water.jpg';
-import water1 from '../../../assets/img/water1.jpg';
-import water2 from '../../../assets/img/water2.jpg';
+import img1 from '../../../assets/img/water.jpg';
+import img2 from '../../../assets/img/water1.jpg';
+import img3 from '../../../assets/img/water2.jpg';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import AnimatedGallery from './../AnimatedGallery/AnimatedGallery';
 import { ScrollableComponent } from '../../ScrollableComponent/ScrollableComponent';
 
 
@@ -22,22 +22,7 @@ const WaterTrackerPage = () => {
         <h2 className={css.title}>Water-tracker</h2>
         <div className={css.container}>
           <div className={css.listWrapper}>
-            <motion.img src={water} alt="water" className={css.imgCamper} whileHover={{
-              scale: 1.5,
-              transition: { duration: 0.5, ease: 'easeInOut' },
-            }}
-              initial={{ scale: 1 }} />
-            <motion.img src={water1} alt="water" className={css.imgCamper} whileHover={{
-              scale: 1.5,
-              transition: { duration: 0.5, ease: 'easeInOut' },
-            }}
-              initial={{ scale: 1 }} />
-            <motion.img src={water2} alt="water" className={css.imgCamper} whileHover={{
-              scale: 1.5,
-              transition: { duration: 0.5, ease: 'easeInOut' },
-            }}
-              initial={{ scale: 1 }} />
-          </div>
+          <AnimatedGallery images={[img1, img2, img3]} interval={4000}/></div>
           <ul className={css.linksWrapper}>
             <li className={css.linksItem}>
               <svg className={css.repoLinkIcon} >

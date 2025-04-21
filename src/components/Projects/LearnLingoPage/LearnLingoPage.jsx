@@ -1,14 +1,12 @@
 import { useState } from 'react';
-import cover1 from '../../../assets/img/cover1.jpg';
-import cover2 from '../../../assets/img/cover2.jpg';
-import cover3 from '../../../assets/img/cover3.jpg';
+import img1 from '../../../assets/img/cover1.jpg';
+import img2 from '../../../assets/img/cover2.jpg';
+import img3 from '../../../assets/img/cover3.jpg';
 import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../../assets/sprite.svg';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { ScrollableComponent } from '../../ScrollableComponent/ScrollableComponent';
-
-
+import AnimatedGallery from './../AnimatedGallery/AnimatedGallery';
 
 
 const LearnLingoPage = () => {
@@ -21,23 +19,9 @@ const [isExpanded, setIsExpanded] = useState(false);
           <div className={css.titleContainer}>
             <h2 className={css.title}>LearnLingo</h2>
         <div className={css.container}>
-<div className={css.listWrapper}>
-       <motion.img className={css.imgCamper} src={cover1} alt="camper" whileHover={{
-    scale: 1.5, 
-    transition: { duration: 0.5, ease: 'easeInOut' }, 
-  }}
-  initial={{ scale: 1 }}/>
-              <motion.img className={css.imgCamper} src={cover2} alt="camper" whileHover={{
-    scale: 1.5, 
-    transition: { duration: 0.5, ease: 'easeInOut' }, 
-  }}
-  initial={{ scale: 1 }}/>
-              <motion.img  className={css.imgCamper} src={cover3} alt="camper" whileHover={{
-    scale: 1.5, 
-    transition: { duration: 0.5, ease: 'easeInOut' }, 
-  }}
-  initial={{ scale: 1 }}/>
-       </div>
+          <div className={css.listWrapper}>
+            <AnimatedGallery images={[img1, img2, img3]} interval={4000} />
+          </div>
       <ul className={css.linksWrapper}>
            <li className={css.linksItem}> <svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>

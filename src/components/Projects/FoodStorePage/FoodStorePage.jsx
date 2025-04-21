@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../../assets/sprite.svg';
-import food from '../../../assets/img/food.jpg';
-import food1 from '../../../assets/img/food2.jpg'
+import img1 from '../../../assets/img/food1.jpg';
+import img2 from '../../../assets/img/food2.jpg'
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import AnimatedGallery from './../AnimatedGallery/AnimatedGallery';
 import { ScrollableComponent } from '../../ScrollableComponent/ScrollableComponent';
 
 
@@ -19,17 +19,8 @@ const FoodStorePage = () => {
         <h2 className={css.title}>FoodStore</h2>
         <div className={css.container}>
         <div className={css.listWrapper}>
-    <motion.img className={css.imgCamper} src={food} alt="camper" whileHover={{
-    scale: 1.5, 
-    transition: { duration: 0.5, ease: 'easeInOut' }, 
-  }}
-  initial={{ scale: 1 }}/>
-        <motion.img  className={css.imgCamper} src={food1} alt="camper" whileHover={{
-    scale: 1.5, 
-    transition: { duration: 0.5, ease: 'easeInOut' }, 
-  }}
-  initial={{ scale: 1 }}/>
-      </div>
+          <AnimatedGallery images={[img1, img2]} interval={4000} />
+          </div>
       <ul className={css.linksWrapper}>
           
       <li className={css.linksItem}>

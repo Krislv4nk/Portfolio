@@ -1,6 +1,6 @@
 
 
-import sprite from "../../assets/icons.svg";
+import sprite from "../../../assets/icons.svg";
 
 
 const Icon = ({ id, className, width = 24, height = 24, stroke = "currentColor" }) => (

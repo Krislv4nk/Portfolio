@@ -1,5 +1,3 @@
-
-
 import AboutMe from 'pages/AboutMe/AboutMe';
 import ProjectsPage from 'pages/ProjectsPage/ProjectsPage';
 
@@ -7,16 +5,21 @@ const AboutAndProjects = () => {
   return (
     <div>
       <section id="about-me">
-        <AboutMe/>
+          <AboutMe />
+        
       </section>
+
       <section id="projects">
-        <ProjectsPage/>
+       
+          <ProjectsPage />
       </section>
     </div>
   );
 };
 
 export default AboutAndProjects;
+
+
 
 
 // import { Parallax, ParallaxLayer } from '@react-spring/parallax';

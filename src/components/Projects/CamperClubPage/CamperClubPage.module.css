@@ -1,8 +1,7 @@
 .wrapper {
-    height: auto;
-    padding: 50px;
-    align-items: center;
-    justify-content: center;
+     width: 360px;
+   height: 600px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.729);
@@ -14,23 +13,27 @@
     border: 2px solid rgba(240, 237, 237, 0.1);
   box-shadow: 0 0 10px rgba(240, 237, 237, 0.1),
     0 0 20px rgba(240, 237, 237, 0.1);
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
 }
 .titleContainer {
   display: flex;
-flex-direction: column;
   margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   display: flex;
   gap: 50px;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .wrapperRight {
-    height: auto;
-    padding: 50px;
-    align-items: center;
-    justify-content: center;
+   width: 360px;
+   height: 600px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.729);
@@ -51,9 +54,7 @@ flex-direction: column;
   box-shadow: 0 0 30px rgba(240, 237, 237, 0.1),
   0 0 40px rgba(240, 237, 237, 0.1);
 }
-.wrapperRight:hover .title, .wrapper:hover .title {
-  font-size: 40px;
-}
+
 
 
 @keyframes slideInFromRight {
@@ -79,26 +80,16 @@ flex-direction: column;
         }
 .title {
     text-align: center;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
-    margin-top: 20px;
-    transition: cubic-bezier(0.23, 1, 0.320, 1);
 }
 .listWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin: 50px 0px;
 }
-.imgCamper {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-    transition: width 0.3s ease-in-out;
-}
+
 .descriptionWrapper {
     padding: 10px 20px;
   border-radius: 20px;
@@ -106,9 +97,9 @@ flex-direction: column;
 
 .linksWrapper {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     flex-direction: column;
-    margin: 50px 0px;
+    margin: 20px 0px;
 
 }
 .linksItem {
@@ -130,15 +121,14 @@ flex-direction: column;
     white-space: nowrap;
   text-decoration: underline;
 text-decoration-skip-ink: none;
-    font-size: 30px;
+    font-size: 16px;
      padding: 8px 16px;
-  color: #ffffff;
+  color: #00baff; 
   display: block;
   
 }
 .links:hover,
   .links:focus {
-    color: #00baff; 
     animation: left-edge 0.5s linear 1;
   }
 
@@ -165,11 +155,10 @@ text-decoration-skip-ink: none;
   display: flex; 
   color: #ffffff;
   cursor: pointer;
-    font-size: 18px;
 font-weight: 400;
 position: absolute;
-  bottom: 50px;
-  right: 50px;
+  bottom: 30px;
+  right: 30px;
 border-radius: 20px;
 border: 1px solid rgba(240, 237, 237, 0.1);
   box-shadow: 0 0 10px rgba(240, 237, 237, 0.1),
@@ -185,6 +174,8 @@ border: 1px solid rgba(240, 237, 237, 0.1);
   
 .expanded {
   overflow: hidden;
+  width: 1000px;
+  height: auto;
 }
   .descriptionTitle {
     font-size: 25px;
@@ -221,32 +212,9 @@ border: 1px solid rgba(240, 237, 237, 0.1);
     font-size: 18px;
     text-align: start;
   }
-  .imgWater {
-    margin-bottom: 50px;
-    width: 500px;
-    height: 300px;
-    border-radius: 8px;
-     transition: width 0.3s ease-in-out;
-    }
+ 
     
-  .phoneBook {
-    width: 500px;
-    height: auto;
-    border-radius: 8px;
-     transition: width 0.3s ease-in-out;
-}
-.imgPhone {
-    width: 220px;
-    height: auto;
-    border-radius: 8px;
-     transition: width 0.3s ease-in-out;
-}
-.img {
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-   transition: width 0.3s ease-in-out;
-}
+  
 
 
 

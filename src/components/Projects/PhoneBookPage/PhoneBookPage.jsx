@@ -2,10 +2,10 @@
 import { useState } from 'react';
 import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../../assets/sprite.svg';
-import phone from '../../../assets/img/phone.png';
-import phoneBook from '../../../assets/img/phone-book.png';
+import img1 from '../../../assets/img/phone2.jpg';
+import img2 from '../../../assets/img/Phone1.jpg';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import AnimatedGallery from './../AnimatedGallery/AnimatedGallery';
 import { ScrollableComponent } from '../../ScrollableComponent/ScrollableComponent';
 
 
@@ -19,18 +19,8 @@ const PhoneBookPage = () => {
     <div className={css.titleContainer}>
       <h2 className={css.title}>PhoneBook</h2>
         <div className={css.container}>
-  <div className={css.listWrapper}>
-        <motion.img className={css.phoneBook} src={phoneBook} alt="camper" whileHover={{
-    scale: 1.5, 
-    transition: { duration: 0.5, ease: 'easeInOut' }, 
-  }}
-  initial={{ scale: 1 }}/>
-        <motion.img  className={css.imgPhone} src={phone} alt="camper" whileHover={{
-    scale: 1.5, 
-    transition: { duration: 0.5, ease: 'easeInOut' }, 
-  }}
-  initial={{ scale: 1 }}/>
-      </div>
+<div className={css.listWrapper}>
+        <AnimatedGallery images={[img1, img2]} interval={4000}/></div>
     <ul className={css.linksWrapper}>
       <li className={css.linksItem}>
                 <svg className={css.repoLinkIcon} >

@@ -1,12 +1,11 @@
 
 import { useState } from 'react';
-import camper from '../../../assets/img/camper.png';
-import camperA from '../../../assets/img/camper-1.png';
+import img1 from '../../../assets/img/camper01.jpg';
+import img2 from '../../../assets/img/camper02.jpg';
 import css from './CamperClubPage.module.css';
 import icons from '../../../assets/sprite.svg';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ScrollableComponent } from '../../ScrollableComponent/ScrollableComponent';
+import AnimatedGallery from './../AnimatedGallery/AnimatedGallery';
 
 const CamperClubPage = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -20,16 +19,7 @@ const CamperClubPage = () => {
         <h2 className={css.title}>CamperClub</h2>
         <div className={css.container}>
           <div className={css.listWrapper}>
-            <motion.img className={css.imgCamper} src={camper} alt="camper" whileHover={{
-              scale: 1.5,
-              transition: { duration: 0.5, ease: 'easeInOut' },
-            }}
-              initial={{ scale: 1 }} />
-            <motion.img className={css.imgCamper} src={camperA} alt="camper" whileHover={{
-              scale: 1.5,
-              transition: { duration: 0.5, ease: 'easeInOut' },
-            }}
-              initial={{ scale: 1 }} />
+          <AnimatedGallery images={[img1, img2]} interval={4000}  />
           </div>
           <ul className={css.linksWrapper}>
             <li className={css.linksItem}> <svg className={css.repoLinkIcon}>
@@ -46,7 +36,6 @@ const CamperClubPage = () => {
         </div>
       </div>
       {isExpanded && (
-        <ScrollableComponent>
           <div className={css.descriptionWrapper}>
             <h4 className={css.descriptionTitle}>Individual Project</h4>
             <p className={css.description}> Meet the
@@ -79,8 +68,7 @@ const CamperClubPage = () => {
             </ul>
             <p className={css.description}>Duration: 3 weeks</p>
           </div>
-        </ScrollableComponent>
-      )}
+        )}
       <button className={css.toggleExpand} onClick={toggleExpand} type='button'>
         {isExpanded ? 'Show less' : 'Read more'}
       </button>
