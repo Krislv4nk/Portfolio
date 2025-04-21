@@ -4,7 +4,6 @@ import { useTransition, animated } from 'react-spring';
 import { useLocation, Routes, Route } from 'react-router-dom';
 import SharedLayout from 'components/SharedLayout/SharedLayout';
 import ErrorPage from 'pages/ErrorPage/ErrorPage';
-import AboutAndProjects from 'pages/AboutAndProjects/AboutAndProjects';
 
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
         <animated.div style={props}>
           <Routes location={item}>
             <Route path="/" element={<SharedLayout />}>
-              <Route index element={<AboutAndProjects />} />
               <Route path="*" element={<ErrorPage />} />
             </Route>
           </Routes>

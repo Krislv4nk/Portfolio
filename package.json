@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.11.5",
     "@fontsource-variable/josefin-sans": "^5.0.21",
     "@mui/material": "^5.15.18",
+    "@react-spring/parallax": "^9.7.5",
     "@tsparticles/all": "^3.4.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.4.0",
