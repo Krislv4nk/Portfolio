@@ -43,11 +43,14 @@
   stroke: #00baff;
 }
   
-.link {
+.linksItem {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 10px;
+    text-align: center;
+     
+  }
+.link {
     text-align: center;
     font-size: 40px;
     font-weight: 600;
@@ -60,7 +63,8 @@
   border-radius: 20px;
   cursor: pointer;
    text-decoration: underline;
-text-decoration-skip-ink: none;
+    width: auto;
+    white-space: nowrap;
 }
 .education {
     display: flex;

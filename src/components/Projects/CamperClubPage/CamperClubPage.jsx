@@ -1,11 +1,11 @@
 
 import { useState } from 'react';
-// import img1 from '../../../assets/img/camper01.jpg';
-// import img2 from '../../../assets/img/camper02.jpg';
+import img1 from '../../../assets/img/camper01.jpg';
+import img2 from '../../../assets/img/camper02.jpg';
 import css from './CamperClubPage.module.css';
 import icons from '../../../assets/sprite.svg';
 import { Link } from 'react-router-dom';
-// import AnimatedGallery from './../AnimatedGallery/AnimatedGallery';
+import AnimatedGallery from './../AnimatedGallery/AnimatedGallery';
 import { ScrollableComponent } from '../../SharedLayout/ScrollableComponent/ScrollableComponent';
 
 const CamperClubPage = () => {
@@ -19,9 +19,9 @@ const CamperClubPage = () => {
       <div className={css.titleContainer}>
         <h2 className={css.title}>CamperClub</h2>
         <div className={css.container}>
-          {/* <div className={css.listWrapper}>
+          <div className={css.listWrapper}>
           <AnimatedGallery images={[img1, img2]} interval={4000}  />
-          </div> */}
+          </div>
           <ul className={css.linksWrapper}>
             <li className={css.linksItem}> <svg className={css.repoLinkIcon}>
               <use href={`${icons}#icon-link`}></use>
