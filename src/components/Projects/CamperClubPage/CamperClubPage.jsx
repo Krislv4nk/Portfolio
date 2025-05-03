@@ -6,6 +6,7 @@ import css from './CamperClubPage.module.css';
 import icons from '../../../assets/sprite.svg';
 import { Link } from 'react-router-dom';
 import AnimatedGallery from './../AnimatedGallery/AnimatedGallery';
+import { ScrollableComponent } from '../../SharedLayout/ScrollableComponent/ScrollableComponent';
 
 const CamperClubPage = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -36,6 +37,7 @@ const CamperClubPage = () => {
         </div>
       </div>
       {isExpanded && (
+        <ScrollableComponent>
           <div className={css.descriptionWrapper}>
             <h4 className={css.descriptionTitle}>Individual Project</h4>
             <p className={css.description}> Meet the
@@ -68,6 +70,7 @@ const CamperClubPage = () => {
             </ul>
             <p className={css.description}>Duration: 3 weeks</p>
           </div>
+          </ScrollableComponent>
         )}
       <button className={css.toggleExpand} onClick={toggleExpand} type='button'>
         {isExpanded ? 'Show less' : 'Read more'}

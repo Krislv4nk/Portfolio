@@ -6,7 +6,7 @@ import img1 from '../../../assets/img/phone2.jpg';
 import img2 from '../../../assets/img/Phone1.jpg';
 import { Link } from 'react-router-dom';
 import AnimatedGallery from './../AnimatedGallery/AnimatedGallery';
-import { ScrollableComponent } from '../../ScrollableComponent/ScrollableComponent';
+import { ScrollableComponent } from '../../SharedLayout/ScrollableComponent/ScrollableComponent';
 
 
 const PhoneBookPage = () => {

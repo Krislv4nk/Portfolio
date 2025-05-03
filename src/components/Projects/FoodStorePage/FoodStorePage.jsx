@@ -5,7 +5,7 @@ import img1 from '../../../assets/img/food1.jpg';
 import img2 from '../../../assets/img/food2.jpg'
 import { Link } from 'react-router-dom';
 import AnimatedGallery from './../AnimatedGallery/AnimatedGallery';
-import { ScrollableComponent } from '../../ScrollableComponent/ScrollableComponent';
+import { ScrollableComponent } from '../../SharedLayout/ScrollableComponent/ScrollableComponent';
 
 
 const FoodStorePage = () => {

@@ -5,7 +5,7 @@ import img3 from '../../../assets/img/cover3.jpg';
 import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../../assets/sprite.svg';
 import { Link } from 'react-router-dom';
-import { ScrollableComponent } from '../../ScrollableComponent/ScrollableComponent';
+import { ScrollableComponent } from '../../SharedLayout/ScrollableComponent/ScrollableComponent';
 import AnimatedGallery from './../AnimatedGallery/AnimatedGallery';
 
 

@@ -1,23 +1,33 @@
 
 
+
 .wrapper {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-   overflow: hidden;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
 }
 
-/* .wrapper {
-  height: 100vh;
-  overflow: hidden;
+.wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .section {
+  position: relative;
+  height: 100vh;
+  scroll-snap-align: start;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 70vh;
-} */
+  justify-content: center;
+  z-index: 1;
+}
+
+.section:not(:first-child) {
+  margin-top: -30vh;
+  z-index: 5;
+}
+
 
 

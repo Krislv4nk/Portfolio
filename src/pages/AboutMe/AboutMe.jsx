@@ -1,58 +1,33 @@
 
-
-import css from "./AboutMe.module.css";
+import ProjectsSection from "../../components/Projects/ProjectsSection/ProjectsSection.jsx";
 import { Intro } from "../../components/AboutMeContent/Intro/Intro.jsx";
 import { Tools } from "../../components/AboutMeContent/Tools/Tools.jsx";
 import { Docs } from "../../components/AboutMeContent/Docs/Docs.jsx";
+import { ScrollableSection } from "../../components/SharedLayout/ScrollableSection/ScrollableSection.jsx";
+import css from "./AboutMe.module.css";
+
 
 const AboutMe = () => {
   return (
     <div className={css.wrapper}>
-            <Intro />
-            <Tools />
-            <Docs />
+      <section id="about-me">
+      <div className={css.section}>
+        <ScrollableSection delay={0}><Intro /></ScrollableSection>
+      </div>
+      <div className={css.section}>
+        <ScrollableSection delay={0.2}><Tools /></ScrollableSection>
+      </div>
+      <div className={css.section}>
+        <ScrollableSection delay={0.4}><Docs /></ScrollableSection>
+        </div>
+      </section>
+      <section className={css.section} id="projects">
+      <div className={css.section}>
+        <ScrollableSection delay={0.6}><ProjectsSection /></ScrollableSection>
+        </div>
+        </section>
     </div>
   );
 };
 
 export default AboutMe;
-
-// import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-// import css from "./AboutMe.module.css";
-// import { Intro } from "../../components/AboutMeContent/Intro/Intro.jsx";
-// import { Tools } from "../../components/AboutMeContent/Tools/Tools.jsx";
-// import { Docs } from "../../components/AboutMeContent/Docs/Docs.jsx";
-
-// const AboutMe = () => {
-//   return (
-//     <div className={css.wrapper}>
-//       <Parallax pages={3} style={{ height: '70vh' }} >
-//         {/* Layer 1 – Intro */}
-//         <ParallaxLayer offset={0} speed={1} style={{
-//           height: '80vh',
-//         }}
-//         >
-//           <div className={css.section}>
-//             <Intro />
-//           </div>
-//         </ParallaxLayer>
-
-//         {/* Layer 2 – Tools */}
-//         <ParallaxLayer offset={1} speed={1} >
-//           <div className={css.section}>
-//             <Tools />
-//           </div>
-//         </ParallaxLayer>
-
-//         {/* Layer 3 – Docs */}
-//         <ParallaxLayer offset={2} speed={1} >
-//           <div className={css.section}>
-//             <Docs />
-//           </div>
-//         </ParallaxLayer>
-//       </Parallax>
-//     </div>
-//   );
-// };
-
-// export default AboutMe;

@@ -32,6 +32,7 @@ body {
   background: black;
 
 }
+
 body::-webkit-scrollbar {
     width: 0px;
 }

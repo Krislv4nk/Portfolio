@@ -1,10 +1,11 @@
-import css from './ProjectsPage.module.css';
+
 import CamperClubPage from 'components/Projects/CamperClubPage/CamperClubPage';
 import WaterTrackerPage from 'components/Projects/WaterTrackerPage/WaterTrackerPage';
 import PhoneBookPage from 'components/Projects/PhoneBookPage/PhoneBookPage';
 import FoodStorePage from 'components/Projects/FoodStorePage/FoodStorePage';
 import LearnLingoPage from 'components/Projects/LearnLingoPage/LearnLingoPage';
-// import { ScrollableComponent } from "../../components/ScrollableComponent/ScrollableComponent";
+import css from './ProjectsSection.module.css';
+
 
 const ProjectsPage = () => {
     

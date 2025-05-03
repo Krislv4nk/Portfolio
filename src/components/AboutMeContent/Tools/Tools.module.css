@@ -6,6 +6,7 @@
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.729);
   padding: 50px 0px;
+  margin-bottom: 100px;
 }
 
   @keyframes slide-up {

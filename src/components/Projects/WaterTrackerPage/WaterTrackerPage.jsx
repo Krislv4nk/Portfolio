@@ -6,7 +6,7 @@ import img2 from '../../../assets/img/water1.jpg';
 import img3 from '../../../assets/img/water2.jpg';
 import { Link } from 'react-router-dom';
 import AnimatedGallery from './../AnimatedGallery/AnimatedGallery';
-import { ScrollableComponent } from '../../ScrollableComponent/ScrollableComponent';
+import { ScrollableComponent } from '../../SharedLayout/ScrollableComponent/ScrollableComponent';
 
 
 
@@ -22,7 +22,8 @@ const WaterTrackerPage = () => {
         <h2 className={css.title}>Water-tracker</h2>
         <div className={css.container}>
           <div className={css.listWrapper}>
-          <AnimatedGallery images={[img1, img2, img3]} interval={4000}/></div>
+            <AnimatedGallery images={[img1, img2, img3]} interval={4000} />
+          </div>
           <ul className={css.linksWrapper}>
             <li className={css.linksItem}>
               <svg className={css.repoLinkIcon} >

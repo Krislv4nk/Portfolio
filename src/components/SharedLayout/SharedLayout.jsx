@@ -4,7 +4,7 @@ import { Header } from 'components/Header/Header';
 import { Container } from 'components/SharedLayout/Container/Container';
 import { Loader } from 'components/Loader/Loader';
 import { Background } from 'components/Background/Background.jsx';
-import AboutAndProjects from 'pages/AboutAndProjects/AboutAndProjects';
+import AboutMe from 'pages/AboutMe/AboutMe';
 
 const SharedLayout = () => {
   return (
@@ -13,7 +13,7 @@ const SharedLayout = () => {
       <Background/>
       <Container>
         <Header />
-        <AboutAndProjects/>
+        <AboutMe/>
       <Suspense fallback={<Loader />}>
         <Outlet />
           </Suspense>
