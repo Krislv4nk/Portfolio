@@ -27,7 +27,7 @@
     justify-content: center;
     gap: 150px;
     padding: 30px;
-   margin-bottom: 100px;
+   margin: 100px 0px;
     width: auto;
 }
  @keyframes slide-up {
@@ -36,11 +36,21 @@
         transform: translateY(0);
     }
 }
-.title {
+.repoLinkIcon {
+ width: 30px;
+  height: 30px;
+  fill: #ffffff;
+  stroke: #00baff;
+}
+  
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     text-align: center;
     font-size: 40px;
     font-weight: 600;
-    margin-bottom: 50px;
     color: #ffffff;
     opacity: 0;
     transform: translateY(100px);
@@ -48,6 +58,9 @@
     background-color: rgba(0, 0, 0, 0.729);
     padding: 10px 20px;
   border-radius: 20px;
+  cursor: pointer;
+   text-decoration: underline;
+text-decoration-skip-ink: none;
 }
 .education {
     display: flex;
@@ -55,13 +68,11 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    list-style: none;
 }
 .cv {
    width: 300px;
     height: auto;
     border-radius: 20px;
-    cursor: pointer;
     animation: slideInFromLeft 2s ease-in-out forwards;
 }
 
@@ -69,6 +80,5 @@
    width: 300px;
     height: auto;
     border-radius: 20px;
-    cursor: pointer;
     animation: slideInFromRight 2s ease-in-out forwards;
 }

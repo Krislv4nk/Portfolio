@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import img1 from '../../../assets/img/cover1.jpg';
-import img2 from '../../../assets/img/cover2.jpg';
-import img3 from '../../../assets/img/cover3.jpg';
+// import img1 from '../../../assets/img/cover1.jpg';
+// import img2 from '../../../assets/img/cover2.jpg';
+// import img3 from '../../../assets/img/cover3.jpg';
 import css from '../CamperClubPage/CamperClubPage.module.css';
 import icons from '../../../assets/sprite.svg';
 import { Link } from 'react-router-dom';
 import { ScrollableComponent } from '../../SharedLayout/ScrollableComponent/ScrollableComponent';
-import AnimatedGallery from './../AnimatedGallery/AnimatedGallery';
+// import AnimatedGallery from './../AnimatedGallery/AnimatedGallery';
 
 
 const LearnLingoPage = () => {
@@ -19,9 +19,9 @@ const [isExpanded, setIsExpanded] = useState(false);
           <div className={css.titleContainer}>
             <h2 className={css.title}>LearnLingo</h2>
         <div className={css.container}>
-          <div className={css.listWrapper}>
+          {/* <div className={css.listWrapper}>
             <AnimatedGallery images={[img1, img2, img3]} interval={4000} />
-          </div>
+          </div> */}
       <ul className={css.linksWrapper}>
            <li className={css.linksItem}> <svg className={css.repoLinkIcon}>
           <use href={`${icons}#icon-link`}></use>

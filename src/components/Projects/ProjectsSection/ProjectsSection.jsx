@@ -1,8 +1,8 @@
 
 import CamperClubPage from 'components/Projects/CamperClubPage/CamperClubPage';
-import WaterTrackerPage from 'components/Projects/WaterTrackerPage/WaterTrackerPage';
-import PhoneBookPage from 'components/Projects/PhoneBookPage/PhoneBookPage';
-import FoodStorePage from 'components/Projects/FoodStorePage/FoodStorePage';
+// import WaterTrackerPage from 'components/Projects/WaterTrackerPage/WaterTrackerPage';
+// import PhoneBookPage from 'components/Projects/PhoneBookPage/PhoneBookPage';
+// import FoodStorePage from 'components/Projects/FoodStorePage/FoodStorePage';
 import LearnLingoPage from 'components/Projects/LearnLingoPage/LearnLingoPage';
 import css from './ProjectsSection.module.css';
 
@@ -15,9 +15,9 @@ const ProjectsPage = () => {
                 <ul className={css.list}>
                      <li><LearnLingoPage /></li>
                     <li><CamperClubPage /></li>
-                    <li><WaterTrackerPage /></li>
+                    {/* <li><WaterTrackerPage /></li>
                     <li><PhoneBookPage /></li>
-                   <li><FoodStorePage /></li>
+                   <li><FoodStorePage /></li> */}
                 </ul>
             </div>
     );

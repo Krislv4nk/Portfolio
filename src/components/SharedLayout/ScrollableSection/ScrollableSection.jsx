@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 
 export const ScrollableSection = ({ children, delay = 0 }) => {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.3,
     triggerOnce: false, 
   });
 
@@ -12,7 +12,7 @@ export const ScrollableSection = ({ children, delay = 0 }) => {
     <motion.div
       ref={ref}
       initial={false}
-      animate={inView ? { y: 0, opacity: 1 } : { y: 200, opacity: 0 }}
+      animate={inView ? { y: 0, opacity: 1 } : { y: 100, opacity: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut', delay }}
       style={{ width: '100%' }}
     >

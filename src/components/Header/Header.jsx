@@ -20,10 +20,10 @@ export const Header = () => {
         <ul className={css.headerList}>
           <li className={css.linkItem}>
             <button
-              onClick={() => handleScrollToSection('about-me')}
+              onClick={() => handleScrollToSection('about')}
               className={css.headerItem}
             >
-              About me
+              About
             </button>
           </li>
           <li className={css.linkItem}>

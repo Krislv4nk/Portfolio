@@ -4,14 +4,14 @@ import { Intro } from "../../components/AboutMeContent/Intro/Intro.jsx";
 import { Tools } from "../../components/AboutMeContent/Tools/Tools.jsx";
 import { Docs } from "../../components/AboutMeContent/Docs/Docs.jsx";
 import { ScrollableSection } from "../../components/SharedLayout/ScrollableSection/ScrollableSection.jsx";
-import css from "./AboutMe.module.css";
+import css from "./About.module.css";
 
 
-const AboutMe = () => {
+const About = () => {
   return (
     <div className={css.wrapper}>
-      <section id="about-me">
-      <div className={css.section}>
+      
+      <div className={css.section} id="about">
         <ScrollableSection delay={0}><Intro /></ScrollableSection>
       </div>
       <div className={css.section}>
@@ -20,14 +20,12 @@ const AboutMe = () => {
       <div className={css.section}>
         <ScrollableSection delay={0.4}><Docs /></ScrollableSection>
         </div>
-      </section>
-      <section className={css.section} id="projects">
-      <div className={css.section}>
+      <div className={css.section} id="projects">
         <ScrollableSection delay={0.6}><ProjectsSection /></ScrollableSection>
         </div>
-        </section>
+        
     </div>
   );
 };
 
-export default AboutMe;
+export default About;
