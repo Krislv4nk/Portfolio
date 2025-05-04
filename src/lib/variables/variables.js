@@ -34,3 +34,48 @@ export const skills = [
   { name: "ChatGPT", iconId: "chatgpt-logo" },
   { name: "REST API", iconId: "rest-api" },
 ];
+
+
+
+
+
+export const items = [
+
+  {
+            name: "Learn Lingo",
+    links: {
+      live: "https://krislv4nk.github.io/LearnLingo/",
+      github: "https://github.com/Krislv4nk/LearnLingoo"
+       }
+        },
+        {
+
+            name: "Camper Club",
+          links: {
+            live: "https://krislv4nk.github.io/Camper-Club/",
+            front: "https://github.com/Krislv4nk/CamperCluub"
+           }
+        },
+        {
+            name: "Water Tracker",
+           links: {
+            live: "https://andriipolishchuk28.github.io/water-tracker-frontend/",
+             front: "https://github.com/AndriiPolishchuk28/water-tracker-frontend/",
+            back: "https://github.com/SerhiiOberemchuk/watertracker-backand-codekartel/"
+           }
+        },
+        {
+            name: "Phone Book",
+          links: {
+            live: "https://krislv4nk.github.io/goit-react-hw-08-phonebook/",
+            front: "https://github.com/Krislv4nk/goit-react-hw-08-phonebook"
+          }
+        },
+  {
+    name: "Food Store",
+    links: {
+      live: "https://vuktorts.github.io/js-team-project-FoodStore/",
+      front: "https://github.com/VuktorTS/js-team-project-FoodStore"
+    }
+  },
+    ]

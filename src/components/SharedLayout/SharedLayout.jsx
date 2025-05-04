@@ -1,30 +1,42 @@
 import { Suspense } from 'react';
-import { Outlet } from 'react-router-dom';
-import { Header } from 'components/Header/Header';
-import { Container } from 'components/SharedLayout/Container/Container';
+import { Outlet, useLocation } from 'react-router-dom';
+import { Header } from './Header/Header';
+import { Container } from './Container/Container';
 import { Loader } from './Loader/Loader';
-import { Background } from 'components/Background/Background.jsx';
+import { Background } from '../Background/Background';
 import About from 'pages/About/About';
-import css from 'components/Header/Header.module.css';
+import { useTransition, animated } from 'react-spring';
 
 const SharedLayout = () => {
-  return (
+  const location = useLocation();
 
+  const transitions = useTransition(location, {
+    from: { opacity: 0, transform: 'translateY(20px)' },
+    enter: { opacity: 1, transform: 'translateY(0)' },
+    leave: { opacity: 0, transform: 'translateY(-20px)' },
+    config: { duration: 400 },
+  });
+
+  return (
     <>
-  <div style={{ position: 'fixed', width: '100%', height: '100%', zIndex: -1 }}>
-    <Background />
-  </div>
+      <Header />
+      <div style={{ position: 'fixed', width: '100%', height: '100%', zIndex: -1 }}>
+        <Background />
+      </div>
+
       <Container>
-    <div className={css.headerWrapper}>
-          <Header />
-        </div>
-    <About />
-    <Suspense fallback={<Loader />}>
-      <Outlet />
-    </Suspense>
-  </Container>
-</>
+        <About />
+        {transitions((style, item) => (
+          <animated.div style={style}>
+            <Suspense fallback={<Loader />}>
+              <Outlet location={item} />
+            </Suspense>
+          </animated.div>
+        ))}
+      </Container>
+    </>
   );
 };
 
 export default SharedLayout;
+

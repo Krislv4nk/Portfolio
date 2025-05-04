@@ -1,8 +1,8 @@
 
 import ProjectsSection from "../../components/Projects/ProjectsSection/ProjectsSection.jsx";
-import { Intro } from "../../components/AboutMeContent/Intro/Intro.jsx";
-import { Tools } from "../../components/AboutMeContent/Tools/Tools.jsx";
-import { Docs } from "../../components/AboutMeContent/Docs/Docs.jsx";
+import { Intro } from "../../components/AboutContent/Intro/Intro.jsx";
+import { Tools } from "../../components/AboutContent/Tools/Tools.jsx";
+import { Docs } from "../../components/AboutContent/Docs/Docs.jsx";
 import { ScrollableSection } from "../../components/SharedLayout/ScrollableSection/ScrollableSection.jsx";
 import css from "./About.module.css";
 

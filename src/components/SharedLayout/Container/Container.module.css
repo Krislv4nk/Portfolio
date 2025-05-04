@@ -8,6 +8,7 @@
   position: relative;
   border: 2px solid red;
   z-index: 10;
+   transform: none !important;
 }
 
 /* .container::after {
