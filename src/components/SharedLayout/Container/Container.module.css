@@ -1,18 +1,22 @@
 
-@media screen and (min-width: 1440px) {
+
 .container {
-    
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 0 50px;
-    margin: 0 auto;
-    max-width: 1440px;
-    position: relative;
-    z-index: 10;
-     opacity: 0;
-    transform: scale(0.5);
-    animation: slide-down 1s forwards;
+  position: relative;
+  border: 2px solid red;
+  z-index: 10;
 }
 
-.container::-webkit-scrollbar {
+/* .container::after {
+  content: '';
+  display: block;
+  height: 250px;
+} */
+
+/* .container::-webkit-scrollbar {
     width: 0px;
 }
 .container::-webkit-scrollbar-track {
@@ -23,12 +27,6 @@
 }
 .container::-webkit-scrollbar-thumb:hover {
     background: transparent;
-}
+} */
 
-@keyframes slide-down {
-    to {
-        opacity: 1;
-        transform: translateY(0); 
-    }
-}
-}
+

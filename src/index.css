@@ -2,11 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
 
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+body {
+  font-family: 'Josefin Sans Variable', sans-serif;
+  background: black;
+  color: white;
 }
 
 html,
@@ -21,19 +35,8 @@ html,
   box-sizing: inherit;
 }
 
-body {
- width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family:'Josefin Sans Variable', sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #ffffff;
-  background: black;
 
-}
-
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     width: 0px;
 }
 body::-webkit-scrollbar-track {
@@ -44,7 +47,7 @@ body::-webkit-scrollbar-thumb {
 }
 body::-webkit-scrollbar-thumb:hover {
     background: transparent;
-}
+} */
 
 
 h1,

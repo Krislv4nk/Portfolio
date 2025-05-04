@@ -10,12 +10,6 @@ export const Docs = () => {
     return (
         <div className={css.docBox}>
         <div className={css.education}>
-          <Lens>
-              <img
-                className={css.cv}
-                src={certificate}
-                alt="cv" />
-          </Lens>
           <div className={css.linksItem}>
           <svg className={css.repoLinkIcon}>
               <use href={`${icons}#icon-link`}></use>
@@ -28,13 +22,14 @@ export const Docs = () => {
             className={css.link}
             >Education</a>
             </div>
-          </div>
-          <div className={css.education}>
-              <Lens><img
-                className={css.cvRight}
-                src={cv}
-              alt="cv" />
+          <Lens>
+              <img
+                className={css.cv}
+                src={certificate}
+                alt="cv" />
           </Lens>
+          </div>
+        <div className={css.education}>
           <div className={css.linksItem}>
           <svg className={css.repoLinkIcon}>
               <use href={`${icons}#icon-link`}></use>
@@ -46,6 +41,11 @@ export const Docs = () => {
               target="_blank"
             >CV</a>
             </div>
+              <Lens><img
+                className={css.cvRight}
+                src={cv}
+              alt="cv" />
+          </Lens>
           </div>
         </div>
     )

@@ -2,7 +2,7 @@
 
 
 .wrapper {
-  height: 100vh;
+ min-height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -16,18 +16,19 @@
 
 .section {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
   scroll-snap-align: start;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
+  scroll-snap-align: start;
 }
 
 .section:not(:first-child) {
   margin-top: -30vh;
   z-index: 5;
 }
-
 
 
