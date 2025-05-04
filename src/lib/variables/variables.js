@@ -1,3 +1,14 @@
+import camper1 from "../../assets/img/camper01.jpg";
+import camper2 from "../../assets/img/camper02.jpg";
+import water1 from '../../assets/img/water.jpg';
+import water2 from '../../assets/img/water1.jpg';
+import lingo1 from '../../assets/img/cover1.jpg';
+import lingo2 from '../../assets/img/cover2.jpg';
+import phone1 from '../../assets/img/phone2.jpg';
+import phone2 from '../../assets/img/Phone1.jpg';
+import store1 from '../../assets/img/food1.jpg';
+import store2 from '../../assets/img/food2.jpg';
+
 
 export const skills = [
   { name: "React", iconId: "react" },
@@ -46,7 +57,11 @@ export const items = [
     links: {
       live: "https://krislv4nk.github.io/LearnLingo/",
       github: "https://github.com/Krislv4nk/LearnLingoo"
-       }
+       },
+          images: {
+      first: lingo1,
+      second: lingo2,
+    },
         },
         {
 
@@ -54,7 +69,11 @@ export const items = [
           links: {
             live: "https://krislv4nk.github.io/Camper-Club/",
             front: "https://github.com/Krislv4nk/CamperCluub"
-           }
+          },
+          images: {
+      first: camper2,
+      second: camper1,
+    },
         },
         {
             name: "Water Tracker",
@@ -62,7 +81,11 @@ export const items = [
             live: "https://andriipolishchuk28.github.io/water-tracker-frontend/",
              front: "https://github.com/AndriiPolishchuk28/water-tracker-frontend/",
             back: "https://github.com/SerhiiOberemchuk/watertracker-backand-codekartel/"
-           }
+           },
+          images: {
+      first: water1,
+      second: water2,
+    },
         },
         {
             name: "Phone Book",
@@ -70,12 +93,21 @@ export const items = [
             live: "https://krislv4nk.github.io/goit-react-hw-08-phonebook/",
             front: "https://github.com/Krislv4nk/goit-react-hw-08-phonebook"
           }
+          ,
+          images: {
+      first: phone1,
+      second: phone2,
+    },
         },
   {
     name: "Food Store",
     links: {
       live: "https://vuktorts.github.io/js-team-project-FoodStore/",
       front: "https://github.com/VuktorTS/js-team-project-FoodStore"
-    }
+    },
+          images: {
+      first: store1,
+      second: store2,
+    },
   },
     ]

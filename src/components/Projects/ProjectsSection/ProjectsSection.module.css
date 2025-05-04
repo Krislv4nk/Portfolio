@@ -6,7 +6,7 @@
 
 .wrapper {
     height: auto;
-    padding: 150px 0px 250px 0px;
+    padding: 150px 0px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -36,23 +36,45 @@ font-size: 55px;
 
 .carousel {
     width: 1040px;
-    height: 500px;
+    height: 470px;
     display: flex;
     align-items: center;
     justify-content: center;
     
 }
-
-.paper {
-    width: 300px;
+.imgWrapper {
+    width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.img {
+    width: 326px;
+    height: 194px;
+    object-fit: cover;
+}
+.infoWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.paper {
+    width: 1000px;
+    height: 430px;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    gap: 10px;
     padding: 20px;
     margin-bottom: 50px;
 
