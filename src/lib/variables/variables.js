@@ -1,13 +1,13 @@
-import camper1 from "../../assets/img/camper01.jpg";
-import camper2 from "../../assets/img/camper02.jpg";
-import water1 from '../../assets/img/water.jpg';
-import water2 from '../../assets/img/water1.jpg';
-import lingo1 from '../../assets/img/cover1.jpg';
-import lingo2 from '../../assets/img/cover2.jpg';
-import phone1 from '../../assets/img/phone2.jpg';
-import phone2 from '../../assets/img/Phone1.jpg';
-import store1 from '../../assets/img/food1.jpg';
-import store2 from '../../assets/img/food2.jpg';
+import camper1 from "../../assets/images/camper1.jpg";
+import camper2 from "../../assets/images/camper.jpg";
+import water1 from '../../assets/images/water-main.jpg';
+import water2 from '../../assets/images/tracker.jpg';
+import lingo1 from '../../assets/images/lingo.jpg';
+import lingo2 from '../../assets/images/lingo1.jpg';
+import phone1 from '../../assets/images/phone2.jpg';
+import phone2 from '../../assets/images/Phone1.jpg';
+import store1 from '../../assets/images/food.jpg';
+import store2 from '../../assets/images/1food.jpg';
 
 
 export const skills = [
@@ -56,7 +56,7 @@ export const items = [
             name: "Learn Lingo",
     links: {
       live: "https://krislv4nk.github.io/LearnLingo/",
-      github: "https://github.com/Krislv4nk/LearnLingoo"
+      front: "https://github.com/Krislv4nk/LearnLingoo"
        },
           images: {
       first: lingo1,
@@ -67,8 +67,8 @@ export const items = [
 
             name: "Camper Club",
           links: {
-            live: "https://krislv4nk.github.io/Camper-Club/",
-            front: "https://github.com/Krislv4nk/CamperCluub"
+            live: "https://krislv4nk.github.io/CamperClub/",
+            front: "https://github.com/Krislv4nk/CamperClub"
           },
           images: {
       first: camper2,

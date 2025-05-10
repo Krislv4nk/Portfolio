@@ -37,23 +37,33 @@ font-size: 55px;
 
 .carousel {
     width: 1200px;
-    height: 690px;
+    height: 640px;
 }
 
 .imgWrapper {
-    width: 100%;
-    height: auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    background-color: black;
+   flex-direction: column;
+   width: 625px;
+    gap: 10px;
+    background-color: rgb(15, 6, 26);
     padding: 20px 0px;
 }
+.rowDirection {
+    flex-direction: row;
+    width: 625px;
+    display: flex;
+    gap: 25px;
+    background-color: rgb(15, 6, 26);
+    padding: 20px 0px;
+  }
 
 .img {
-    width: 576px;
+    width: 476px;
+    object-fit: cover;
+    
+}
+.rowDirection .img {
+    width: 300px;
     object-fit: cover;
     
 }
@@ -64,15 +74,17 @@ font-size: 55px;
     display: flex;
     gap: 30px;
     flex-direction: column;
+    background-color: burlywood;
+    padding: 20px;
 }
 .paper {
-    height: 540px;
+    height: 590px;
     display: flex;
     align-items: center;
     justify-content: center;
    gap: 50px;
-    padding: 0px 70px 50px 70px;
-    margin-bottom: 50px;
+    padding: 0px 70px 0px 70px;
+    background-color: rgb(15, 6, 26) !important;
 }
 
 .infoTitle {
@@ -84,6 +96,7 @@ font-size: 55px;
 .linksWrapper {
     display: flex;
     gap: 30px;
+    flex-direction: column;
 }
 .links {
     color: #fff;
