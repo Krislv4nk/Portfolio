@@ -6,7 +6,6 @@
   margin: 0 auto;
   padding: 0 50px;
   position: relative;
-  border: 2px solid red;
   z-index: 10;
    transform: none !important;
 }

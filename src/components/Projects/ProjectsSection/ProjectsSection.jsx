@@ -6,6 +6,7 @@ import { Paper, Button } from '@mui/material';
 import { StyledEngineProvider } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import { ShowMoreModal } from '../ShowMoreModal/ShowMoreModal';
+import { Lens } from "@/components/magicui/lens";
 import css from './ProjectsSection.module.css';
 import { items } from '../../../lib/variables/variables';
 
@@ -36,14 +37,15 @@ const ProjectsPage = () => {
                 navButtonsAlwaysVisible={true}
                 navButtonsProps={{
                     style: {
-                        backgroundColor: 'white',
-                        color: 'black',
-                        borderRadius: 0,
+                        backgroundColor: 'transparent',
+                        color: 'white',
                         width: '50px',
                         height: '50px',
-                        border: 'red 1px solid',
+                        border: 'rgba(240, 237, 237, 0.64) 1px solid',
+                        borderRadius: '30%',
                         bottom: '0',
-                        top: 'unset'
+                        top: 'unset',
+                        margin: '0 20px',
                     }
                 }}
                 swipe={true}
@@ -73,8 +75,8 @@ const Item = ({ item, openShowMoreHandler }) => {
     return (
         <Paper className={css.paper}>
             <div className={`${css.imgWrapper} ${(item.name === "Camper Club" || item.name === "Food Store") ? css.rowDirection : ''}`}>
-                <img className={css.img} src={item.images.first} alt={item.name} />
-                <img className={css.img} src={item.images.second} alt={item.name} />
+            <Lens><img className={css.img} src={item.images.first} alt={item.name} /></Lens>
+            <Lens><img className={css.img} src={item.images.second} alt={item.name} /></Lens>
             </div>
             <div className={css.infoWrapper}>
                 <h2 className={css.infoTitle}>{item.name}</h2>
