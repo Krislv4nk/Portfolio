@@ -129,22 +129,18 @@ export const items = [
       "Settings: Users can customize their experience, including units of measurement and notification preferences.",
       "Responsive Design: The app is designed to work on various devices, ensuring a seamless experience on desktops, tablets, and smartphones."
     ],
-    tools: {
-      frontend: [
-        "React",
-        "Redux",
-        "MUI (Material-UI)",
-        "Axios",
-        "Formik",
-        "Yup"
-      ],
-      backend: [
-        "Node.js",
-        "Express",
-        "Nodemon",
-        "JWT (JSON Web Tokens)"
-      ]
-    },
+    tools: [
+      "React",
+      "Redux",
+      "MUI (Material-UI)",
+      "Axios",
+      "Formik",
+      "Yup",
+      "Node.js",
+      "Express",
+      "Nodemon",
+      "JWT (JSON Web Tokens)"
+    ],
     role: "On Front-End - Implemented logic for SignUp/SignIn pages (Redux, Axios, Formik, Yup), component MyDailyNorma with modal-window (MUI), component Background; on Back-End - Implemented logic for TodayWater component."
   },
         {
