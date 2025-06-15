@@ -9,6 +9,7 @@ import { ShowMoreModal } from '../ShowMoreModal/ShowMoreModal';
 import { Lens } from "@/components/magicui/lens";
 import css from './ProjectsSection.module.css';
 import { items } from '../../../lib/variables/variables';
+import icons from '../../../assets/symbol-defs.svg';
 
 
 
@@ -81,12 +82,18 @@ const Item = ({ item, openShowMoreHandler }) => {
             <div className={css.infoWrapper}>
                 <h2 className={css.infoTitle}>{item.name}</h2>
                 <div className={css.linksWrapper}>
-                    <a href={item.links.live} rel="noreferrer" target="_blank" className={css.links} title="View Live Demo">Live Demo</a>
-                    <a href={item.links.front} rel="noreferrer" target="_blank" className={css.links} title="View Front-End">Front-End GitHub</a>
-                    <a href={item.links.back} rel="noreferrer" target="_blank" className={css.links} title="View Back-End">Back-End GitHub</a>
+                    <a href={item.links.live} rel="noreferrer" target="_blank" className={css.links} title="View Live Demo"><svg className={css.repoLinkIcon}>
+              <use href={`${icons}#icon-link`}></use>
+            </svg>Live Demo</a>
+                    <a href={item.links.front} rel="noreferrer" target="_blank" className={css.links} title="View Front-End"><svg className={css.repoLinkIcon}>
+              <use href={`${icons}#icon-link`}></use>
+            </svg>Front-End GitHub</a>
+                    <a href={item.links.back} rel="noreferrer" target="_blank" className={css.links} title="View Back-End">
+                        <svg className={css.repoLinkIcon}>
+              <use href={`${icons}#icon-link`}></use>
+            </svg>Back-End GitHub</a>
                 </div>
-                <Button className={css.button} onClick={() => openShowMoreHandler(item)}>
-                    Show more
+                <Button className={css.button} onClick={() => openShowMoreHandler(item)}>Show more
                 </Button>
             </div>
         </Paper>

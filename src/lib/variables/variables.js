@@ -155,7 +155,13 @@ export const items = [
       second: phone2,
           },
           description: "Within this individual project, I implemented restricted routes accessible exclusively to registered users. When a user attempts to access these restricted routes without being logged into their account, they are automatically redirected to either the login or registration page. This feature ensures that only authorized users can navigate through the protected sections of the program, enhancing both security and user experience.The project enables users to store and manage contacts using the capabilities of the React framework and additional used for styling icons and interface components. This project is implemented following best practices in web development and includes testing to confirm its functionality",
-        tools: [
+          features: [
+            "User Authentication: Users can create accounts, log in, and manage their profiles.",
+            "Contact Management: Users can add, edit, and delete contacts from their phone book.",
+            "Search Functionality: Users can search for contacts by name or other criteria.",
+            "Responsive Design: The app is designed to work on various devices, ensuring a seamless experience."
+          ],
+          tools: [
     "React",
     "Redux",
     "MUI (Material-UI)",
@@ -182,5 +188,12 @@ export const items = [
       "Filter Functionality: Users can filter products based on various criteria to find what they need quickly.",
       "Pagination: Implemented pagination to manage large sets of data efficiently."
     ],
+    tools: [
+      "Vanilla JavaScript",
+      "HTML",
+      "CSS",
+      "REST API",
+      "Webpack"
+    ]
   },
     ]

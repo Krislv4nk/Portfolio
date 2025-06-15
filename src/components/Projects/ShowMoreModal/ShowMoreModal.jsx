@@ -1,4 +1,5 @@
-
+import css from './ShowMoreModal.module.css';
+import icons from '../../../assets/symbol-defs.svg';
 
 
 
@@ -9,11 +10,15 @@ export const ShowMoreModal = ({ onClose, item }) => {
     const { name, description, features, tools, role, images, links } = item;
 
     return (
-        <div style={{ padding: '2rem', backgroundColor: '#fff', color: '#000', maxHeight: '80vh', overflowY: 'auto' }}>
+        <div className={css.mainWrapper}>
+            <button onClick={onClose} >
+                <svg className={css.repoLinkIcon}>
+              <use href={`${icons}#icon-close`}></use>
+                </svg></button>
             <h2>{name}</h2>
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                <img src={images.first} alt={`${name} preview 1`} style={{ width: '45%' }} />
-                <img src={images.second} alt={`${name} preview 2`} style={{ width: '45%' }} />
+            <div className={css.imgWrapper}>
+                <img className={css.image} src={images.first} alt={`${name} preview 1`} />
+                <img className={css.image} src={images.second} alt={`${name} preview 2`} />
             </div>
 
             <h3>Links:</h3>
