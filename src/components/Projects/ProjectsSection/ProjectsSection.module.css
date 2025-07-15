@@ -41,10 +41,12 @@
 .carousel {
     width: 1200px;
     height: 590px;
-    border: 1px solid rgba(153, 69, 232, 0.325);
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.05), 
-    0 0 60px rgba(152, 69, 232, 0.1),
-    0 0 80px rgba(152, 69, 232, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0 0 0 0.5px rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
     border-radius: 10px;
 }
 
@@ -132,8 +134,8 @@ border: 1px solid #ffffff !important;
     justify-content: center;
    gap: 50px;
     padding: 0px 70px 0px 70px;
-    background: linear-gradient(135deg, #36051f, #000d4f, #020515) !important;
-    
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
 .infoTitle {
