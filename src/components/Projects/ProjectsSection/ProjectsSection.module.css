@@ -12,7 +12,8 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
- margin: 100px 0px ;
+    padding-top: 50px;
+ margin: 100px 0px;
 }
 
 @keyframes gradient {
@@ -32,7 +33,7 @@
     -webkit-text-fill-color: transparent;
     padding: 10px 20px;
     border-radius: 20px;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 60px;
   }
@@ -40,7 +41,7 @@
 
 .carousel {
     width: 1200px;
-    height: 590px;
+    height: 400px;
     background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow:
@@ -50,10 +51,21 @@
     border-radius: 10px;
 }
 
+.paper {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap: 50px;
+    padding: 0px 70px 0px 70px;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
 .imgWrapper {
     display: flex;
    flex-direction: column;
-   width: 625px;
+   width: 425px;
     gap: 10px;
     background-color: transparent;
     padding: 20px 0px;
@@ -62,7 +74,7 @@
 }
 .rowDirection {
     flex-direction: row;
-    width: 625px;
+    width: 425px;
     display: flex;
     gap: 25px;
     background-color: transparent;
@@ -70,12 +82,12 @@
   }
 
 .img {
-    width: 476px;
+    width: 276px;
     object-fit: cover;
     border-radius: 10px;
 }
 .rowDirection .img {
-    width: 300px;
+    width: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -91,13 +103,15 @@
     width: 258px;
 }
 .button {
+  font-family: 'Courier New', monospace;
     padding: 16px 32px !important;
     display: flex;
     align-items: center ;
     justify-content: center ;
     gap: 20px; 
     text-align: center;
-    font-weight: 700 !important;
+    /* font-weight: 700 !important; */
+    font-size: 0.6rem !important;
   color: #ffffff !important;
   cursor: pointer;
 border-radius: 20px !important;
@@ -127,19 +141,10 @@ border: 1px solid #ffffff !important;
   }
 
 
-.paper {
-    height: 590px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   gap: 50px;
-    padding: 0px 70px 0px 70px;
-    background-color: rgba(255, 255, 255, 0.05) !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
-}
+
 
 .infoTitle {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 700;
     color: white;
     margin-bottom: 20px;
@@ -160,7 +165,7 @@ border: 1px solid #ffffff !important;
    width: auto;
    white-space: nowrap;
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     /* text-decoration: none;
     transition: all 0.3s ease; */
   }
