@@ -6,29 +6,26 @@ import css from './AnimatedGallery.module.css';
 
 const imageVariants = {
   enter: {
-    opacity: 0,
+    opacity: 1,
     y: 0,
-    scale: 0.95,
     transition: {
-      duration: 0.05,
+      duration: 0.3,
       ease: 'easeInOut',
     },
   },
   center: {
     opacity: 1,
     y: 0,
-    scale: 1,
     transition: {
-      duration: 0.05,
+      duration: 0.3,
       ease: 'easeInOut',
     },
   },
   exit: {
-    opacity: 0,
+    opacity: 1,
     y: 0,
-    scale: 0.95,
     transition: {
-      duration: 0.05,
+      duration: 0.3,
       ease: 'easeInOut',
     },
   },

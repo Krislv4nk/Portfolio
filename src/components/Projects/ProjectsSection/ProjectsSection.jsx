@@ -39,15 +39,14 @@ const ProjectsPage = () => {
                 navButtonsAlwaysVisible={true}
                 navButtonsProps={{
                     style: {
-                        backgroundColor: 'transparent',
                         color: 'white',
                         width: '50px',
                         height: '50px',
                         border: 'rgba(240, 237, 237, 0.64) 1px solid',
-                        borderRadius: '30%',
+                        borderRadius: '20%',
                         bottom: '0',
                         top: 'unset',
-                        margin: '0 20px',
+                    margin: '0 20px',
                     }
                 }}
                 swipe={true}
@@ -55,7 +54,7 @@ const ProjectsPage = () => {
                 fullHeightHover={false}
             >
               {items.map(item => {
-  const imagesArray = [item.images.first, item.images.second];
+  const imagesArray = [item.images.first, item.images.second, item.images.third].filter(Boolean);
 
   return (
     <Item
@@ -102,11 +101,19 @@ const Item = ({ item, openShowMoreHandler }) => {
         </Lens>
         <Lens>
           <img className={css.img} src={item.images.second} alt={item.name} />
-        </Lens>
+            </Lens>
+        {item.images.third && (
+          <Lens>
+            <img className={css.img} src={item.images.third} alt={item.name} />
+          </Lens>
+        )}
       </>
     ) : (
       <Lens>
-        <AnimatedGallery images={[item.images.first, item.images.second]} interval={7000} />
+        <AnimatedGallery
+          images={[item.images.first, item.images.second, item.images.third].filter(Boolean)}
+          interval={7000}
+        />
       </Lens>
     )}
             

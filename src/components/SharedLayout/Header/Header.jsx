@@ -17,26 +17,35 @@ export const Header = () => {
 
   useEffect(() => {
     const sections = ['about', 'projects'];
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        rootMargin: '-40% 0px -50% 0px', // активується коли середина секції видима
-        threshold: 0.1,
-      }
-    );
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.6, 
+    };
 
-    sections.forEach((id) => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(id => {
       const section = document.getElementById(id);
-      if (section) observer.observe(section);
+      if (section) {
+        observer.observe(section);
+      }
     });
 
-    return () => observer.disconnect();
+    return () => {
+      sections.forEach(id => {
+        const section = document.getElementById(id);
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
   }, []);
 
   return (
@@ -47,9 +56,7 @@ export const Header = () => {
           <li className={css.linkItem}>
             <button
               onClick={() => handleScrollToSection('about')}
-              className={`${css.headerItem} ${
-                activeSection === 'about' ? css.active : ''
-              }`}
+              className={`${css.headerItem} ${activeSection === 'about' ? css.active : ''}`}
             >
               About
             </button>
@@ -57,9 +64,7 @@ export const Header = () => {
           <li className={css.linkItem}>
             <button
               onClick={() => handleScrollToSection('projects')}
-              className={`${css.headerItem} ${
-                activeSection === 'projects' ? css.active : ''
-              }`}
+              className={`${css.headerItem} ${activeSection === 'projects' ? css.active : ''}`}
             >
               Projects
             </button>
@@ -69,6 +74,7 @@ export const Header = () => {
     </header>
   );
 };
+
 
 
 

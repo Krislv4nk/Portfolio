@@ -4,10 +4,13 @@ import water1 from '../../assets/images/water-main.jpg';
 import water2 from '../../assets/images/tracker.jpg';
 import lingo1 from '../../assets/images/lingo.jpg';
 import lingo2 from '../../assets/images/lingo1.jpg';
-import phone1 from '../../assets/images/phone2.jpg';
-import phone2 from '../../assets/images/Phone1.jpg';
+import lingo3 from '../../assets/images/lingo3.jpg';
+// import lingo3 from '../../assets/images/lingo3-2x.jpg';
+import phone1 from '../../assets/images/phone21.jpg';
+import phone2 from '../../assets/images/Phone11.jpg';
 import store1 from '../../assets/images/food.jpg';
 import store2 from '../../assets/images/1food.jpg';
+import store3 from '../../assets/images/filters.jpg';
 
 
 export const skills = [
@@ -60,7 +63,8 @@ export const items = [
        },
           images: {
       first: lingo1,
-      second: lingo2,
+            second: lingo2,
+            third: lingo3,
     },
     description: "Individual Project. The Teachers App is a web application built with Firebase and React for viewing and interacting with a teacher database.Users can register, log in, view profiles, save favorites, and book trial lessons. Firebase ensures real-time update and secure user management",
     features: [
@@ -178,7 +182,8 @@ export const items = [
     },
           images: {
       first: store1,
-      second: store2,
+            second: store2,
+            third: store3,
     },
     description: "Team Project. The Food Store project is a collaborative effort that showcases the power of Vanilla JavaScript, API integration, and responsive design. As part of a team, I contributed to the development of two key sections on the main page: Popular Products and Discount Products. The website features a responsive layout, ensuring a seamless user experience across devices. Additionally, I implemented modal windows, contact forms, filter functionality, and pagination to enhance user interaction and streamline navigation.",
     features: [

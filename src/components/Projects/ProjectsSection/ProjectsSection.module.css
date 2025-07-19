@@ -40,6 +40,7 @@
   
 
 .carousel {
+  position: relative;
     width: 1200px;
     height: 400px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -95,8 +96,8 @@
     border-radius: 10px;
 }
 .foodClass {
-  padding: 0px 115px;
-    width: 500px;
+  padding-left: 50px;
+    width: 680px;
   height: 400px;
     object-fit: cover;
     border-radius: 10px;
