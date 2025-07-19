@@ -1,4 +1,4 @@
-import camper1 from "../../assets/images/camper1.jpg";
+import camper1 from "../../assets/images/copycamper1.jpg";
 import camper2 from "../../assets/images/camper.jpg";
 import water1 from '../../assets/images/water-main.jpg';
 import water2 from '../../assets/images/tracker.jpg';

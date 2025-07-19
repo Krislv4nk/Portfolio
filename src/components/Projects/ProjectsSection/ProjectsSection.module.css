@@ -55,8 +55,7 @@
     height: 400px;
     display: flex;
     align-items: center;
-    justify-content: center;
-   gap: 50px;
+    justify-content: space-between;
     padding: 0px 70px 0px 70px;
     background-color: rgba(255, 255, 255, 0.05) !important;
     border: 1px solid rgba(255, 255, 255, 0.08) !important;
@@ -64,33 +63,45 @@
 
 .imgWrapper {
     display: flex;
-   flex-direction: column;
-   width: 425px;
-    gap: 10px;
+   width: 730px;
+   height: 400px;
     background-color: transparent;
-    padding: 20px 0px;
     justify-content: center;
     align-items: center;
+    padding-left: 20px;
 }
 .rowDirection {
     flex-direction: row;
-    width: 425px;
+    width: 730px;
+    height: 400px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 25px;
     background-color: transparent;
-    padding: 20px 0px;
   }
 
 .img {
-    width: 276px;
+    width: 730px;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px;
 }
-.rowDirection .img {
-    width: 200px;
+.camperClass {
+  width: 630px;
+  padding: 0px 50px;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px;
 }
+.foodClass {
+  padding: 0px 115px;
+    width: 500px;
+  height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 .infoWrapper {
    align-items: center;

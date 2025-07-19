@@ -5,9 +5,33 @@ import { useState, useEffect } from 'react';
 import css from './AnimatedGallery.module.css';
 
 const imageVariants = {
-  enter: { opacity: 0, scale: 0.9 },
-  center: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
-  exit: { opacity: 0, scale: 0.9, transition: { duration: 0.4 } },
+  enter: {
+    opacity: 0,
+    y: 0,
+    scale: 0.95,
+    transition: {
+      duration: 0.05,
+      ease: 'easeInOut',
+    },
+  },
+  center: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.05,
+      ease: 'easeInOut',
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: 0,
+    scale: 0.95,
+    transition: {
+      duration: 0.05,
+      ease: 'easeInOut',
+    },
+  },
 };
 
 const AnimatedGallery = ({ images = [], interval = 3000 }) => {
@@ -23,7 +47,7 @@ const AnimatedGallery = ({ images = [], interval = 3000 }) => {
 
   return (
     <div className={css.sliderWrapper}>
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="sync">
         <motion.img
           key={index}
           src={images[index]}
@@ -33,10 +57,7 @@ const AnimatedGallery = ({ images = [], interval = 3000 }) => {
           initial="enter"
           animate="center"
           exit="exit"
-          whileHover={{
-            scale: 1,
-            transition: { duration: 0.1 },
-          }}
+
         />
       </AnimatePresence>
     </div>
