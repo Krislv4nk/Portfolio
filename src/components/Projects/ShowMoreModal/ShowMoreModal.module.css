@@ -1,40 +1,41 @@
 
 
 .mainWrapper {
-    padding: 30px;
-    display: flex;
+  padding: 30px;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-   /* top: 50%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
   background-color: rgb(36, 35, 35);
-  z-index: 7;
-  text-align: left;
-   width: 982px;
-height: 720px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(240, 237, 237, 0.1),
-      0 0 20px rgba(240, 237, 237, 0.1),
-      0 0 40px rgba(240, 237, 237, 0.1),
-      0 0 80px rgba(240, 237, 237, 0.1);
-    overflow: auto;
-     /* scrollbar-width: thin; */
-   /* box-sizing: border-box;
-   scroll-behavior: smooth; */
-
+  z-index: 777;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(240, 237, 237, 0.1),
+              0 0 20px rgba(240, 237, 237, 0.1),
+              0 0 40px rgba(240, 237, 237, 0.1),
+              0 0 80px rgba(240, 237, 237, 0.1);
+  overflow-y: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: 900px;
+  min-height: 500px;
 }
 
 
 .closeButton {
     position: absolute;
+    content: "";
     top: 20px;
     right: 20px;
     background: none;
     border: none;
     cursor: pointer;
+     display: flex;
+               justify-content: center;
+               align-items: center;
 }
 
 .repoLinkIcon {
@@ -45,7 +46,9 @@ height: 720px;
 
    .title {
     font-size: 25px;
+    margin-top: 50px;
     margin-bottom: 10px;
+    font-weight: 800;
 }
 
 
@@ -57,46 +60,59 @@ height: 720px;
     margin-right: auto;
     margin-bottom: 10px;
 }
+.linksWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
 .linksList {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.linkItem {
+  list-style: none;
 }
 .link {
-    font-size: 16px;
-    color: #ffffff;
-    text-decoration: underline;
-    transition: color 0.3s ease;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
 }
-
-.linksWrapper {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    justify-content: space-between;
-    gap: 20px;
-    margin-right: 0px;
-    margin-right: auto;
+.link:hover {
+  color: #9969e8;
+}
+.title,
+.subtitle,
+.description {
+  width: 100%;
+  text-align: left;
 }
 .description {
     font-size: 16px;
     color: #ffffff;
-    margin-bottom: 20px;
-}
-.role {
-    font-size: 16px;
-    color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .featuresList,
 .toolsList {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 16px;
-    margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+}
+.toolItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.featureItem {
+  color: #ffffff;
 }
 
 .showLessButton {
@@ -106,8 +122,7 @@ height: 720px;
     align-items: center ;
     justify-content: center ;
     gap: 20px; 
-    text-align: center;
-    font-size: 0.6rem ;
+    font-size: 18px;
   color: #ffffff;
   cursor: pointer;
 border-radius: 20px;
@@ -116,6 +131,9 @@ border: 1px solid #ffffff;
     0 0 20px rgba(240, 237, 237, 0.1),
     0 0 40px rgba(240, 237, 237, 0.1),
     0 0 80px rgba(240, 237, 237, 0.1);
+    transition: all 0.3s ease;
+    margin-right: 0px;
+    margin-left: auto;
 }
 .showLessButton:hover {
      border-color: rgba(153, 69, 232, 0.325);

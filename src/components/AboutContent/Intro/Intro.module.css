@@ -6,8 +6,8 @@
     align-items: center;
     justify-content: center;
     gap: 100px;
-    padding: 50px;
-    margin: 200px 0px;
+    padding: 140px 50px;
+    margin: 100px 0px;
 }
 .helloDiv {
     display: flex;

@@ -19,7 +19,7 @@ export const ShowMoreModal = ({ onClose, item }) => {
                 </svg></button>
             <h2 className={css.title}>{name}</h2>
             <div className={css.linksWrapper}>
-                <h3 className={css.subtitle}>Links:</h3>
+                {/* <h3 className={css.subtitle}>Links:</h3> */}
                 <ul className={css.linksList}>
                     <li className={css.linkItem}><a className={css.link} href={links.live} target="_blank" rel="noreferrer">Live Demo</a></li>
                     <li className={css.linkItem}><a className={css.link} href={links.front} target="_blank" rel="noreferrer">Front-End GitHub</a></li>
@@ -31,7 +31,7 @@ export const ShowMoreModal = ({ onClose, item }) => {
                 {tools.map((tool, i) => {
     const skill = skills.find(s => s.name.toLowerCase() === tool.toLowerCase());
     return (
-      <li key={i} className={css.toolItem}>
+      <li key={i} className={css.toolItem}>{tool}
         {skill && (
           <Icon id={skill.iconId} className={css.toolIcon} />
         )}

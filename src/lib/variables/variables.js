@@ -79,10 +79,17 @@ export const items = [
       "react-router-dom",
       "Firebase",
       "MUI (Material-UI)",
+      "Axios",
+      "@emotion/styled",
       "uuid",
       "react-select",
       "Formik",
-      "Yup"
+      "Yup",
+      "Vite",
+      "Vs Code",
+      "Git",
+      "Postman",
+      "Figma",
     ]
   },
         {
@@ -109,7 +116,12 @@ export const items = [
     "MUI (Material-UI)",
     "Axios",
     "Formik",
-    "Yup"
+    "Yup",
+    "Vite",
+      "Vs Code",
+    "Git",
+    "Postman",
+    "Figma"
   ],
         },
         {
@@ -143,7 +155,15 @@ export const items = [
       "Node.js",
       "Express",
       "Nodemon",
-      "JWT (JSON Web Tokens)"
+      "JWT (JSON Web Tokens)",
+      "Vite",
+      "Vs Code",
+      "Git",
+      "MongoDB",
+      "Postman",
+      "Nodemailer",
+      "i18next",
+      "Figma"
     ],
     role: "On Front-End - Implemented logic for SignUp/SignIn pages (Redux, Axios, Formik, Yup), component MyDailyNorma with modal-window (MUI), component Background; on Back-End - Implemented logic for TodayWater component."
   },
@@ -171,7 +191,11 @@ export const items = [
     "MUI (Material-UI)",
     "Axios",
     "Formik",
-    "Yup"
+            "Yup",
+    "Vite",
+      "Vs Code",
+      "Git",
+      "Postman",
   ]
   },
   {
@@ -198,7 +222,11 @@ export const items = [
       "HTML",
       "CSS",
       "REST API",
-      "Webpack"
+      "Webpack",
+      "Parcel",
+      "Vs Code",
+      "Git",
+      "Figma",
     ]
   },
     ]
