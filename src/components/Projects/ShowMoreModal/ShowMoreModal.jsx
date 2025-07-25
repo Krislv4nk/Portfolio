@@ -2,6 +2,7 @@ import css from './ShowMoreModal.module.css';
 import { skills } from '../../../lib/variables/variables.js';
 import Icon from '../../AboutContent/Icon/Icon.jsx';
 import icons from '../../../assets/symbol-defs.svg';
+import { UnknownIcon } from './UnknownIcon/UnknownIcon.jsx';
 
 
 
@@ -9,7 +10,7 @@ import icons from '../../../assets/symbol-defs.svg';
 export const ShowMoreModal = ({ onClose, item }) => {
     if (!item) return null;
 
-    const { name, description, features, tools, role, links } = item;
+    const { name, description, features, tools, links } = item;
 
     return (
         <div className={css.mainWrapper}>
@@ -31,16 +32,18 @@ export const ShowMoreModal = ({ onClose, item }) => {
                 {tools.map((tool, i) => {
     const skill = skills.find(s => s.name.toLowerCase() === tool.toLowerCase());
     return (
-      <li key={i} className={css.toolItem}>{tool}
-        {skill && (
+      <li key={i} className={css.toolItem}>
+        {skill ? (
           <Icon id={skill.iconId} className={css.toolIcon} />
+        ) : (
+          <UnknownIcon className={css.toolIcon} />
         )}
-        {/* <span>{tool}</span> */}
+        <span>{tool}</span>
       </li>
     );
   })}
             </ul>
-            <h3 className={css.subtitle}>Role: <span className={css.role}>{role}</span></h3>
+            <h3 className={css.subtitle}>Role: </h3>
             <p className={css.description}>{description}</p>
 
             <h3 className={css.subtitle}>Features:</h3>
