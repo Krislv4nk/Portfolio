@@ -232,7 +232,8 @@ export const items = [
       "Vs Code",
       "Git",
       "Figma",
-      "npm"
+      "npm",
+      "Postman",
     ]
   },
     ]
