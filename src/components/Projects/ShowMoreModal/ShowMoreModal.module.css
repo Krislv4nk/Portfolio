@@ -20,7 +20,7 @@
   overflow-y: auto;
   max-width: 90vw;
   max-height: 90vh;
-  width: 900px;
+  width: 1000px;
   min-height: 500px;
 }
 
@@ -48,7 +48,7 @@
     font-size: 25px;
     margin-top: 50px;
     margin-bottom: 10px;
-    font-weight: 800;
+    font-weight: 900;
 }
 
 
@@ -56,6 +56,8 @@
 
 .subtitle {
     font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
      margin-left: 0px;
     margin-right: auto;
     margin-bottom: 10px;
@@ -76,7 +78,9 @@
   list-style: none;
 }
 .link {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
   color: #ffffff;
   text-decoration: underline;
   transition: color 0.3s ease;
@@ -93,11 +97,10 @@
 .description {
     font-size: 16px;
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.featuresList,
-.toolsList {
+.featuresList {
   display: flex;
   flex-wrap: wrap;
   gap: 10px 20px;
@@ -106,11 +109,7 @@
   padding: 0;
   list-style: none;
 }
-.toolItem {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+
 .featureItem {
   color: #ffffff;
 }
@@ -149,4 +148,35 @@ border: 1px solid #ffffff;
     width: 30px;
     height: 30px;
     fill: #ffffff;
+}
+.toolsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 20px;
+  margin: 20px 0px 40px 0px;
+  padding: 0;
+  list-style: none;
+}
+
+
+.toolItem{
+  padding: 24px 20px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0 0 0 0.5px rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+
+  color: #f1f1f1;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

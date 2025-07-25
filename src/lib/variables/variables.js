@@ -47,6 +47,9 @@ export const skills = [
   { name: "Vercel", iconId: "vercel" },
   { name: "ChatGPT", iconId: "chatgpt-logo" },
   { name: "REST API", iconId: "rest-api" },
+  { name: "Styled Components", iconId: "styled-components" },
+  { name: "npm", iconId: "npm" },
+  { name: "React Router DOM", iconId: "reactrouter" },
 ];
 
 
@@ -76,13 +79,11 @@ export const items = [
     ],
     tools: [
       "React",
-      "react-router-dom",
+      "React Router DOM",
       "Firebase",
       "Material-UI",
       "Axios",
       "@emotion/styled",
-      "uuid",
-      "react-select",
       "Formik",
       "Yup",
       "Vite",
@@ -90,6 +91,7 @@ export const items = [
       "Git",
       "Postman",
       "Figma",
+      "npm"
     ]
   },
         {
@@ -121,7 +123,8 @@ export const items = [
       "Vs Code",
     "Git",
     "Postman",
-    "Figma"
+    "Figma",
+    "npm"
   ],
         },
         {
@@ -163,7 +166,9 @@ export const items = [
       "Postman",
       "Nodemailer",
       "i18next",
-      "Figma"
+      "Figma",
+      "Styled Components",
+      "npm"
     ],
     role: "On Front-End - Implemented logic for SignUp/SignIn pages (Redux, Axios, Formik, Yup), component MyDailyNorma with modal-window (MUI), component Background; on Back-End - Implemented logic for TodayWater component."
   },
@@ -195,7 +200,8 @@ export const items = [
     "Vite",
       "Vs Code",
       "Git",
-      "Postman",
+            "Postman",
+      "npm"
   ]
   },
   {
@@ -226,6 +232,7 @@ export const items = [
       "Vs Code",
       "Git",
       "Figma",
+      "npm"
     ]
   },
     ]

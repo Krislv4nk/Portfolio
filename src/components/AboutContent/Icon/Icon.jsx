@@ -10,3 +10,4 @@ const Icon = ({ id, className, width = 24, height = 24, stroke = "currentColor" 
 );
 
 export default Icon;
+
