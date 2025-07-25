@@ -1,7 +1,7 @@
 import css from './ShowMoreModal.module.css';
 import { skills } from '../../../lib/variables/variables.js';
 import Icon from '../../AboutContent/Icon/Icon.jsx';
-import icons from '../../../assets/symbol-defs.svg';
+import icons from '../../../assets/icons.svg';
 import { UnknownIcon } from './UnknownIcon/UnknownIcon.jsx';
 
 

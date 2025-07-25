@@ -10,7 +10,7 @@ import { ShowMoreModal } from '../ShowMoreModal/ShowMoreModal';
 import { Lens } from "@/components/magicui/lens";
 import css from './ProjectsSection.module.css';
 import { items } from '../../../lib/variables/variables';
-import icons from '../../../assets/symbol-defs.svg';
+import icons from '../../../assets/icons.svg';
 import AnimatedGallery from '../AnimatedGallery/AnimatedGallery.jsx';
 
 
