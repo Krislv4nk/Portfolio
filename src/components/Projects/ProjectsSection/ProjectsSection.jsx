@@ -10,7 +10,6 @@ import { ShowMoreModal } from '../ShowMoreModal/ShowMoreModal';
 import { Lens } from "@/components/magicui/lens";
 import css from './ProjectsSection.module.css';
 import { items } from '../../../lib/variables/variables';
-import icons from '../../../assets/sprite.svg';
 import AnimatedGallery from '../AnimatedGallery/AnimatedGallery.jsx';
 
 
@@ -43,7 +42,7 @@ const ProjectsPage = () => {
                         width: '50px',
                         height: '50px',
                         border: 'rgba(240, 237, 237, 0.64) 1px solid',
-                        borderRadius: '20%',
+                        borderRadius: '20px',
                         bottom: '0',
                         top: 'unset',
                     margin: '0 20px',
@@ -123,14 +122,14 @@ const Item = ({ item, openShowMoreHandler }) => {
         <h2 className={css.infoTitle}>{item.name}</h2>
         <div className={css.linksWrapper}>
           <a href={item.links.live} rel="noreferrer" target="_blank" className={css.links} title="View Live Demo">
-            <svg className={css.repoLinkIcon}><use href={`${icons}#icon-links`} /></svg>Live Demo
+            Live Demo
           </a>
           <a href={item.links.front} rel="noreferrer" target="_blank" className={css.links} title="View Front-End">
-            <svg className={css.repoLinkIcon}><use href={`${icons}#icon-links`} /></svg>Front-End GitHub
+            Front-End GitHub
           </a>
           {item.links.back && (
             <a href={item.links.back} rel="noreferrer" target="_blank" className={css.links} title="View Back-End">
-              <svg className={css.repoLinkIcon}><use href={`${icons}#icon-link`} /></svg>Back-End GitHub
+              Back-End GitHub
             </a>
           )}
         </div>

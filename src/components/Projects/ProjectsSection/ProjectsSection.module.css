@@ -43,13 +43,13 @@
   position: relative;
     width: 1200px;
     height: 400px;
-    background-color: rgba(255, 255, 255, 0.05);
+   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow:
     0 1px 2px rgba(0, 0, 0, 0.05),
     inset 0 0 0 0.5px rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(8px);
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .paper {
@@ -86,22 +86,21 @@
     width: 730px;
     height: 400px;
     object-fit: cover;
-    border-radius: 10px;
 }
 .camperClass {
-  width: 730px;
-  /* padding: 0px 50px; */
+  width: 630px;
+  gap: 40px;;
+  margin: 0px 30px;
     height: 400px;
     object-fit: cover;
-    border-radius: 10px;
 }
 .foodClass {
   /* padding-left: 50px; */
     width: 730px;
   height: 400px;
     object-fit: cover;
-    border-radius: 10px;
 }
+
 
 
 .infoWrapper {
@@ -118,41 +117,22 @@
   font-family: 'Courier New', monospace;
     padding: 16px 32px !important;
     display: flex;
-    align-items: center ;
-    justify-content: center ;
-    gap: 20px; 
+    align-items: center;
+    justify-content: center;
     text-align: center;
     /* font-weight: 700 !important; */
-    font-size: 0.6rem !important;
+    font-size: 12px !important;
   color: #ffffff !important;
   cursor: pointer;
 border-radius: 20px !important;
-border: 1px solid #ffffff !important;
-  box-shadow: 0 0 10px rgba(240, 237, 237, 0.1),
-    0 0 20px rgba(240, 237, 237, 0.1),
-    0 0 40px rgba(240, 237, 237, 0.1),
-    0 0 80px rgba(240, 237, 237, 0.1);
+border: 1px solid rgba(240, 237, 237, 0.64) !important;
+ 
 }
 
 .button:hover {
-    border-color: rgba(153, 69, 232, 0.325) !important;
-    box-shadow:
-      0 0 10px rgba(153, 69, 232, 0.325),
-      0 0 20px rgba(152, 69, 232, 0.1),
-      0 0 40px rgba(152, 69, 232, 0.1),
-      0 0 80px rgba(152, 69, 232, 0.1);
-    transform: scale(1.05);
+  background-color: #494949 !important;
     transition: all 0.3s ease;
   }
-
-  .showMoreIcon {
-    width: 10px;
-    height: 10px;
-    fill: #ffffff;
-    stroke: #00baff;
-  }
-
-
 
 
 .infoTitle {
@@ -163,45 +143,63 @@ border: 1px solid #ffffff !important;
 }
 .linksWrapper {
     display: flex;
-    gap: 30px;
-    flex-direction: column;
+    gap: 20px;
+    flex-direction: column; 
     margin-bottom: 20px;
 }
 .links {
-  display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  cursor: pointer;
-  text-decoration: underline;
-   width: auto;
-   white-space: nowrap;
-    color: white;
-    font-size: 18px;
-    /* text-decoration: none;
-    transition: all 0.3s ease; */
+   font-size: 18px;
+   font-weight: 600;
+   position: relative;
+      overflow: hidden;
+      text-decoration: none;
+   padding: 5px 10px;
+   color: #ffffffff;
+   transition:  0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
   }
-  
-  /* .links::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0;
-    bottom: -4px;
-    background-color: white;
-  } */
-  
-  .links:hover,
-  .links:focus {
-    animation: left-edge 0.5s linear 1;
-  }
-  .repoLinkIcon {
-    width: 30px;
-     height: 30px;
-     fill: #ffffff;
-     stroke: #00baff;
-   }
+
+  .links::after {
+   content: "";
+   border-radius: 10px;
+   background: rgba(98, 88, 88, 0.5);
+   position: absolute;
+   left: 12px;
+   bottom: -6px;
+   width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        z-index: -1;
+        
+   transition:  0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+}
+
+.links:hover:after {
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 100%;
+      }
+
+
+
+ /* &::after {
+        content: "";
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 12px;
+        bottom: -6px;
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        z-index: -1;
+        transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+      }
+      &:hover:after {
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 100%;
+      }
+    } */
+
  
 @keyframes left-edge {
 	0% {

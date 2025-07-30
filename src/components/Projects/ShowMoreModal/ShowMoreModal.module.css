@@ -10,13 +10,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(36, 35, 35);
   z-index: 777;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(240, 237, 237, 0.1),
-              0 0 20px rgba(240, 237, 237, 0.1),
-              0 0 40px rgba(240, 237, 237, 0.1),
-              0 0 80px rgba(240, 237, 237, 0.1);
+background-color: rgb(23, 23, 23);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0 0 0 0.5px rgba(255, 255, 255, 0.06);
+  /* backdrop-filter: blur(2px); */
   overflow-y: auto;
   max-width: 90vw;
   max-height: 90vh;
@@ -25,24 +26,6 @@
 }
 
 
-.closeButton {
-    position: absolute;
-    content: "";
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
-     display: flex;
-               justify-content: center;
-               align-items: center;
-}
-
-.repoLinkIcon {
-    width: 30px;
-     height: 30px;
-     fill: #ffffff;
-   }
 
    .title {
     font-size: 25px;
@@ -57,7 +40,7 @@
 .subtitle {
     font-size: 20px;
     font-weight: 600;
-    color: #ffffff;
+    color: #979595;
      margin-left: 0px;
     margin-right: auto;
     margin-bottom: 10px;
@@ -77,17 +60,77 @@
 .linkItem {
   list-style: none;
 }
-.link {
+
+.links {
+   font-size: 18px;
+   font-weight: 600;
+   position: relative;
+      overflow: hidden;
+      text-decoration: none;
+   padding: 5px 10px;
+   color: #ffffffff;
+   transition:  0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+  }
+
+  .links::after {
+   content: "";
+   border-radius: 10px;
+   background: rgba(98, 88, 88, 0.5);
+   position: absolute;
+   left: 12px;
+   bottom: -6px;
+   width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        z-index: -1;
+        
+   transition:  0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+}
+
+.links:hover:after {
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 100%;
+      }
+
+
+/* .link {
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
-  color: #ffffff;
-  text-decoration: underline;
-  transition: color 0.3s ease;
+  text-decoration: none;
+   line-height: 1;
+   position: relative;
+   z-index: 0;
+   display: inline-block;
+   padding: 5px 10px;
+   overflow: hidden;
+   color: #ffffffff;
+   vertical-align: bottom;
+   transition: color .3s ease-out;
 }
-.link:hover {
-  color: #9969e8;
+.link::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   transform: translateY(calc(100% - 2px));
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(60deg,  #8e44ad 0%, #3498db 50%, #00ffff 100%);
+   transition: transform .25s ease-out;
 }
+
+.link:hover { 
+   color: #fff; 
+}
+.link:hover::before {
+   transform: translateY(0);
+   transition: transform .25s ease-out;
+} */
+
+
 .title,
 .subtitle,
 .description {
@@ -116,32 +159,23 @@
 
 .showLessButton {
      font-family: 'Courier New', monospace;
-    padding: 16px 32px;
+    padding: 10px 20px;
     display: flex;
-    align-items: center ;
-    justify-content: center ;
-    gap: 20px; 
+    align-items: center;
+    justify-content: center;
     font-size: 18px;
+    font-weight: 600;
   color: #ffffff;
   cursor: pointer;
 border-radius: 20px;
-border: 1px solid #ffffff;
-  box-shadow: 0 0 10px rgba(240, 237, 237, 0.1),
-    0 0 20px rgba(240, 237, 237, 0.1),
-    0 0 40px rgba(240, 237, 237, 0.1),
-    0 0 80px rgba(240, 237, 237, 0.1);
-    transition: all 0.3s ease;
+border: 1px solid rgba(240, 237, 237, 0.64);
     margin-right: 0px;
     margin-left: auto;
 }
+
+
 .showLessButton:hover {
-     border-color: rgba(153, 69, 232, 0.325);
-    box-shadow:
-      0 0 10px rgba(153, 69, 232, 0.325),
-      0 0 20px rgba(152, 69, 232, 0.1),
-      0 0 40px rgba(152, 69, 232, 0.1),
-      0 0 80px rgba(152, 69, 232, 0.1);
-    transform: scale(1.05);
+background-color: #494949;
     transition: all 0.3s ease;
 }
 .toolIcon {

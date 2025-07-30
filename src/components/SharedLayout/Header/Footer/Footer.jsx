@@ -19,7 +19,7 @@ export const Footer = () => {
                     <use href={`${icons}#icon-telegram`}></use>
                   </svg></a></li>
               <li><a href="https://github.com/Krislv4nk/" className={css.contacts} title="GitHub" target="_blank"
-                  rel="noreferrer"><svg className={css.icon}>
+                  rel="noreferrer"><svg className={css.iconGitHub}>
                     <use href={`${icons}#icon-github1`}></use>
                   </svg></a></li>
             </ul></footer>
