@@ -1,5 +1,7 @@
 import { Suspense } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
+import SimpleBar from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css';
 import { Header } from './Header/Header';
 import { Container } from './Container/Container';
 import { Loader } from './Loader/Loader';
@@ -20,6 +22,7 @@ const SharedLayout = () => {
   return (
     <>
       <Header />
+      <SimpleBar style={{ maxHeight: '100vh', overflowY: 'auto' }}>
       <div style={{ position: 'fixed', width: '100%', height: '100%', zIndex: -1 }}>
         <Background />
       </div>
@@ -33,7 +36,8 @@ const SharedLayout = () => {
             </Suspense>
           </animated.div>
         ))}
-      </Container>
+        </Container>
+      </SimpleBar>
     </>
   );
 };

@@ -1,3 +1,6 @@
+
+// import SimpleBar from 'simplebar-react';
+// import 'simplebar-react/dist/simplebar.min.css';
 import css from './ShowMoreModal.module.css';
 import { skills } from '../../../lib/variables/variables.js';
 import Icon from '../../AboutContent/Icon/Icon.jsx';
@@ -11,7 +14,8 @@ export const ShowMoreModal = ({ onClose, item }) => {
     const { name, description, features, tools, links } = item;
 
     return (
-        <div className={css.mainWrapper}>
+      <div className={css.mainWrapper}>
+         
             <h2 className={css.title}>{name}</h2>
             <div className={css.linksWrapper}>
                 <ul className={css.linksList}>
@@ -46,7 +50,8 @@ export const ShowMoreModal = ({ onClose, item }) => {
                 ))}
             </ul>
 
-            <button className={css.showLessButton} onClick={onClose}>Show less</button>
+          <button className={css.showLessButton} onClick={onClose}>Show less</button>
+          
         </div>
     );
 };

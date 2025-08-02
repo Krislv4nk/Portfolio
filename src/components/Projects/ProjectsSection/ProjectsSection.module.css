@@ -6,8 +6,7 @@
 
 .wrapper {
     background-color: black;
-    height: auto;
-    padding: 0px 0px 50px 0px;
+    /* height: auto; */
     align-items: center;
     justify-content: center;
     display: flex;
@@ -56,7 +55,8 @@
     height: 400px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+
     padding: 0px 70px 0px 70px;
     background-color: rgba(255, 255, 255, 0.05) !important;
     border: 1px solid rgba(255, 255, 255, 0.08) !important;
@@ -111,7 +111,7 @@
     flex-direction: column;
     background-color: transparent;
     padding: 20px;
-    width: 258px;
+    width: 280px;
 }
 .button {
   font-family: 'Courier New', monospace;
@@ -146,6 +146,11 @@ border: 1px solid rgba(240, 237, 237, 0.64) !important;
     gap: 20px;
     flex-direction: column; 
     margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.linksItem {
+  list-style: none;
 }
 .links {
    font-size: 18px;

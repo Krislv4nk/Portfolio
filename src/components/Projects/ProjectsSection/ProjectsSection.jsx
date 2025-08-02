@@ -120,19 +120,25 @@ const Item = ({ item, openShowMoreHandler }) => {
 
       <div className={css.infoWrapper}>
         <h2 className={css.infoTitle}>{item.name}</h2>
-        <div className={css.linksWrapper}>
-          <a href={item.links.live} rel="noreferrer" target="_blank" className={css.links} title="View Live Demo">
-            Live Demo
-          </a>
-          <a href={item.links.front} rel="noreferrer" target="_blank" className={css.links} title="View Front-End">
-            Front-End GitHub
-          </a>
-          {item.links.back && (
-            <a href={item.links.back} rel="noreferrer" target="_blank" className={css.links} title="View Back-End">
-              Back-End GitHub
+        <ul className={css.linksWrapper}>
+          <li className={css.linksItem}>
+            <a href={item.links.live} rel="noreferrer" target="_blank" className={css.links} title="View Live Demo">
+              Live Demo
             </a>
+          </li>
+          <li className={css.linksItem}>
+            <a href={item.links.front} rel="noreferrer" target="_blank" className={css.links} title="View Front-End">
+              Front-End GitHub
+            </a>
+          </li>
+          {item.links.back && (
+            <li className={css.linksItem}>
+              <a href={item.links.back} rel="noreferrer" target="_blank" className={css.links} title="View Back-End">
+                Back-End GitHub
+              </a>
+            </li>
           )}
-        </div>
+        </ul>
         <Button className={css.button} onClick={() => openShowMoreHandler(item)}>Show more</Button>
       </div>
     </Paper>
