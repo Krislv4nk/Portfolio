@@ -1,6 +1,6 @@
 
-// import SimpleBar from 'simplebar-react';
-// import 'simplebar-react/dist/simplebar.min.css';
+import SimpleBar from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css';
 import css from './ShowMoreModal.module.css';
 import { skills } from '../../../lib/variables/variables.js';
 import Icon from '../../AboutContent/Icon/Icon.jsx';
@@ -15,7 +15,7 @@ export const ShowMoreModal = ({ onClose, item }) => {
 
     return (
       <div className={css.mainWrapper}>
-         
+         <SimpleBar className={css.scrollArea} style={{ maxHeight: '100%' }} forceVisible="y" autoHide={false}>
             <h2 className={css.title}>{name}</h2>
             <div className={css.linksWrapper}>
                 <ul className={css.linksList}>
@@ -30,13 +30,13 @@ export const ShowMoreModal = ({ onClose, item }) => {
     const skill = skills.find(s => s.name.toLowerCase() === tool.toLowerCase());
     return (
       <li key={i} className={css.toolItem}>
-        {skill && (
-          <>
-            <Icon id={skill.iconId} className={css.toolIcon} />
-            <span>{tool}</span>
-          </>
-        )}
-      </li>
+  {skill && (
+    <div className={css.tooltipWrapper}>
+      <Icon id={skill.iconId} className={css.toolIcon} />
+      <span className={css.tooltipText}>{tool}</span>
+    </div>
+  )}
+</li>
     );
   })}
             </ul>
@@ -50,8 +50,8 @@ export const ShowMoreModal = ({ onClose, item }) => {
                 ))}
             </ul>
 
-          <button className={css.showLessButton} onClick={onClose}>Show less</button>
-          
+          <button className={css.showLessButton} type='button' title='Show less' onClick={onClose}>Show less</button>
+          </SimpleBar>
         </div>
     );
 };

@@ -25,7 +25,6 @@
         #292929aa 0%,
         #191919cc 50%
     );
-    /* backdrop-filter: blur(4px); */
     box-shadow: inset 0 2px 2px 0 #e7c4a088,
     inset 0 -2px 2px 0 #0003;
     
@@ -49,29 +48,26 @@
 .linksItem {
     display: flex;
     align-items: center;
-    gap: 10px;
     text-align: center;
      
   }
 
   .link {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
   cursor: pointer;
-  width: 160px;
   padding: 10px 20px;
-    border-radius: 20px;
-   background: #fff2;
-        box-shadow: 
-        0 0 0 1px #fff3, 
-        inset 120px 0 100px -100px #000c, 
-        0 0 0 0 #fff1;
-
-        transition: box-shadow 0.4s ease-in-out;
+  border-radius: 20px;
+  background: #fff2;
+  box-shadow: 
+    0 0 0 1px #fff3, 
+    inset 120px 0 100px -100px #000c, 
+    0 0 0 0 #fff1;
+width: 200px;
+  white-space: nowrap; 
+  transition: box-shadow 0.4s ease-in-out;
         &:hover {
             box-shadow: 
             0 0 0 1px #fff3, 
@@ -79,11 +75,7 @@
             -4px 0 8px 2px #fff2;
         }
   }
-
-  
-   
-
-   .cv {
+.cv {
    width: 200px;
     height: auto;
     border-radius: 20px;

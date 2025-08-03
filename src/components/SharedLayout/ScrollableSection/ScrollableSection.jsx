@@ -17,7 +17,7 @@ export const ScrollableSection = ({ children, delay = 0 }) => {
       style={{
        width: '100%',
   minHeight: '100vh',
-        transform: 'none',
+        // transform: 'none',
       }}
     >
   {children}
