@@ -1,13 +1,13 @@
 
-import myPhoto from "../../../assets/img/mainPhoto.png";
+import myPhoto from "../../../assets/img/type-foto-4.png";
 import css from "./Intro.module.css";
 
 
 export const Intro = () => {
     return (
-<div className={css.container}>
-        <img className={css.photo} src={myPhoto} alt="myPhoto" />
+      <div className={css.container}>
         <div className={css.helloDiv}>
+          
           <h2 className={css.helloTitle}>Hello!</h2>
           <p className={css.text}> I am Kristina, a junior full-stack developer.
           I am eager to wholeheartedly dive into the world of programming. My skills and knowledge are constantly evolving,
@@ -16,6 +16,7 @@ export const Intro = () => {
           and development to create quality and innovative products.
           </p>
           </div>
+        <img className={css.photo} src={myPhoto} alt="myPhoto" />
       </div>
     )
 };

@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     padding: 140px 50px;
     margin: 100px 0px;
 }
@@ -65,22 +65,14 @@
     opacity: 0; 
   }
   to {
-    width: 350px; 
+    width: 500px; 
     opacity: 1;
   }
 }
 .photo {
-  width: 250px;
+  width: 500px;
   height: auto;
-  box-shadow: 
-    0 0 5px rgba(240, 237, 237, 0.1),
-    0 0 10px rgba(240, 237, 237, 0.1),
-    0 0 20px rgba(240, 237, 237, 0.1),
-    0 0 40px rgba(240, 237, 237, 0.1),
-    0 0 80px rgba(240, 237, 237, 0.1);
-    border-radius: 50%;
-    position: sticky;
-    z-index: 12;
+    object-fit: cover;
     animation: grow 2s ease-in-out forwards;
 }
 
