@@ -50,6 +50,7 @@ export const skills = [
   { name: "Styled Components", iconId: "styled-components" },
   { name: "npm", iconId: "npm" },
   { name: "React Router DOM", iconId: "reactrouter" },
+  { name: "JSON", iconId: "json"}
 ];
 
 
@@ -91,7 +92,9 @@ export const items = [
       "Git",
       "Postman",
       "Figma",
-      "npm"
+      "npm",
+      "JSON",
+
     ]
   },
         {
@@ -124,7 +127,8 @@ export const items = [
     "Git",
     "Postman",
     "Figma",
-    "npm"
+    "npm",
+    "JSON"
   ],
         },
         {
@@ -168,7 +172,9 @@ export const items = [
       "i18next",
       "Figma",
       "Styled Components",
-      "npm"
+      "npm",
+      "JSON"
+
     ],
     role: "On Front-End - Implemented logic for SignUp/SignIn pages (Redux, Axios, Formik, Yup), component MyDailyNorma with modal-window (MUI), component Background; on Back-End - Implemented logic for TodayWater component."
   },
@@ -201,7 +207,8 @@ export const items = [
       "Vs Code",
       "Git",
             "Postman",
-      "npm"
+            "npm",
+    "JSON",
   ]
   },
   {
@@ -234,6 +241,7 @@ export const items = [
       "Figma",
       "npm",
       "Postman",
+      "JSON"
     ]
   },
     ]
