@@ -1,21 +1,49 @@
 
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
+import { useRef, useState, useEffect } from 'react';
 import css from './ShowMoreModal.module.css';
 import { skills } from '../../../lib/variables/variables.js';
 import Icon from '../../AboutContent/Icon/Icon.jsx';
+import sprite from '../../../assets/sprite.svg';
 
 
 
 
 export const ShowMoreModal = ({ onClose, item }) => {
-    if (!item) return null;
+  const scrollRef = useRef(null);
+  const [isScrolledToBottom, setIsScrolledToBottom] = useState(false);
 
-    const { name, description, features, tools, links } = item;
+ useEffect(() => {
+  const simpleBarInstance = scrollRef.current;
+  if (!simpleBarInstance) return;
+
+  const scrollEl = simpleBarInstance.getScrollElement(); 
+
+  const handleScroll = () => {
+    const atBottom = scrollEl.scrollTop + scrollEl.clientHeight >= scrollEl.scrollHeight - 5;
+    setIsScrolledToBottom(atBottom);
+  };
+
+  scrollEl.addEventListener('scroll', handleScroll);
+  handleScroll();
+
+  return () => scrollEl.removeEventListener('scroll', handleScroll);
+}, []);
+
+  if (!item) return null;
+
+  const { name, description, features, tools, links } = item;
+
 
     return (
       <div className={css.mainWrapper}>
-         <SimpleBar className={css.scrollArea} style={{ maxHeight: '100%' }} forceVisible="y" autoHide={false}>
+        <SimpleBar className={css.scrollArea}
+          style={{ maxHeight: '100%' }}
+          forceVisible="y"
+          autoHide={false}
+          ref={scrollRef}>
+          <div className={css.container}>
             <h2 className={css.title}>{name}</h2>
             <div className={css.linksWrapper}>
                 <ul className={css.linksList}>
@@ -51,7 +79,13 @@ export const ShowMoreModal = ({ onClose, item }) => {
             </ul>
 
           <button className={css.showLessButton} type='button' title='Show less' onClick={onClose}>Show less</button>
-          </SimpleBar>
+          <div className={`${css.scrollHint} ${isScrolledToBottom ? css.hide : ''}`}>
+       <svg className={css.svgIcon}>
+<use href={`${sprite}#icon-down`} />
+</svg>
+            </div>
+            </div>
+        </SimpleBar>
         </div>
     );
 };

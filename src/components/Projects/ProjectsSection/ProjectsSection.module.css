@@ -113,39 +113,30 @@
     padding: 20px;
     width: 280px;
 }
-/* .button {
-  font-family: 'Courier New', monospace;
-    padding: 16px 32px !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
- 
-} */
+
 
 .button {
     font-family: 'Courier New', monospace;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     font-size: 18px;
     font-weight: 600;
-    color: #ffffff !important;
-    cursor: pointer;
-    background-color: transparent !important;
-   border-bottom: 2px solid #ffffff !important;
-   
-   transition: color .3s ease-out;
+  color: #ffffff;
+  cursor: pointer;
+    margin-right: 50px;
+    margin-left: auto;
+    border-radius: 20px;
+ padding: 10px 20px;
+     border-bottom: 2px solid #ffffff;
+    transition: color .3s ease-out;
 }
 
 
 .button:hover {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-  border-radius: 20px !important;
-  background-color: #494949 !important;
+  border-radius: 20px;
+ padding: 10px 20px;
+  background-color: #494949;
     transition: all 0.3s ease;
   }
 

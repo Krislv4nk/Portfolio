@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import clsx from 'clsx';
 import Carousel from 'react-material-ui-carousel';
-import { Paper, Button } from '@mui/material';
+import { Paper } from '@mui/material';
 import { StyledEngineProvider } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import { ShowMoreModal } from '../ShowMoreModal/ShowMoreModal';
@@ -139,7 +139,7 @@ const Item = ({ item, openShowMoreHandler }) => {
             </li>
           )}
         </ul>
-        <Button className={css.button} onClick={() => openShowMoreHandler(item)}>Show more</Button>
+        <button type='button' title='Show more' className={css.button} onClick={() => openShowMoreHandler(item)}>Show more</button>
       </div>
     </Paper>
   );
