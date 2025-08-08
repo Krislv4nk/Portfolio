@@ -159,30 +159,28 @@
   list-style: none;
 }
 .links {
-   font-size: 18px;
-   font-weight: 600;
-   position: relative;
-      overflow: hidden;
-      text-decoration: none;
-   padding: 5px 10px;
-   color: #ffffffff;
-   transition:  0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
-  }
-
-  .links::after {
-   content: "";
-   border-radius: 10px;
-   background: rgba(98, 88, 88, 0.5);
-   position: absolute;
-   left: 12px;
-   bottom: -6px;
-   width: calc(100% - 8px);
-        height: calc(100% - 8px);
-        z-index: -1;
-        
-   transition:  0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #fff2;
+  box-shadow: 
+    0 0 0 1px #fff3, 
+    inset 120px 0 100px -100px #000c, 
+    0 0 0 0 #fff1;
+width: 200px;
+  white-space: nowrap; 
+  transition: box-shadow 0.4s ease-in-out;
+        &:hover {
+            box-shadow: 
+            0 0 0 1px #fff3, 
+            inset 200px 0px 100px -100px #000a, 
+            -4px 0 8px 2px #fff2;
 }
-
+}
 .links:hover:after {
         left: 0;
         bottom: -2px;

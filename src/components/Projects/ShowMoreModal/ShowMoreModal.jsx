@@ -80,9 +80,11 @@ export const ShowMoreModal = ({ onClose, item }) => {
 
           <button className={css.showLessButton} type='button' title='Show less' onClick={onClose}>Show less</button>
           <div className={`${css.scrollHint} ${isScrolledToBottom ? css.hide : ''}`}>
-       <svg className={css.svgIcon}>
-<use href={`${sprite}#icon-down`} />
-</svg>
+       {[...Array(3)].map((_, i) => (
+    <svg key={i} className={css.svgIcon}>
+      <use href={`${sprite}#icon-down`} />
+    </svg>
+  ))}
             </div>
             </div>
         </SimpleBar>

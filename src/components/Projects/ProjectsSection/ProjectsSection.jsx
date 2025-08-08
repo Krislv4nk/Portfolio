@@ -47,7 +47,7 @@ const ProjectsPage = () => {
                         top: 'unset',
                     margin: '0 20px',
                     }
-                }}
+          }}
                 swipe={true}
                 swipeThreshold={50}
                 fullHeightHover={false}

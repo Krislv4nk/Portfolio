@@ -31,7 +31,7 @@ export const skills = [
   { name: "GitHub", iconId: "github" },
   { name: "VS Code", iconId: "vscode" },
   { name: "Figma", iconId: "figma" },
-  { name: "@emotion/styled", iconId: "internet" },
+  { name: "@emotion", iconId: "emotion" },
   { name: "Postman", iconId: "postman" },
   { name: "Vite", iconId: "jsvite" },
   { name: "Nodemailer", iconId: "nodemailer" },
@@ -49,8 +49,14 @@ export const skills = [
   { name: "REST API", iconId: "rest-api" },
   { name: "Styled Components", iconId: "styled-components" },
   { name: "npm", iconId: "npm" },
-  { name: "React Router DOM", iconId: "reactrouter" },
-  { name: "JSON", iconId: "json"}
+  { name: "React Router", iconId: "reactrouter" },
+  { name: "JSON", iconId: "json" },
+  { name: "Create React App", iconId: "Create-React-App" },
+  { name: "Swagger", iconId: "swagger-original" },
+  { name: "Nano ID", iconId: "nanoid" },
+  { name: "UUID", iconId: "uuid" },
+  { name: "Mongoose", iconId: "mongoose-original" },
+  { name: "Stack Overflow", iconId: "stackoverflow" },
 ];
 
 
@@ -80,11 +86,11 @@ export const items = [
     ],
     tools: [
       "React",
-      "React Router DOM",
+      "React Router",
       "Firebase",
       "Material-UI",
       "Axios",
-      "@emotion/styled",
+      "@emotion",
       "Formik",
       "Yup",
       "Vite",
@@ -94,6 +100,7 @@ export const items = [
       "Figma",
       "npm",
       "JSON",
+      "UUID"
 
     ]
   },
@@ -118,6 +125,7 @@ export const items = [
   tools: [
     "React",
     "Redux",
+    "React Router",
     "Material-UI",
     "Axios",
     "Formik",
@@ -155,6 +163,7 @@ export const items = [
     tools: [
       "React",
       "Redux",
+      "React Router",
       "Material-UI",
       "Axios",
       "Formik",
@@ -163,7 +172,8 @@ export const items = [
       "Express.js",
       "Nodemon",
       "JWT",
-      "Vite",
+      "Mongoose",
+      "Create React App",
       "Vs Code",
       "Git",
       "MongoDB",
@@ -173,7 +183,8 @@ export const items = [
       "Figma",
       "Styled Components",
       "npm",
-      "JSON"
+      "JSON",
+      "Swagger"
 
     ],
     role: "On Front-End - Implemented logic for SignUp/SignIn pages (Redux, Axios, Formik, Yup), component MyDailyNorma with modal-window (MUI), component Background; on Back-End - Implemented logic for TodayWater component."
@@ -203,12 +214,13 @@ export const items = [
     "Axios",
     "Formik",
             "Yup",
-    "Vite",
+    "Create React App",
       "Vs Code",
       "Git",
             "Postman",
             "npm",
-    "JSON",
+            "JSON",
+    "Nano ID",
   ]
   },
   {
